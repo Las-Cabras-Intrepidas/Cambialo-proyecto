@@ -1,0 +1,27 @@
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+.button {
+  font-family: "Roboto Mono", monospace;
+}
+
+.title {
+  font-size: 40px;
+}
+
+.image {
+  width: 500px;
+  height: 500px;
+  display: block;
+  margin: 100px auto;
+}
+
+.tile {
+  display: block;
+  margin: auto;
+}
+
+.columns {
+  padding: 30px;
+}
