@@ -25,3 +25,13 @@ body {
 .columns {
   padding: 30px;
 }
+
+.navbar > .container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-items {
+  display: flex;
+  justify-content: flex-start;
+}
