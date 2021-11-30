@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
+  <link rel="stylesheet" href="src/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+
+<body>
+  <header id="header">
+    <img src="src/img/logotipo3.svg"
+      */Logotipo_cabcera alt="Logotipo_cabecera" class="logo">
+
+    <!--Barra búsqueda-->
+    <div class="barra_busqueda">
+      <div class="container-4">
+        <input type="search" id="search" placeholder="Busca en todas las categorías ..." />
+        <button class="icon"><i class="fa fa-search"></i></button>
+      </div>
+    </div>
+    <!--Menu Header-->
+    <ul class="main-menu">
+      <li class="menu-item">Home</li>
+      <li class="menu-item">Subir producto</li>
+      <li class="menu-item">Contacto</li>
+      <li class="login">Identifícate</li>
+      <li class="cta">Regístrate</li>
+    </ul>
+  </header>
+
+
+  <!--Cuerpo página en Bulma!-->
+  <section class="section is-small">
+    <div class="columns">
+      <div class="column is-2">
+        <p>Categorias:</p>
+        <ul>
+          <li><a href="#">Electrónica (6)</a></li>
+          <li><a href="#">Hogar (3)</a></li>
+          <li><a href="#">Mascotas (1)</a></li>
+        </ul>
+      </div>
+      <div class="column is-4">
+        <div><img class="img-product" src="https://i.blogs.es/d86db0/meme-fry-1/1366_2000.jpg" /></div>
+        <div class="miniaturas">
+          <img src="https://i.blogs.es/d86db0/meme-fry-1/1366_2000.jpg" />
+          <img src="https://i.blogs.es/d86db0/meme-fry-1/1366_2000.jpg" />
+          <img src="https://i.blogs.es/d86db0/meme-fry-1/1366_2000.jpg" />
+          <img src="https://i.blogs.es/d86db0/meme-fry-1/1366_2000.jpg" />
+        </div>
+      </div>
+      <div class="column is-5">
+        <h3 class="subtitle has-text-weight-bold">Nombre Producto</h3>
+        <p><strong>Descripción:</strong>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed finibus libero ac interdum.
+        </p>
+        <br>
+        <div class="button">Solicitar</div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="section">
+    <div class="box">
+      <div class="columns">
+        <div class="column is-left">
+          <h3 class="subtitle has-text-weight-bold">¿Qué quieres dar a cambio de este producto?</h3>
+          <div class="columns">
+            <img class="producto" src="https://i.blogs.es/d86db0/meme-fry-1/1366_2000.jpg" />
+            <button class="button alinear-boton">Confirmar</button>
+          </div>
+          <div class="text-product">
+            <p class="verde">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-justified">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi
+              nec leo vestibulum fringilla.
+            </p>
+          </div>
+
+        </div>
+        <div class="column is-right">
+          <form class="box">
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control">
+                <input class="input" type="email" placeholder="soleny@example.com" />
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Tu Mensaje</label>
+              <div class="control">
+                <input class="textarea" type="text" placeholder="Escribe una breve descripción de tu producto." />
+              </div>
+            </div>
+            <button class="button">Enviar</button>
+          </form>
+        </div>
+  </section>
+
+  <section class="section">
+    <h3 class="title is-size-3">También te puede interesar...</h3>
+  </section>
+
+  <div class="container" style="z-index: -2;">
+    <div class="columns">
+      <div class="column is-3">
+        <div class="card has-text-centered">
+          <header class="card-header">
+            <p class="card-header-title">Artículo 1</p>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              <img src="https://i.blogs.es/d86db0/meme-fry-1/1366_2000.jpg" />
+              <p class="verde">Disponible</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+              </p>
+            </div>
+            <button class="button is-focused is-rounded">Saber Más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-3">
+        <div class="card has-text-centered">
+          <header class="card-header">
+            <p class="card-header-title">Artículo 2</p>
+          </header>
+          <div class="card-content has-text-centered">
+            <div class="content">
+              <img src="https://i.blogs.es/d86db0/meme-fry-1/1366_2000.jpg" />
+              <p class="verde">Disponible</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+              </p>
+            </div>
+            <button class="button is-focused is-rounded">Saber Más</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-3">
+        <div class="card has-text-centered">
+          <header class="card-header">
+            <p class="card-header-title">Artículo 3</p>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              <img src="https://i.blogs.es/d86db0/meme-fry-1/1366_2000.jpg" />
+              <p class="verde">Disponible</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+              </p>
+            </div>
+            <button class="button is-focused is-rounded">Saber Más</button>
+          </div>
+        </div>
+      </div>
+      <div class="column is-3">
+        <div class="card has-text-centered">
+          <header class="card-header">
+            <p class="card-header-title">Artículo 4</p>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              <img src="https://i.blogs.es/d86db0/meme-fry-1/1366_2000.jpg" />
+              <p class="verde">Disponible</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus nec iaculis mauris.
+              </p>
+            </div>
+            <button class="button is-focused is-rounded">Saber Más</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="hero is-link is-small">
+    <div class="hero-body">
+      <div class="columns is-centered">
+        <div class="column is-two-thirds">
+          <p class="is-size-3">
+            Entra en el portal en donde puedes comprar sin dinero, porque aquí tus cosas tienen valor.
+          </p>
+        </div>
+        <div class="column is-flex">
+          <div class="button" style="color: #fff">Regístrate</div>
+          <div class="button" style="color: #fff">Subir Producto</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>Web Creada para EOI 2021 ©</p>
+    </div>
+  </footer>
+</body>
+</html>
