@@ -22,7 +22,7 @@
 
     <!--Menu Header-->
     <ul class="main-menu">
-      <li class="menu-item">Home</li>
+      <li class="menu-item">Empieza Aquí</li>
       <li class="menu-item">Contacto</li>
     </ul>
   </header>
@@ -31,37 +31,32 @@
   <section class="hero-header is-small">
     <div class="hero-body">
       <div class="columns">
-        <div class="column column-1 is-half has-text-left">
-          <p class="is-size-2">
-            ¿Conoces la nueva manera
-          </p>
-          <p class="is-size-2">
-            de comprar sin dinero?
-          <p class="sub-head">
-            Con Cámbialo, nace la plataforma
-          </p>
-          <p class="sub-head">
-            de intercambio entre usuarios que buscan
-          </p>
-          <p class="sub-head">
-            dar una nueva vida a lo que ya no usan
-          </p>
-          </p>
+        <div class="column column-1 is-half">
+          <div class="depresion"></div>
+          <div class="header-text">
+            <h1 class="text-shadow is-size-2">
+              ¿Conoces la nueva manera de comprar sin dinero?
+            </h1>
+            <h3 class="sub-head">
+              Con Cámbialo, nace la plataforma de intercambio entre usuarios que buscan dar una nueva vida a lo que ya
+              no usan.
+            </h3>
+          </div>
         </div>
 
         <div class="column column-2">
           <div class="container form-1">
             <div class="field">
-              <label class="label">Name</label>
+              <label class="label">Nombre</label>
               <div class="control">
-                <input class="input" type="text" placeholder="Text input">
+                <input class="input" type="text" placeholder="Tu nombre">
               </div>
             </div>
 
             <div class="field">
               <label class="label">Username</label>
               <div class="control has-icons-left has-icons-right">
-                <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+                <input class="input is-link" type="text" placeholder="Crea tu ususario">
                 <span class="icon is-small is-left">
                   <i class="fas fa-user"></i>
                 </span>
@@ -69,39 +64,24 @@
                   <i class="fas fa-check"></i>
                 </span>
               </div>
-              <p class="help is-success">This username is available</p>
+              <p class="help is-success">Tu usuario está disponible</p>
             </div>
 
             <div class="field">
               <label class="label">Email</label>
               <div class="control has-icons-left has-icons-right">
-                <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                <input class="input is-link" type="email" placeholder="Tu email">
                 <span class="icon is-small is-left">
                   <i class="fas fa-envelope"></i>
                 </span>
-                <span class="icon is-small is-right">
-                  <i class="fas fa-exclamation-triangle"></i>
-                </span>
               </div>
-              <p class="help is-danger">This email is invalid</p>
+              <p class="help is-link">This email is invalid</p>
             </div>
 
             <div class="field">
-              <label class="label">Subject</label>
+              <label class="label">Mensaje</label>
               <div class="control">
-                <div class="select">
-                  <select>
-                    <option>Select dropdown</option>
-                    <option>With options</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-
-            <div class="field">
-              <label class="label">Message</label>
-              <div class="control">
-                <textarea class="textarea" placeholder="Textarea"></textarea>
+                <textarea class="textarea" placeholder="Tu mensaje..."></textarea>
               </div>
             </div>
 
@@ -109,30 +89,14 @@
               <div class="control">
                 <label class="checkbox">
                   <input type="checkbox">
-                  I agree to the <a href="#">terms and conditions</a>
-                </label>
-              </div>
-            </div>
-
-            <div class="field">
-              <div class="control">
-                <label class="radio">
-                  <input type="radio" name="question">
-                  Yes
-                </label>
-                <label class="radio">
-                  <input type="radio" name="question">
-                  No
+                  Estoy de acuerdo con los <a href="#">terminos y condiciones.</a>
                 </label>
               </div>
             </div>
 
             <div class="field is-grouped">
               <div class="control">
-                <button class="button is-link">Submit</button>
-              </div>
-              <div class="control">
-                <button class="button is-link is-light">Cancel</button>
+                <button class="button is-link is-rounded" onclick="location.reload()">Enviar</button>
               </div>
             </div>
           </div>
@@ -186,7 +150,7 @@
     </h3>
   </div>
 
-  <div class="container" style="z-index: -2">
+  <div class="container">
     <div class="columns">
       <div class="column is-3">
         <div class="card has-text-centered">
@@ -253,153 +217,110 @@
     </div>
   </div>
 
+  <hr>
   <!--otra section final-->
-  <section class="hero margenes-section is-link is-small">
+  <section class="hero margenes-section is-small">
     <div class="hero-body">
       <div class="columns">
         <div class="column is-full has-text-centered">
-          <p class="text-shadow is-size-3">
+          <p class="is-size-2">
             Cuando necesites hacer un trueque, cuenta con Cámbialo como tu web de confianza en Canarias.
           </p>
         </div>
   </section>
 
-  <!--form de landing-->
-  <div class="columns is-size-4 margenes-section has-text-left is-centered">
-    <div class="column">
-      <h3 class="title form-title is-size-3">Envíanos tu artículo</h3>
-      <div class="box">
-        <div class="field">
-          <label class="label">Nombre y Apellido</label>
-          <div class="control">
-            <input class="input" type="text" placeholder="Tu nombre y apellido">
-          </div>
-        </div>
+  <!--contactanos-->
 
-        <div class="field">
-          <label class="label">Email</label>
-          <div class="control">
-            <input class="input" type="email" placeholder="Tu email">
-          </div>
-        </div>
-
-        <div class="field">
-          <label class="label">Cuéntanos sobre tu artículo</label>
-          <div class="control">
-            <textarea class="textarea" placeholder="Tu mensaje..."></textarea>
-          </div>
-        </div>
-
-        <div class="field">
-          <div class="control">
-            <label class="checkbox">
-              <input type="checkbox">
-              Acepto los <a href="#">terminos y condiciones</a>
-            </label>
-          </div>
-        </div>
-
-        <div class="field is-grouped">
-          <div class="control">
-            <button class="button">Enviar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="column">
-      <h3 class="title form-title is-size-3">Contacta con nosotros</h3>
-      <div class="contactanos">
-        <ul>
-          <li class="is-size-5 contact-item">
-            lascabrasintrepidas@gmail.com
-          </li>
-          <li class="is-size-5 contact-item">
-            555-555-555
-          </li>
-          <li class="is-size-5 contact-item">
-            Calle EOI, 2021. Edificio 9 de Diciembre.
-          </li>
-        </ul>
-        <img class="mapa-tenerife" src="https://www.visitarcanarias.com/Images/mapa_tenerife.jpg" alt="mapa_tenerife">
-      </div>
-    </div>
-  </div>
 
   <!--columnas final-->
-  <hr>
+ <!--<hr> -->
 
-  <div class="columns animation-box has-text-centered">
-    <div class="column">
-      <div class="columna">SI NO LO USAS SÚBELO.
-        <div class="is-size-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Phasellus nec iaculis mauris.</div>
-      </div>
+  <div class="columns grey-columns has-text-centered animation-box">
+    <div class="column columna">
+      <h3 class="">SI NO LO USAS SÚBELO</h3>
+       <i class="fas fa-cloud-upload-alt"></i>
+        <p class="is-size-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Phasellus nec iaculis mauris.</p>
     </div>
 
-    <div class="column">
-      <div class="columna">ALARGAMOS LA VIDA DE TU PRODUCTO.
-        <div class="is-size-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Phasellus nec iaculis mauris.</div>
-      </div>
+    <div class="column columna">
+      <h3 class="">ALARGAMOS LA VIDA DE TU PRODUCTO</h3>
+       <i class="fas fa-heartbeat"></i>
+        <p class="is-size-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Phasellus nec iaculis mauris.</p>
     </div>
-  </div>
+</div>
+
 
   <div class="columns has-text-centered animation-box">
-    <div class="column">
-      <div class="columna">MÁS ESPACIO EN TU CASA.
-        <div class="is-size-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Phasellus nec iaculis mauris.</div>
-      </div>
+    <div class="column columna">
+      <h3 class="">MÁS ESPACIO EN TU CASA</h3>
+       <i class="fas fa-home"></i>
+        <p class="is-size-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Phasellus nec iaculis mauris.</p>
     </div>
 
-    <div class="column">
-      <div class="columna">PRODUCTOS VERIFICADOS.
-        <div class="is-size-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Phasellus nec iaculis mauris.</div>
+
+    <div class="column columna">
+      <h3 class="">PRODUCTOS VERIFICADOS</h3>
+       <i class="fas fa-check-double"></i>
+        <p class="is-size-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Phasellus nec iaculis mauris.</p>
+    </div>
+</div>
+
+
+  <h3 class="rrss is-size-3 has-text-centered">Nuestras redes sociales...</h3>
+  <div class="section">
+    <div class="columns has-text-centered">
+      <div class="column">
+        <a href="https://www.instagram.com/cambialo_es/"><i class="fab fa-facebook-f"></i></a>
+      </div>
+      <div class="column">
+        <a href="https://www.instagram.com/cambialo_es/"><i class="rrss fab fa-instagram"></i></a>
+      </div>
+      <div class="column">
+        <a href="https://twitter.com/CambialoES"><i class="rrss fab fa-twitter"></i></a>
       </div>
     </div>
   </div>
 
   <hr>
-
-  <div class="section">
-    <h3 class="title has-text-centered is-size-5">
-      Síguenos en RRSS para conocer nuestro día a día
-    </h3>
-    <div class="box border-blue">
-      <div class="columns has-text-centered">
-        <div class="column">
-          TWITTER
-        </div>
-        <div class="column">
-          INSTAGRAM
-        </div>
-        <div class="column">
-          FACEBOOK
-        </div>
+  <!-- counter y contactanos-->
+  <div class="section contact-us">
+    <div class="columns has-text-centered">
+      <div class="column">
+        <h3 class="contact-title is-size-3">Dónde encontranos</h3>
+        <ul class="contact-text">
+          <li class="contact-items">928 781 784</li>
+          <li class="contact-items">cabarasintrepidas@gmail.com</li>
+          <li class="contact-items">Calle EOI, 2021</li>
+        </ul>
       </div>
-
-        <div class="columns fixed-box has-text-centered">
-          <div class="column">
-            <a href="https://twitter.com/CambialoES"><i class="rrss fab fa-twitter"></i></a>
-          </div>
-          <div class="column">
-            <a href="https://www.instagram.com/cambialo_es/"><i class="rrss fab fa-instagram"></i></a>
-          </div>
-          <div class="column">
-            <a href="https://www.instagram.com/cambialo_es/"><i class="fab fa-facebook-f"></i></a>
-          </div>
-        </div>
+      <div class="column">
+        <img class="contact-img" src="img/vias.jpg">
+      </div>
     </div>
   </div>
 
-
   <!--footer-->
-  <footer class="footer">
+  <footer class="footer has-background-dark has-text-black is-small">
     <div class="content has-text-centered">
-
-      <p>Web Creada para EOI 2021 ©</p>
+      <div class="columns is-desktop">
+        <div class="column">
+          <img src="img/logotipo3.svg" */Logotipo_cabcera alt="Logotipo_cabecera" class="logo-footer">
+        </div>
+        <div class="column is-half">
+          <p class="footer-copy">
+            © Copyright All rights reserved 2021 - By Intrepid Ibex
+          </p>
+        </div>
+        <div class="column">
+          <a href="https://www.instagram.com/cambialo_es/"><i class="footer-icon fab fa-facebook-f fa-2x"></i></a>
+          <a href="https://www.instagram.com/cambialo_es/"><i class="footer-icon fab fa-instagram fa-2x"></i></a>
+          <a href="https://twitter.com/CambialoES"><i class="footer-icon fab fa-twitter fa-2x"></i></a>
+        </div>
+      </div>
     </div>
   </footer>
 </body>
