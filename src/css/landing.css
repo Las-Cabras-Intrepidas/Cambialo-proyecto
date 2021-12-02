@@ -148,41 +148,44 @@ header {
 
 /*CABECERA*/
 .hero-header {
-  background-color: #012bb349;
+  background-image: url();
 }
-.hero-body {
-  max-width: 1700px !important;
-  margin: auto;
 
+.hero-body {
+  max-width: 1700px;
+  margin: auto;
+  background-color: #012bb375;
 }
 
 .column-1 {
   color: #fff;
-  padding: 150px 0px 0px 250px;
-  line-height: 60px;
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 50px;
+  line-height: 40px;
   font-weight: 700;
   font-family: "Nunito", Sans-serif;
   margin-bottom: 15px;
+}
 
-}
-.column-1 .is-size-2{
-  font-size: 0px;
-}
-.column-1 .sub-head {
-  color: #fff
-  line-height: 50px;
-  font-size: 25px;
+.sub-head {
+  color: #fff;
+  line-height: 30px;
+  margin-top: 20px;
+  font-size: 18px;
   font-weight: 100;
   font-family: "Nunito", Sans-serif;
+}
+.depresion {
+  width: 30%;
+}
 
-}
-.column-2 {
-}
 .form-1 {
   background-color: #fff;
   border-radius: 20px;
   padding: 25px;
-  width: 50%;
+  width: 65%;
   height: 100%;
 }
 
@@ -193,6 +196,8 @@ header {
 
 .margenes-section {
   margin-top: 30px;
+  background-color: #012bb375;
+  color: white;
 }
 
 .contactanos {
@@ -204,10 +209,9 @@ header {
   margin-left: 40px;
 }
 
-.mapa-tenerife {
-  width: 26rem;
-  height: 15rem;
-  margin-top: 18px;
+.verde {
+  color: green;
+  font-weight: 700;
 }
 
 /*boton saber mas landing page nuevo*/
@@ -223,41 +227,22 @@ header {
 }
 
 .columna {
-  background-color: #012bb3;
+  background-color: darkgray;
   color: white;
   text-shadow: 2px 2px 3px black;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 20px;
   border: 2px solid white;
+  border-radius: 6px;
   margin: 15px;
   padding: 20px;
-  -webkit-transition: font-size 1s ease;
-  transition: font-size 1s ease;
-}
-
-.columna:hover {
-  background-color: white;
-  border: 2px dotted #012bb3;
-  text-shadow: none;
-  color: black;
-  font-size: 27px;
 }
 
 .text-shadow {
   text-shadow: 2px 2px 3px black;
 }
 
-.animation-box {
-  -webkit-transition: 1s ease-out;
-  transition: 1s ease-out;
-}
-
-.animation-box:hover {
-  padding: 20px;
-}
-
 .prueba {
-  margin: 30px 20px 50px 20px;
+  margin: 60px 20px;
 }
 
 .fixed-box {
@@ -273,4 +258,54 @@ header {
 
 .border-blue {
   border: 1px solid #012bb3;
+}
+
+hr {
+  background: #dd752e;
+  border: 2.5px solid #dd752e;
+  border-radius: 25px;
+  width: 60rem;
+  margin: 30px auto;
+}
+
+/*contact info*/
+li {
+  font-size: 18px;
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.contact-title {
+  margin-top: -10px;
+  margin-bottom: 35px;
+}
+
+.contact-img {
+  width: 450px;
+  height: 250px;
+  border-radius: 6px;
+  margin-right: 150px;
+}
+
+/* footer */
+.footer {
+  height: 50px;
+}
+
+.footer-copy {
+  margin: 10px;
+}
+
+.footer-icon {
+  margin-left: 40px;
+}
+
+.logo-footer {
+  width: 23%;
+  margin-top: -5px;
+  margin-left: -10px;
+}
+
+.grey-columns {
+  margin-top: 22px;
 }
