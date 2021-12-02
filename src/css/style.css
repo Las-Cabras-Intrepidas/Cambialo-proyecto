@@ -3,7 +3,11 @@
   --main-color: #012bb3;
   --placeholder-gray: #cccaca;
 }
-
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
 /*Header_style*/
 header {
   height: auto;
@@ -46,22 +50,31 @@ header {
   border-radius: 30px;
   background-color: #fff;
   color: #012bb3;
+  text-decoration: none;
 }
 .login:hover {
   color: #fff;
   background-color: #012bb3;
   transition: 0.2s;
+  text-decoration: none;
 }
 .cta {
   padding: 8px 20px;
   border-radius: 30px;
   background-color: #fff;
   color: #012bb3;
+  text-decoration: none;
 }
 .cta:hover {
   color: #fff;
   background-color: #012bb3;
   transition: 0.2s;
+  text-decoration: none;
+}
+.cta:active {
+  color: #fff;
+  background-color: #012bb3;
+  border: inset;
 }
 
 /*Search_Style*/
@@ -174,7 +187,7 @@ header {
 .eslogan_cabecera {
   font-size: 1em;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 100px;
   text-align: center;
 }
 .eslogan_1 {
@@ -203,8 +216,35 @@ hr {
   margin: 30px auto;
   padding: 0px 7%;
 }
+/*SEGUNDO BANNER*/
+.hero.has-background {
+  margin-top: 80px;
+  position: relative;
+  overflow: hidden;
+  background-color: #012bb3b3;
+}
+.hero-background {
+  position: absolute;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 100%;
+}
+.hero-background.is-transparent {
+  opacity: 0.3;
+}
 
-.border-hero {
+.container.has-text-right h1 {
+  color: #fff;
+}
+.container.has-text-right h3 {
+  color: #fff;
+}
+.border-hero-1 {
+  border: none;
+}
+
+.border-hero-2 {
   border: 2px solid green;
 }
 
@@ -248,99 +288,4 @@ hr {
 .column-button {
   justify-content: space-around;
   align-items: center;
-}
-/*CSS DE LA LANDING PAGE */
-
-.borde-vertical {
-  border: 2px solid white;
-  margin-right: 40px;
-}
-
-.contenedor {
-  display: flex;
-  justify-content: center;
-}
-
-.margenes-section {
-  margin-top: 30px;
-}
-
-.contactanos {
-  line-height: 60px;
-}
-
-.contact-item {
-  list-style: armenian;
-  margin-left: 40px;
-}
-
-.mapa-tenerife {
-  width: 26rem;
-  height: 15rem;
-  margin-top: 18px;
-}
-
-/*boton saber mas landing page nuevo*/
-.button.is-medium {
-  color: white;
-  background-color: #012bb3;
-}
-
-.button.is-medium:hover {
-  color: black;
-  background-color: white;
-  border: 1px solid #012bb3;
-}
-
-.columna {
-  background-color: #012bb3;
-  color: white;
-  text-shadow: 2px 2px 3px black;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 20px;
-  border: 2px solid white;
-  margin: 15px;
-  padding: 20px;
-  -webkit-transition: font-size 1s ease;
-  transition: font-size 1s ease;
-}
-
-.columna:hover {
-  background-color: white;
-  border: 2px dotted #012bb3;
-  text-shadow: none;
-  color: black;
-  font-size: 27px;
-}
-
-.text-shadow {
-  text-shadow: 2px 2px 3px black;
-}
-
-.animation-box {
-  -webkit-transition: 1s ease-out;
-  transition: 1s ease-out;
-}
-
-.animation-box:hover {
-  padding: 20px;
-}
-
-.prueba {
-  margin: 30px 20px 50px 20px;
-}
-
-.fixed-box {
-  margin-top: -70px;
-}
-
-.fa-instagram,
-.fa-twitter,
-.fa-facebook-f {
-  font-size: 50px;
-  color: #012bb3;
-}
-
-.border-blue {
-  border: 1px solid #012bb3;
 }
