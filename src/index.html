@@ -1,107 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link
-         rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"
-      />
-      <link
-         rel="stylesheet"
-         href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
-      />
-      <link rel="stylesheet" href="css/style.css" />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-         href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
-         rel="stylesheet"
-      />
-      <link
-         href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
-         rel="stylesheet"
-      />
-   </head>
-
-   <body>
-      <header id="header">
-         <img src="img/logotipo3.svg" */Logotipo_cabcera alt="Logotipo_cabecera"
-         class="logo">
-
-         <!--Barra búsqueda-->
-         <div class="barra_busqueda">
-            <div class="container-4">
-               <input
-                  type="search"
-                  id="search"
-                  placeholder="Busca en todas las categorías ..."
-               />
-               <button class="icon"><i class="fa fa-search"></i></button>
-            </div>
-         </div>
-         <!--Menu Header-->
-         <ul class="main-menu">
-            <li class="menu-item">Home</li>
-            <li class="menu-item">Subir producto</li>
-            <li class="menu-item">Contacto</li>
-            <li class="login"><a href="login.html">Identifícate</a></li>
-            <li class="cta"><a href="registrer.html">Regístrarse</a></li>
-         </ul>
-      </header>
-      <!--Banner-->
-
-      <figure
-         class="hero block_article is-halfheight"
-         style="background-image: url(img/banner.jpg)"
-      >
-         <span><h1>BUSCA.</h1></span>
-         <span><h1>ENCUENTRA. CAMBIA.</h1></span>
-
-         <p>Conecta con otros usuarios y descubre un modelo de mercado unico</p>
-      </figure>
-
-      <!--Eslogan-->
-      <div class="eslogan_cabecera">
-         <p class="eslogan_1">
-            Cámbialo te ofrece la oportunidad de darle valor a lo que creías que
-            ya no lo tenía
-         </p>
-         <h1 class="eslogan_h1">
-            <strong>¿Cuál va a ser tu próximo cambio?</strong>
-         </h1>
-      </div>
-      <hr />
-      <div class="categorias">
-         <ul class="categoria_cabecera">
-            <li class="categoria_1">Coches</li>
-            <li class="categoria_2">Coches</li>
-            <li class="categoria_3">Coches</li>
-            <li class="categoria_4">Coches</li>
-            <li class="categoria_5">Coches</li>
-            <li class="categoria_6">Coches</li>
-            <li class="categoria_7">Coches</li>
-            <li class="categoria_8">Coches</li>
-         </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Navigation Bar-->
+    <header id="header">
+      <div class="logo-space">
+        <a href="index.html"
+          ><img class="logo" src="img/logotipo3.png" alt="Logotipo"
+        /></a>
       </div>
 
-      <!--Cuerpo página en Bulma!-->
-      <div class="hero has-background is-halfheight">
-         <img
-            alt="trading"
-            class="hero-background is-transparent"
-            src="img/Trading.jpg"
-         />
-         <div class="hero-body">
-            <div class="container has-text-right">
-               <h1 class="title">Compra sin dinero</h1>
-               <h3 class="subtitle">Cambialo</h3>
-               <button class="button is-white">Empieza ya!</button>
-            </div>
-         </div>
+      <!--Barra búsqueda-->
+      <!-- <div class="barra_busqueda">
+        <div class="container-4">
+          <input
+            type="search"
+            id="search"
+            placeholder="Busca en todas las categorías ..."
+          />
+          <button class="icon"><i class="fa fa-search"></i></button>
+        </div>
+      </div> -->
+
+      <!-- Enlaces -->
+      <div class="link-box">
+        <nav>
+          <ul class="main-menu">
+            <li><a class="menu-item" href="index.html">Inicio</a></li>
+            <li>
+              <a class="menu-item" href="product_confirm.html">Productos</a>
+            </li>
+            <li><a class="menu-item" href="#">Conócenos</a></li>
+            <li><a class="menu-item" href="#">Contacto</a></li>
+          </ul>
+        </nav>
+        <!-- Botones -->
+        <div class="login-btn">
+          <button class="styless-btn">
+            <a class="sign-in-btn" href="login.html">Identifícate</a>
+          </button>
+          <button class="styless-btn">
+            <a class="register-btn" href="registrer.html">Regístarse</a>
+          </button>
+        </div>
       </div>
-      <!--<section class="columns heroe has-text-centered">
+    </header>
+
+    <!--Hero Section-->
+
+    <section
+      class="hero block_article is-halfheight"
+      style="background-image: url(img/banner.jpg)"
+    >
+      <h1 class="hero-title">BUSCA.</h1>
+      <h2 class="hero-title">ENCUENTRA. CAMBIA.</h2>
+      <p>Conecta con otros usuarios y descubre un modelo de mercado unico</p>
+    </section>
+
+    <!--Eslogan-->
+    <div class="eslogan_cabecera">
+      <p class="eslogan_1">
+        Cámbialo te ofrece la oportunidad de darle valor a lo que creías que ya
+        no lo tenía
+      </p>
+      <h1 class="eslogan_h1">
+        <strong>¿Cuál va a ser tu próximo cambio?</strong>
+      </h1>
+    </div>
+    <hr />
+    <div class="categorias">
+      <ul class="categoria_cabecera">
+        <li class="categoria_1">Coches</li>
+        <li class="categoria_2">Coches</li>
+        <li class="categoria_3">Coches</li>
+        <li class="categoria_4">Coches</li>
+        <li class="categoria_5">Coches</li>
+        <li class="categoria_6">Coches</li>
+        <li class="categoria_7">Coches</li>
+        <li class="categoria_8">Coches</li>
+      </ul>
+    </div>
+
+    <!--Cuerpo página en Bulma!-->
+    <div class="hero has-background is-halfheight">
+      <img
+        alt="trading"
+        class="hero-background is-transparent"
+        src="img/Trading.jpg"
+      />
+      <div class="hero-body">
+        <div class="container has-text-right">
+          <h1 class="title">Compra sin dinero</h1>
+          <h3 class="subtitle">Cambialo</h3>
+          <button class="button is-white">Empieza ya!</button>
+        </div>
+      </div>
+    </div>
+    <!--<section class="columns heroe has-text-centered">
       <div class="column is-6 border-hero-1">
         <figure class="image is-fullwidth is-fullheight hero-image">
           <img src="img/Trading.jpg" />
@@ -114,79 +132,73 @@
       </div>
     </section>-->
 
-      <section>
-         <div class="column">Tus cosas tienen valor, cambialas!</div>
-         <div class="columns">
-            <div class="column is-3 border-icon">icono</div>
-            <div class="column is-3 border-icon">icono</div>
-            <div class="column is-3 border-icon">icono</div>
-            <div class="column is-3 border-icon">icono</div>
-         </div>
-         <div class="columns">
-            <div class="column is-4 border-cards">
-               tarjeta con explicacion de nuestro valor principal
-            </div>
-            <div class="column is-4 border-cards">
-               tarjeta con explicacion de nuestro valor principal
-            </div>
-            <div class="column is-4 border-cards">
-               tarjeta con explicacion de nuestro valor principal
-            </div>
-         </div>
-      </section>
-      <section class="columns">
-         <div class="column border-caja">
-            <img
-               src="https://i.blogs.es/d86db0/meme-fry-1/1366_2000.jpg"
-               alt=""
-            />
-         </div>
-         <div class="column border-caja"></div>
-      </section>
-      <section class="columns">
-         <div class="column border-caja"></div>
-         <div class="column border-caja">
-            <img
-               src="https://i.blogs.es/d86db0/meme-fry-1/1366_2000.jpg"
-               alt=""
-            />
-         </div>
-      </section>
-      <section>
-         <div class="column has-text-centered">
-            <h3 class="title">Te acompañamos en todo momento</h3>
-            <h4 class="subtitle">
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-               eiusmod tempor incididunt ut labore
-            </h4>
-         </div>
-         <div class="columns is-flex social-container">
-            <div class="column border-social"></div>
-            <div class="column border-social"></div>
-            <div class="column border-social"></div>
-         </div>
-      </section>
-      <section class="hero is-info is-small">
-         <div class="hero-body">
-            <div class="columns is-centered">
-               <div class="column is-two-thirds">
-                  <p class="is-size-3">
-                     Entra en el portal en donde puedes comprar sin dinero,
-                     porque aquí tus cosas tienen valor.
-                  </p>
-               </div>
-               <div class="column is-flex column-button">
-                  <div class="button" style="color: #fff">Regístrate</div>
-                  <div class="button" style="color: #fff">Subir Producto</div>
-               </div>
-            </div>
-         </div>
-      </section>
+    <section>
+      <div class="column">Tus cosas tienen valor, cambialas!</div>
+      <div class="columns">
+        <div class="column is-3 border-icon">icono</div>
+        <div class="column is-3 border-icon">icono</div>
+        <div class="column is-3 border-icon">icono</div>
+        <div class="column is-3 border-icon">icono</div>
+      </div>
+      <div class="columns">
+        <div class="column is-4 border-cards">
+          tarjeta con explicacion de nuestro valor principal
+        </div>
+        <div class="column is-4 border-cards">
+          tarjeta con explicacion de nuestro valor principal
+        </div>
+        <div class="column is-4 border-cards">
+          tarjeta con explicacion de nuestro valor principal
+        </div>
+      </div>
+    </section>
+    <section class="columns">
+      <div class="column border-caja">
+        <img src="https://i.blogs.es/d86db0/meme-fry-1/1366_2000.jpg" alt="" />
+      </div>
+      <div class="column border-caja"></div>
+    </section>
+    <section class="columns">
+      <div class="column border-caja"></div>
+      <div class="column border-caja">
+        <img src="https://i.blogs.es/d86db0/meme-fry-1/1366_2000.jpg" alt="" />
+      </div>
+    </section>
+    <section>
+      <div class="column has-text-centered">
+        <h3 class="title">Te acompañamos en todo momento</h3>
+        <h4 class="subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore
+        </h4>
+      </div>
+      <div class="columns is-flex social-container">
+        <div class="column border-social"></div>
+        <div class="column border-social"></div>
+        <div class="column border-social"></div>
+      </div>
+    </section>
+    <section class="hero is-info is-small">
+      <div class="hero-body">
+        <div class="columns is-centered">
+          <div class="column is-two-thirds">
+            <p class="is-size-3">
+              Entra en el portal en donde puedes comprar sin dinero, porque aquí
+              tus cosas tienen valor.
+            </p>
+          </div>
+          <div class="column is-flex column-button">
+            <div class="button" style="color: #fff">Regístrate</div>
+            <div class="button" style="color: #fff">Subir Producto</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <footer class="footer">
-         <div class="content has-text-centered">
-            <p>Web Creada para EOI 2021 ©</p>
-         </div>
-      </footer>
-   </body>
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>Web Creada para EOI 2021 ©</p>
+      </div>
+    </footer>
+  </body>
 </html>
