@@ -57,6 +57,7 @@ header {
 .styless-btn {
   background: none;
   border: none;
+  line-height: 2.5rem;
 }
 
 .sign-in-btn {
@@ -286,22 +287,6 @@ hr {
   margin: 0;
 }
 
-.heroe {
-  height: 400px;
-}
-
-.border-icon {
-  border: 2px solid pink;
-}
-
-.border-cards {
-  border: 2px solid hotpink;
-}
-
-.border-caja {
-  border: 2px solid blue;
-}
-
 .columns:not(:last-child) {
   margin-bottom: 0;
 }
@@ -310,16 +295,74 @@ hr {
   margin-bottom: 0;
 }
 
-.border-social {
-  border: 2px solid magenta;
+.heroe {
+  height: 400px;
 }
 
-.social-container {
-  width: 70%;
-  margin: 0 auto;
+.values-container {
+  margin: 40px 20%;
+  text-align: center;
+}
+
+.border-cards {
+  border: 2px solid var(--placeholder-gray);
+  box-shadow: 1px 1px 5px var(--placeholder-gray);
+  border-radius: 40px;
+  padding: 15px;
+}
+
+.border-cards + .border-cards {
+  margin-left: 20px;
+}
+
+.cards-title {
+  font-family: "Ramabhadra", sans-serif;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.product-container {
+  margin: 30px 10%;
+}
+
+.product-card {
+  box-shadow: 0px 0px 8px var(--placeholder-gray);
+  padding-bottom: 5px;
+}
+
+.has-text-left {
+  font-size: 14px;
+  margin: 8px;
+}
+
+.green {
+  color: green;
+  font-family: "Ramabhadra", sans-serif;
 }
 
 .column-button {
   justify-content: space-around;
   align-items: center;
+}
+
+.footer-copy {
+  margin: 10px;
+  color: #fff;
+}
+
+.social-title {
+  color: white;
+  font-size: 18px;
+  font-family: "Ramabhadra", sans-serif;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-icon {
+  color: #fff;
+  font-size: 32px;
 }
