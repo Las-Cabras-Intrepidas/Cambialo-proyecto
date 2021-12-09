@@ -1,44 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/registerbatman.css">
+  <link rel="stylesheet" href="index.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-  <title>Cámbialo</title>
+  <title>Document</title>
 </head>
+
 <body>
-    <form class="box">
-      <div class="field">
-        <label class="label">Email</label>
-        <div class="control">
-          <input class="input" type="email" placeholder="tucorreo@tumail.com">
-        </div>
-      </div>
 
-      <div class="field">
-        <label class="label">Contraseña</label>
-        <div class="control">
-          <input class="input" type="password" placeholder="******">
-        </div>
-      </div>
-
-      <button class="button is-primary">Iniciar Sesión</button>
-    </form>
-
-    <div class="container">
-      <button type="button is-rounded"
-        onclick="document.getElementById('id01').style.display='none'"
-        class="cancelbtn">
-        Cancelar
-      </button>
-      <a href="#" class="psw">Olvidaste la clave?</a>
+  <!-- Cabecera -->
+  <header class="header-container">
+    <div>
+      <img class="logo" src="img/logotipo3.svg" alt="Logotipo" />
     </div>
-  </form>
-</div>
+    <nav class="flex" id="navbar">
+      <a class="contact-link" href="#">Contacto</a>
+      <button class="btn"><a href="#">Tienda</a></button>
+    </nav>
+  </header>
+  <!-- Fin Cabecera -->
+
+  <section class="border-nav">
+    <div class="container-register">
+      <div class="avatar">
+        <img class="avatar-form"
+          src="https://i02.appmifile.com/62_bbs_en/23/01/2021/842639b59d3d1e1de361e2ca4f970283.png" alt="">
+        <h2>Log in here</h2>
+        <i class="icon fas fa-arrow-circle-down"></i>
+      </div>
+      <div class="form-bottom">
+        <form>
+          <label id="email">
+            <p class="p-form">Email:</p><input type="text">
+          </label>
+          <label id="passsword">
+            <p class="p-form">Contraseña:</p><input type="password">
+          </label>
+        </form>
+        <button class="form-btn">Log in!</button>
+        <p>Or <a class="terms-text" href="#">create an account</a></p>
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>
