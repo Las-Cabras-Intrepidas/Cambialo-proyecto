@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Genos:wght@300;600&family=Ramabhadra&family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 :root {
   --main-color: #012bb3;
   --placeholder-gray: #cccaca;
   --darker-gray: #5e5e5e;
+  --text: "Poppins", sans-serif;
 }
 html,
 body {
@@ -58,9 +60,9 @@ header {
 }
 
 .styless-btn {
- background: none;
- border: none;
- line-height: 2.5rem;
+  background: none;
+  border: none;
+  line-height: 2.5rem;
 }
 
 .sign-in-btn {
@@ -94,7 +96,6 @@ header {
   text-decoration: none;
 }
 
-
 .menu-item {
   margin: 0 1rem;
   font-weight: 600;
@@ -126,8 +127,6 @@ header {
   -webkit-box-shadow: 0px 1px 0px 0px rgb(0, 105, 202);
   box-shadow: 0px 1px 0px 0px rgb(0, 105, 202);
 }
-
-
 
 /* Cuerpo Pagina */
 
@@ -243,7 +242,6 @@ section {
   background-color: aqua;
 } */
 
-
 .column-button {
   justify-content: space-around;
   align-items: center;
@@ -257,7 +255,7 @@ section {
 .social-title {
   color: white;
   font-size: 18px;
-  font-family: "Ramabhadra", sans-serif;
+  font-family: var(--text);
 }
 
 .social-links {

@@ -1,8 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Genos:wght@300;600&family=Ramabhadra&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 :root {
   --main-color: #012bb3;
   --placeholder-gray: #cccaca;
   --darker-gray: #5e5e5e;
+  --text: "Poppins", sans-serif;
 }
 a {
   text-decoration: none;
@@ -185,7 +187,7 @@ header {
   text-align: left;
   width: 50%;
   margin-left: 3rem;
-  font-family: "Ramabhadra", sans-serif;
+  font-family: var(--text);
   letter-spacing: 0.5px;
 }
 
@@ -240,7 +242,7 @@ header {
 
 .icon-text {
   font-size: 18px;
-  font-family: "Ramabhadra", sans-serif;
+  font-family: var(--text);
   margin-top: 16px;
 }
 
@@ -318,7 +320,7 @@ hr {
 }
 
 .cards-title {
-  font-family: "Ramabhadra", sans-serif;
+  font-family: var(--text);
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
@@ -339,7 +341,7 @@ hr {
 
 .green {
   color: green;
-  font-family: "Ramabhadra", sans-serif;
+  font-family: var(--text);
 }
 
 .column-button {
@@ -352,7 +354,7 @@ hr {
 .footer-link {
   color: #fff;
   font-size: 18px;
-  font-family: "Ramabhadra", sans-serif;
+  font-family: var(--text);
   list-style: none;
 }
 
@@ -364,7 +366,7 @@ hr {
 .social-title {
   color: white;
   font-size: 18px;
-  font-family: "Ramabhadra", sans-serif;
+  font-family: var(--text);
 }
 
 .social-links {
