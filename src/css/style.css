@@ -1,8 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Genos:wght@300;600&family=Ramabhadra&family=Righteous&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
   --main-color: #012bb3;
   --placeholder-gray: #cccaca;
   --darker-gray: #5e5e5e;
+  --shadow-color: rgba(129, 129, 129, 0.171);
+
+}
+body{
+  font-family: "Poppins", sans-serif;
 }
 a {
   text-decoration: none;
@@ -18,8 +24,10 @@ header {
   align-items: center;
   padding: 0 3%;
   box-sizing: border-box;
-  border-bottom: 1px solid rgba(129, 129, 129, 0.171);
+  border-bottom: 2px solid var(--shadow-color);
+  box-shadow: 0px 18px 15px -10px  var(--shadow-color);
   z-index: 10;
+
 }
 
 .logo-space {
@@ -51,7 +59,7 @@ header {
 
 .menu-item:hover {
   border-bottom: 3px solid var(--main-color);
-  transition: 0.2s;
+  transition: 0.1s;
 }
 
 .styless-btn {
@@ -94,7 +102,7 @@ header {
   color: #fff;
   background-color: var(--main-color);
   border: inset;
-} */
+}
 
 /*Search_Style*/
 .barra_busqueda {
@@ -177,31 +185,63 @@ header {
   background: white;
 }
 
-/* Copiar hast aqui para navigation bar */
+/* Copiar hasta aqui para navigation bar */
+
+/*FINAL NAVBAR STYLE*/
 
 /*Hero Section*/
 
 .hero-left {
+
   text-align: left;
-  width: 50%;
+  width: 100%;
   margin-left: 3rem;
-  font-family: "Ramabhadra", sans-serif;
-  letter-spacing: 0.5px;
+
+
 }
 
 .hero-title {
   text-align: left;
   color: #fff;
-  font-size: 1.5rem;
-  font-weight: bolder;
+  font-weight: 800;
+  font-style: bolder;
+  font-size: 2.25rem;
+  animation-duration: 2.5s;
+  animation-name: slidein;
+  letter-spacing: 2px;
 }
 
 .hero-text {
-  font-size: 1.175rem;
+  font-size: 1rem;
   color: #fff;
-  margin-top: 20px;
+  font-weight: 300;
+  margin-top: 5px;
+  animation-duration: 2.5s;
+  animation-name: slidein2;
+  letter-spacing: 0.75px;
 }
+@keyframes slidein {
+  from {
+    margin-left: -50%;
+    width: -50%
+  }
 
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@keyframes slidein2 {
+  from {
+    margin-left: 50%;
+    width: 50%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 .block_article {
   background-size: cover;
   justify-content: center;
@@ -284,7 +324,9 @@ hr {
 .border-hero-2 {
   border: 2px solid green;
 }
-
+.products{
+  font-weight: ;
+}
 .columns {
   margin: 0;
 }
@@ -304,13 +346,21 @@ hr {
 .values-container {
   margin: 40px 20%;
   text-align: center;
+  display: flex;
+  justify-content: center;
+
 }
 
 .border-cards {
   border: 2px solid var(--placeholder-gray);
   box-shadow: 1px 1px 5px var(--placeholder-gray);
   border-radius: 40px;
+  width: 100%;
   padding: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .border-cards + .border-cards {
