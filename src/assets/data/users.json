@@ -1,0 +1,45 @@
+{
+    "users": [
+
+        {
+            "name": "admin",
+            "user": "admin",
+            "password": "admin"
+        },
+        {
+            "name": "Miguel",
+            "user": "miguel",
+            "password": "miguel"
+        },
+        {
+            "name": "Fran",
+            "user": "fran",
+            "password": "fran"
+        },
+        {
+            "name": "Adrian",
+            "user": "adrian",
+            "password": "adrian"
+        },
+        {
+            "name": "Soleny",
+            "user": "soleny",
+            "password": "soleny"
+        },
+        {
+            "name": "Barbara",
+            "user": "barbara",
+            "password": "barbara"
+        },
+        {
+            "name": "Soleny",
+            "user": "soleny",
+            "password": "soleny"
+        },
+        {
+            "name": "Adan",
+            "user": "adan",
+            "password": "adan"
+        }
+    ]
+}
