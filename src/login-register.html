@@ -57,109 +57,40 @@
                 <div class="caja__trasera-login">
                     <h3>¿Ya tienes una cuenta?</h3>
                     <p>Iniciar sesión para entrar en la página</p>
-                    <button id="btn__iniciar-sesion">Iniciar sesión
-                        <a href="index.html" style="color: white;">Iniciar sesión</a>
-                    </button>
+                    <button id="loginButton2">Iniciar sesión</button>
                 </div>
                 <div class="caja__trasera-register">
                     <h3>¿Aún no tienes una cuenta?</h3>
                     <p>Regístrate para poder iniciar sesión</p>
-                    <button id="btn__registrarse" style="background-color: #012BB3;">Registrarse</button>
+                    <button id="registerButton2" style="background-color: #012BB3;">Registrarse</button>
                 </div>
             </div>
 
             <!--Formulario de Login y registro-->
             <div class="contenedor__login-register">
                 <!--Login-->
-                <form action="" class="formulario__login">
+                <form action="#" id="formLogin" method="GET" class="formulario__login">
                     <h2>Iniciar sesión</h2>
-                    <input id="userLogin" type="text" placeholder="Nombre de usuario">
-                    <input id="pswLogin" type="password" placeholder="Contraseña">
-                    <button style="background-color: #012BB3;">
-                        <a href="index.html" style="color: white;">Iniciar sesión</a>
-                    </button>
+                    <input id="userLogin" type="text" placeholder="Nombre de usuario" required>
+                    <input id="pswLogin" type="password" placeholder="Contraseña" required>
+                    <button id="loginButton"  style="background-color: #012BB3;">Iniciar sesión</button>
                 </form>
 
                 <!--Register-->
-                <form action="" class="formulario__register">
+                <form  action="#"  class="formulario__register">
                     <h2>Registrarse</h2>
-                    <input id="nameUser" type="text" placeholder="Nombre completo">
-                    <input id="user" type="text" placeholder="Nombre de usuario">
-                    <input id="psw" type="password" placeholder="Contraseña">
-                    <button style="background-color: #012BB3;">
-                        <a href="index.html" style="color: white;">Registrarse</a>
-                    </button>
+                    <input id="nameUser" type="text" placeholder="Nombre completo" required>
+                    <input id="user" type="text" placeholder="Nombre de usuario"required>
+                    <input id="psw" type="password" placeholder="Contraseña"required>
+                    <input id="checkTerms" type="checkbox" required >Estoy de acuerdo con los <a href="./terms-conditions.html">terminos y condiciones</a>
+                    <br>
+                    <button id="registerButton" style="background-color: #012BB3;">Registrarse</button>
                 </form>
             </div>
         </div>
 
     </main>
-    <script>
-        //Ejecutando funciones
-        document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
-        document.getElementById("btn__registrarse").addEventListener("click", register);
-        window.addEventListener("resize", anchoPage);
-
-        //Declarando variables
-        let formulario_login = document.querySelector(".formulario__login");
-        let formulario_register = document.querySelector(".formulario__register");
-        let contenedor_login_register = document.querySelector(".contenedor__login-register");
-        let caja_trasera_login = document.querySelector(".caja__trasera-login");
-        let caja_trasera_register = document.querySelector(".caja__trasera-register");
-
-        //FUNCIONES
-
-        function anchoPage() {
-
-            if (window.innerWidth > 850) {
-                caja_trasera_register.style.display = "block";
-                caja_trasera_login.style.display = "block";
-            } else {
-                caja_trasera_register.style.display = "block";
-                caja_trasera_register.style.opacity = "1";
-                caja_trasera_login.style.display = "none";
-                formulario_login.style.display = "block";
-                contenedor_login_register.style.left = "0px";
-                formulario_register.style.display = "none";
-            }
-        }
-
-        anchoPage();
-
-
-        function iniciarSesion() {
-            if (window.innerWidth > 850) {
-                formulario_login.style.display = "block";
-                contenedor_login_register.style.left = "10px";
-                formulario_register.style.display = "none";
-                caja_trasera_register.style.opacity = "1";
-                caja_trasera_login.style.opacity = "0";
-            } else {
-                formulario_login.style.display = "block";
-                contenedor_login_register.style.left = "0px";
-                formulario_register.style.display = "none";
-                caja_trasera_register.style.display = "block";
-                caja_trasera_login.style.display = "none";
-            }
-        }
-
-        function register() {
-            if (window.innerWidth > 850) {
-                formulario_register.style.display = "block";
-                contenedor_login_register.style.left = "410px";
-                formulario_login.style.display = "none";
-                caja_trasera_register.style.opacity = "0";
-                caja_trasera_login.style.opacity = "1";
-            } else {
-                formulario_register.style.display = "block";
-                contenedor_login_register.style.left = "0px";
-                formulario_login.style.display = "none";
-                caja_trasera_register.style.display = "none";
-                caja_trasera_login.style.display = "block";
-                caja_trasera_login.style.opacity = "1";
-            }
-        }
-    </script>
+    
 
 </body>
 
