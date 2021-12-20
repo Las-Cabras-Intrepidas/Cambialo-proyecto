@@ -1,0 +1,21 @@
+/* ESTILOS PAGINA CATEGORIA PRODUCTOS */
+
+.container-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 1px solid red;
+}
+
+.card-category {
+}
+
+.img-category {
+  border-radius: 50%;
+  max-width: 40%;
+}
+
+.text-category {
+  text-align: center;
+  font-weight: 900;
+}
