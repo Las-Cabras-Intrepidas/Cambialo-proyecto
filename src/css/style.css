@@ -119,13 +119,14 @@ header {
 /*Search_Style*/
 .barra_busqueda {
    margin: 25px;
-   width: 525px;
+   width: 40%;
    display: flex;
    background: none;
-   align-content: flex-start;
-   justify-content: flex-start;
+   align-content: center;
+   justify-content: center;
    border: none;
    border-style: none;
+   overflow: hidden;
 }
 .container-4 {
    width: 525px;
@@ -202,7 +203,11 @@ header {
 /*FINAL NAVBAR STYLE*/
 
 /*Hero Section*/
-
+.block_article {
+   background-size: cover;
+   justify-content: center;
+   text-align: left;
+}
 .hero-left {
    text-align: left;
    width: 100%;
@@ -252,11 +257,6 @@ header {
       width: 100%;
    }
 }
-.block_article {
-   background-size: cover;
-   justify-content: center;
-   text-align: left;
-}
 
 /*Eslogan cabecera*/
 .slogan-banner {
@@ -301,6 +301,30 @@ hr {
    width: 350px;
    margin: 30px auto;
    padding: 0px 7%;
+}
+
+/*CSS IMAGEN MOSAICO*/
+.mosaic-image {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.mosaic-image-banner {
+   background-image: url(img/mosaic-image.png);
+   width: 60%;
+   height: 60%;
+   margin: 20px;
+   margin-top: 100px;
+   animation-name: transparent;
+   animation-timing-function: 100s;
+}
+@keyframes transparent {
+   from {
+      opacity: 1;
+   }
+   to {
+      opacity: 0.5;
+   }
 }
 
 /*SEGUNDO BANNER*/
