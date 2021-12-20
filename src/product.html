@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
   <link rel="stylesheet" href="css/product.css" />
+  <link rel="stylesheet" href="css/footer.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
@@ -14,51 +15,143 @@
 </head>
 
 <body>
+        <!--Comienzo Navigation Bar-->
+
+        <header id="header">
+          <div class="logo-space">
+             <a href="index.html"
+                ><img class="logo" src="img/logotipo3.png" alt="Logotipo"
+             /></a>
+             <div class="name-logo">
+                <p>CÁMBIALO</p>
+             </div>
+          </div>
+
+          <!--Barra búsqueda
+        <div class="barra_busqueda">
+
+         <div class="container-4">
+           <input
+             type="search"
+             id="search"
+             placeholder="Busca en todas las categorías ..."
+           />
+           <button class="icon"><i class="fa fa-search"></i></button>
+         </div>
+
+
+          <!-- Enlaces -->
+          <div class="link-box">
+             <nav>
+                <ul class="main-menu">
+                   <li>
+                      <!--<a class="menu-item" href="product_confirm.html">Productos</a>-->
+                   </li>
+                   <li><a class="menu-item" href="#conocenos">Conócenos</a></li>
+                   <!-- <li><a class="menu-item" href="#">Contacto</a></li> -->
+                </ul>
+             </nav>
+             <!-- Botones -->
+             <div class="login-btn">
+                <button class="styless-btn">
+                   <a class="sign-in-btn" href="login-register.html">Iniciar sesión</a>
+                </button>
+
+             </div>
+          </div>
+       </header>
+       <!--Fin Navigation Bar-->
+
   <!--Cuerpo categorias-->
 <div>
-  <p>
+  <p class="tab-product">
     <a href="index.html">Inicio</a> > <a href="product.html">Tienda</a>
   </p>
 </div>
 <div>
-  <h1>
+  <h1 class="text-store">
     Categorías
   </h1>
 </div>
 
 <div class="container-categories">
   <div class="card-category">
-    <img class="img-category" src="img/productosoleny.jpg" alt="bolsa de productos">
+    <img class="img-category" src="img/product1.jpg" alt="bolsa de productos">
     <h2 class="text-category">Tecnología</h2>
   </div>
   <div class="card-category">
-    <img class="img-category" src="img/productosoleny.jpg" alt="bolsa de productos">
+    <img class="img-category" src="img/product2.jpg" alt="bolsa de productos">
     <h2 class="text-category">Hogar</h2>
   </div>
   <div class="card-category">
-    <img class="img-category" src="img/productosoleny.jpg" alt="bolsa de productos">
+    <img class="img-category" src="img/product3.jpg" alt="bolsa de productos">
     <h2 class="text-category">Mascotas</h2>
   </div>
   <div class="card-category">
-    <img class="img-category" src="img/productosoleny.jpg" alt="bolsa de productos">
+    <img class="img-category" src="img/product5.jpg" alt="bolsa de productos">
     <h2 class="text-category">Juegos</h2>
   </div>
   <div class="card-category">
-    <img class="img-category" src="img/productosoleny.jpg" alt="bolsa de productos">
+    <img class="img-category" src="img/product4.jpg" alt="bolsa de productos">
     <h2 class="text-category">Ropa</h2>
   </div>
   <div class="card-category">
-    <img class="img-category" src="img/productosoleny.jpg" alt="bolsa de productos">
+    <img class="img-category" src="img/product6.jpg" alt="bolsa de productos">
     <h2 class="text-category">Deportes</h2>
   </div>
 </div>
 <!-- fin categorias-->
-
 <div>
-  <p>Todos los resultados</p>
+  <p class="text-store">Todos los resultados</p>
 </div>
+<!--cards de productos-->
 
 
+<!-- footer -->
+<footer class="footer-container">
+  <div class="link-container">
+    <div class="desktop-bg">
+      <ul class="footer-list">
+        <li class="footer-link">
+          <a href="#navbar">INICIO</a>
+        </li>
+        <li class="footer-link">
+          <a href="#product">PRODUCTOS</a>
+        </li>
+        <li class="footer-link">
+          <a href="#form">CONTACTO</a>
+        </li>
+      </ul>
+    </div>
+    <div class="desktop-bg">
+      <ul class="footer-list">
+        <li class="footer-link">
+          <a href="#">SOPORTE</a>
+        </li>
+        <li class="footer-link">
+          <a href="#">AVISO LEGAL</a>
+        </li>
+        <li class="footer-link">
+          <a href="#">CONOCENOS</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-flex">
+    <a href="#">
+      <img
+        class="logo"
+        src="img/logotipo3.svg"
+        width="25"
+        height="25"
+        alt=""
+      />
+    </a>
+    <h4 class="footer-title">Cambialo!</h4>
+    <p class="footer-rights">Copyright © 2021, Cámbialo ©</p>
+  </div>
+</footer>
+<!-- fin footer -->
 
 </body>
 </html>
