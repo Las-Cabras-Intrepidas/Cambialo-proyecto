@@ -203,64 +203,53 @@ header {
 /* Copiar hasta aqui para navigation bar */
 
 /*FINAL NAVBAR STYLE*/
-
-/*Hero Section*/
-.block_article {
-   background-size: cover;
+/*CSS IMAGEN MOSAICO*/
+.mosaic-image {
+   display: flex;
+   align-items: center;
    justify-content: center;
-   text-align: left;
 }
-.hero-left {
+.mosaic-image-banner {
 
-   text-align: left;
-   width: 100%;
-   margin-left: 3rem;
+   width: 90%;
+   height: 45%;
+   margin: 5px;
+   opacity: 0.4;
 
-}
+ }
+ .mosaic-text-container{
+   position: absolute;
+   flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: 425px;
+    background-color: #ffffffd8;
+    backdrop-filter: blur(15px);
+    border:1px solid var(--shadow-color);
+    box-shadow: 5px 18px 18px 5px var(--shadow-color);
+    color: black;
 
-.hero-title {
-   text-align: left;
-   color: rgba(0, 0, 0, 0.87);
-   font-weight: 800;
-   font-style: bolder;
-   font-size: 2.25rem;
-   animation-duration: 2s;
-   animation-name: slidein;
-   letter-spacing: 2px;
-}
 
-.hero-text {
-   font-size: 1rem;
-   color: var(--main-color);
-   font-style: bolder;
-   font-weight: 400;
+ }
+
+ .mosaic-text-container span{
+    font-weight: 200;
+    font-size: 1rem;
+ }
+ .mosaic-title2{
+   margin-bottom: 15px;
    margin-top: 5px;
-   animation-duration: 2.25s;
-   animation-name: slidein2;
-   letter-spacing: 0.75px;
-}
-@keyframes slidein {
-   from {
-      margin-left: -50%;
-      width: -50%;
-   }
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+   justify-content: center;
 
-   to {
-      margin-left: 0%;
-      width: 100%;
-   }
-}
-@keyframes slidein2 {
-   from {
-      margin-left: 38%;
-      width: 38%;
-   }
-
-   to {
-      margin-left: 0%;
-      width: 100%;
-   }
-}
+ }
+ .mosaic-text{
+    margin-bottom: 45px;
+ }
 
 /*Eslogan cabecera*/
 .slogan-banner {
@@ -309,53 +298,7 @@ hr {
    padding: 0px 7%;
 }
 
-/*CSS IMAGEN MOSAICO*/
-.mosaic-image {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-.mosaic-image-banner {
 
-   width: 90%;
-   height: 45%;
-   margin: 5px;
-   opacity: 0.4;
-
- }
- .mosaic-text-container{
-   position: absolute;
-   flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 800px;
-    height: 500px;
-    background-color:  rgba(255, 255, 255, 0.85);
-    border:1px solid var(--shadow-color);
-    box-shadow: 5px 18px 18px 5px var(--shadow-color);
-    z-index: 100;
-    color: black;
-    overflow: hidden;
-
- }
-
- .mosaic-text-container span{
-    font-weight: 200;
-    font-size: 1rem;
- }
- .mosaic-title2{
-   margin-bottom: 15px;
-   margin-top: 5px;
-   display: flex;
-   align-items: center;
-   flex-direction: row;
-   justify-content: center;
-
- }
- .mosaic-text{
-    margin-bottom: 45px;
- }
 /*SEGUNDO BANNER*/
 .hero.has-background {
    margin-top: 50px;
@@ -472,35 +415,80 @@ hr {
 
 /* Estilos del footer */
 
-.footer-link {
-
-  color: #fff;
-  font-size: 18px;
-  font-family: var(--text);
-  list-style: none;
-
-}
-
-.footer-copy {
-   margin: 10px;
-   color: #fff;
-}
-
-.social-title {
-
-  color: white;
-  font-size: 18px;
-  font-family: var(--text);
-
-}
-
-.social-links {
+.link-container {
    display: flex;
+   width: 70%;
+   background: none;
    justify-content: space-around;
-   align-items: center;
-}
-
-.footer-icon {
+   margin: 25px;
    color: #fff;
-   font-size: 32px;
-}
+
+ }
+ .desktop-bg a{
+   color: #fff;
+   margin: 8px;
+ }
+ .footer-flex {
+    color: #fff;
+    margin-left: 30px;
+ }
+.footer-container {
+   align-items: center;
+   display: flex;
+   flex-direction: row-reverse;
+   width: 100%;
+   background-color: var(--main-color);
+ }
+
+ .footer-flex {
+   flex-wrap: wrap;
+ }
+
+ .footer-link {
+   margin-bottom: 1rem;
+ }
+
+
+@media (min-width: 1150px) {
+ .rrss-container,
+ .contact-container {
+   width: 50%;
+   margin: 1.5rem auto;
+   justify-content: space-between;
+ }
+
+ .contact-container {
+   justify-content: center;
+ }
+
+ .link-container {
+   width: 50%;
+ }
+
+ .footer-container {
+   display: grid;
+   grid-template-columns: 40% 60%;
+   grid-template-rows: 1fr;
+ }
+
+ .footer-container div:nth-of-type(1) {
+   order: 2;
+ }
+
+ .footer-container div:nth-of-type(2) {
+   order: 1;
+ }
+
+ .link-container {
+   display: flex;
+   width: 60%;
+   background: none;
+   justify-content: space-around;
+ }
+ .footer-flex {
+   flex-wrap: wrap;
+ }
+
+ .footer-link {
+   margin-bottom: 1rem;
+ }
