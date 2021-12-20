@@ -56,18 +56,18 @@ function registerUser(name, user, psw) {
 }
 //registerUser("pepe", "pepe", "pepe");
 //OK
-function searchUser(name,user,psw){
+function searchUser(name, user, psw) {
     let searchUser = {
         "name": name,
         "user": user,
         "passwords": psw
     };
     //ESTO DA LA POSICIÓN DEL ARRAY USERS DEL ELEMENTO A BUSCAR 
-    
-    let userFound =users.findIndex(element => element.user == searchUser.user && element.password == searchUser.passwords);   
-    if(userFound != undefined && userFound != null && userFound > -1){
-        console.log("Posición del Usuario Encontrado",userFound);
-        console.log("El usuario encontrado es: ",users[userFound].name);
+
+    let userFound = users.findIndex(element => element.user == searchUser.user && element.password == searchUser.passwords);
+    if (userFound != undefined && userFound != null && userFound > -1) {
+        console.log("Posición del Usuario Encontrado", userFound);
+        console.log("El usuario encontrado es: ", users[userFound].name);
         return "exist";
     }
 }
@@ -79,31 +79,29 @@ let inputButton = document.getElementById("registerButton");
 let inputName = document.getElementById("nameUser");
 let inputUser = document.getElementById("user");
 let inputPsw = document.getElementById("psw");
-console.log( inputButton);
+console.log(inputButton);
 inputButton.addEventListener("click", () => {
     let valueinputName = inputName.value;
     let valueinputUser = inputUser.value;
     let valueinputPsw = inputPsw.value;
 
 
-    console.log("Valores",valueinputName, valueinputUser, valueinputPsw);
-    if((valueinputName,valueinputUser,valueinputPsw) != null && (valueinputName,valueinputUser,valueinputPsw) != undefined ){
-        
+    console.log("Valores", valueinputName, valueinputUser, valueinputPsw);
+    if ((valueinputName, valueinputUser, valueinputPsw) != null && (valueinputName, valueinputUser, valueinputPsw) != undefined) {
+
         //COMPROBAR QUE EL USUARIO EXISTA O NO PARA NO AÑADIR DOS IGUALES
-        if(searchUser(valueinputName,valueinputUser,valueinputPsw) == "exist") {
+        if (searchUser(valueinputName, valueinputUser, valueinputPsw) == "exist") {
             console.log("EL USUARIO YA EXISTE");
             //MOSTRAR EN EL REGISTER QUE EL USUARIO YA EXISTE   
-        }  
-        else{
+        } else {
             //AÑADE A LA VARIABLE USERS QUE YA EXISTE
             registerUser(valueinputName, valueinputUser, valueinputPsw);
         }
-        
-    }
-    else{
+
+    } else {
         console.log("No es Posible registrar");
     }
-    
+
 
 });
 
@@ -113,31 +111,25 @@ inputButton.addEventListener("click", () => {
 
 
 //------------------LOGIN--------------------
-// let inputLoginButton = document.getElementById("loginButton");
-// let inputLoginUser = document.getElementById("userLogin");
-// let inputLoginPsw = document.getElementById("pswLogin");
-// let informTextLogin = document.getElementById("inform-text");
+let inputLoginButton = document.getElementById("loginButton");
+let inputLoginUser = document.getElementById("userLogin");
+let inputLoginPsw = document.getElementById("pswLogin");
+let informTextLogin = document.getElementById("inform-text");
 
-// inputLoginButton.addEventListener("click",()=>{
-//     let valueLoginUser = inputLoginUser.value;
-//     let valueLoginPsw = inputLoginPsw.value;
-//     if(searchUser("nombre",valueLoginUser,valueLoginPsw) == "exist"){
-//         //EL USUARIO EXISTE 
-//         console.log("Logeado Correctamente");
-//         //CAMBIAR A LA PAGINA PRICIPAL CON EL LOGIN YA REGISTRADO
-//     }
-//     else{
-//         // informTextLogin.style.color="red"
-//         // informTextLogin.innerText="No existe ese usuario";
-//         alert("El usuario o la contraseña no son correctas");
-//     }
- 
-// })
+inputLoginButton.addEventListener("click", () => {
+    let valueLoginUser = inputLoginUser.value;
+    let valueLoginPsw = inputLoginPsw.value;
+    if (searchUser("nombre", valueLoginUser, valueLoginPsw) == "exist") {
+        //EL USUARIO EXISTE 
+        console.log("Logeado Correctamente");
+        //CAMBIAR A LA PAGINA PRICIPAL CON EL LOGIN YA REGISTRADO
+    } else {
+        // informTextLogin.style.border = "red";
+        // informTextLogin.innerText = "No existe ese usuario";
+        console.log("El usuario o la contraseña no son correctas");
+    }
 
-
-
-
-
+})
 
 //MOSTRAR LISTADO DE USUARIOS
 console.log(users);
