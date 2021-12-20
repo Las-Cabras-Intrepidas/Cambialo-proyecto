@@ -8,6 +8,11 @@
 }
 
 .card-category {
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-category {
@@ -18,4 +23,16 @@
 .text-category {
   text-align: center;
   font-weight: 900;
+}
+
+@media (min-width: 750px) {
+  .card-category {
+    max-width: 30%;
+  }
+}
+
+@media (min-width: 900px) {
+  .container-categories {
+    flex-wrap: nowrap;
+  }
 }
