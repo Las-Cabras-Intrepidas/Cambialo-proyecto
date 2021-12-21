@@ -11,9 +11,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <title>Cambialo | Web de intercambios y trueques</title>
     <script src="js/nav.js" defer></script>
+    <script type="module" src="./js/manejousuario.js"></script>
 </head>
 
 <body>
@@ -39,8 +41,8 @@
           <button class="icon"><i class="fa fa-search"></i></button>
         </div> -->
         <button class="mobile-nav-toggle" aria-controls="main-menu" aria-expanded="false">
-        <span class="sr-only">Menu</span>
-      </button>
+            <span class="sr-only">Menu</span>
+        </button>
 
         <!-- Enlaces -->
         <div class="link-box" data-visible="false">
@@ -55,12 +57,10 @@
                 </ul>
             </nav>
             <!-- Botones -->
-            <div class="login-btn">
-                <button class="styless-btn">
-            <a id="btnIni" class="sign-in-btn" href="login-register.html"
-              >Iniciar sesión</a
-            >
-          </button>
+            <div id="botonesLogin" class="login-btn">
+                <button id="btnInicio" class="styless-btn">
+                    <a class="sign-in-btn" href="login-register.html">Iniciar sesión</a>
+                </button>
             </div>
         </div>
         <!-- <button class="styless-btn hamburger" >
@@ -77,10 +77,10 @@
             <h1 class="mosaic-text">
                 Conecta con otros usuarios y dale otra vida a lo que ya no usas.
             </h1>
-            <div class="login-btn">
-                <button class="styless-btn">
-            <a class="sign-in-btn" href="login-register.html">Empieza aquí</a>
-          </button>
+            <div id="botonesBorrar1" class="login-btn">
+                <button id="btnBorrar1"  class="styless-btn">
+                    <a class="sign-in-btn" href="login-register.html">Empieza aquí</a>
+                </button>
             </div>
         </div>
     </section>
@@ -139,19 +139,22 @@
         <div class="column is-three-quarters-mobile is-3-desktop border-cards">
             <h4 class="cards-title">Compromiso</h4>
             <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae voluptatem nesciunt dolorem vitae laudantium? Architecto, amet animi consectetur quo corporis facere nulla.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae voluptatem nesciunt dolorem vitae
+                laudantium? Architecto, amet animi consectetur quo corporis facere nulla.
             </p>
         </div>
         <div class="column is-three-quarters-mobile is-3-desktop border-cards">
             <h4 class="cards-title">Transparencia</h4>
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit repellat laudantium quo delectus tempora. Dolores cumque aliquid voluptatibus rerum, aspernatur omnis.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit repellat laudantium quo delectus tempora.
+                Dolores cumque aliquid voluptatibus rerum, aspernatur omnis.
             </p>
         </div>
         <div class="column is-three-quarters-mobile is-3-desktop border-cards">
             <h4 class="cards-title">Facilidad</h4>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quaerat voluptates blanditiis maxime quos velit beatae doloribus aliquid. Voluptas velit deserunt, aspernatur omnis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quaerat voluptates blanditiis maxime quos
+                velit beatae doloribus aliquid. Voluptas velit deserunt, aspernatur omnis.
             </p>
         </div>
     </section>
@@ -171,7 +174,8 @@
                     <p class="green">Disponible</p>
                     <p class="has-text-weight-bold">Nombre Producto</p>
                     <p class="has-text-left">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum fringilla.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum
+                        fringilla.
                     </p>
                 </div>
             </div>
@@ -183,7 +187,8 @@
                     <p class="green">Disponible</p>
                     <p class="has-text-weight-bold">Nombre Producto</p>
                     <p class="has-text-left">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum fringilla.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum
+                        fringilla.
                     </p>
                 </div>
             </div>
@@ -195,7 +200,8 @@
                     <p class="green">Disponible</p>
                     <p class="has-text-weight-bold">Nombre Producto</p>
                     <p class="has-text-left">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum fringilla.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum
+                        fringilla.
                     </p>
                 </div>
             </div>
@@ -207,7 +213,8 @@
                     <p class="green">Disponible</p>
                     <p class="has-text-weight-bold">Nombre Producto</p>
                     <p class="has-text-left">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum fringilla.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum
+                        fringilla.
                     </p>
                 </div>
             </div>
@@ -219,7 +226,8 @@
                     <p class="green">Disponible</p>
                     <p class="has-text-weight-bold">Nombre Producto</p>
                     <p class="has-text-left">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum fringilla.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum
+                        fringilla.
                     </p>
                 </div>
             </div>
@@ -231,7 +239,8 @@
                     <p class="green">Disponible</p>
                     <p class="has-text-weight-bold">Nombre Producto</p>
                     <p class="has-text-left">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum fringilla.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum
+                        fringilla.
                     </p>
                 </div>
             </div>
@@ -243,7 +252,8 @@
                     <p class="green">Disponible</p>
                     <p class="has-text-weight-bold">Nombre Producto</p>
                     <p class="has-text-left">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum fringilla.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum
+                        fringilla.
                     </p>
                 </div>
             </div>
@@ -255,7 +265,8 @@
                     <p class="green">Disponible</p>
                     <p class="has-text-weight-bold">Nombre Producto</p>
                     <p class="has-text-left">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum fringilla.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum
+                        fringilla.
                     </p>
                 </div>
             </div>
@@ -266,12 +277,12 @@
     <div class="hero has-background is-halfheight">
         <img alt="trading" class="hero-background is-transparent" src="img/Trading.jpg" />
         <div class="hero-body">
-            <div class="container has-text-right">
+            <div id="botonesBorrar2" class="container has-text-right">
                 <h1 class="title">Compra sin dinero</h1>
                 <h3 class="subtitle">Cámbialo</h3>
-                <button class="button button-banner is-white">
-            <a href="login-register.html">Únete ya</a>
-          </button>
+                <button id="btnBorrar2" class="button button-banner is-white">
+                    <a href="login-register.html">Únete ya</a>
+                </button>
             </div>
         </div>
     </div>
