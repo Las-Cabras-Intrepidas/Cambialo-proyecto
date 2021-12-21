@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <script src="js/nav.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
-  <link rel="stylesheet" href="css/product.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/footer.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"/>
-  <script src="js/nav.js" defer></script>
-</head>
-
-<body>
+  <body>
     <!--Comienzo Navigation Bar-->
 
     <header id="header">
       <div class="logo-space">
-          <a class="logo" href="index.html"><img src="img/logotipo3.png" alt="Logotipo" /></a>
-          <div class="name-logo">
-              <p>CÁMBIALO</p>
-          </div>
+        <a class="logo" href="index.html"
+          ><img src="img/logotipo3.png" alt="Logotipo"
+        /></a>
+        <div class="name-logo">
+          <p>CÁMBIALO</p>
+        </div>
       </div>
 
       <!--Barra búsqueda
@@ -38,309 +47,521 @@
         />
         <button class="icon"><i class="fa fa-search"></i></button>
       </div> -->
-      <button class="mobile-nav-toggle" aria-controls="main-menu" aria-expanded="false">
-      <span class="sr-only">Menu</span>
-    </button>
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="main-menu"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Menu</span>
+      </button>
 
       <!-- Enlaces -->
       <div class="link-box" data-visible="false">
-          <nav>
-              <ul id="main-menu" class="main-menu">
-                  <li class="menu-item"><a href="#conocenos">Conócenos</a></li>
-                  <li class="menu-item"><a href="#">Contacto</a></li>
-              </ul>
-          </nav>
-          <!-- Botones -->
-          <div class="login-btn">
-              <button class="styless-btn">
-          <a id="btnIni" class="sign-in-btn" href="login-register.html">Iniciar sesión</a>
-        </button>
-          </div>
+        <nav>
+          <ul id="main-menu" class="main-menu">
+            <li class="menu-item"><a href="index.html">Inicio</a></li>
+            <li class="menu-item">
+              <a href="./product.html">Productos</a>
+            </li>
+            <li class="menu-item"><a href="#conocenos">Conócenos</a></li>
+            <li class="menu-item"><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+        <!-- Botones -->
+        <div class="login-btn">
+          <button class="styless-btn">
+            <a id="btnIni" class="sign-in-btn" href="login-register.html"
+              >Iniciar sesión</a
+            >
+          </button>
+        </div>
       </div>
       <!-- <button class="styless-btn hamburger" >
 
       </button> -->
-  </header>
+    </header>
 
-  <!--Fin Navigation Bar-->
+    <!--Fin Navigation Bar-->
 
-  <!--Cuerpo categorias-->
-<div>
-  <p class="tab-product">
-    <a href="index.html">Inicio</a> > <a class="subrayar" href="product.html">Tienda</a>
-  </p>
-</div>
-<div>
-  <h1 class="text-store">
-    Categorías
-  </h1>
-</div>
+    <!--Cuerpo categorias-->
+    <div>
+      <p class="breadcrum">
+        <a href="index.html">Inicio</a> >
+        <a class="subrayar" href="product.html">Tienda</a>
+      </p>
+    </div>
+    <div>
+      <h1 class="text-store">Categorías</h1>
+    </div>
 
-<div class="container-categories">
-  <div class="card-category">
-    <img class="img-category" src="img/product1.jpg" alt="bolsa de productos">
-    <h2 class="text-category">Tecnología</h2>
-  </div>
-  <div class="card-category">
-    <img class="img-category" src="img/product2.jpg" alt="bolsa de productos">
-    <h2 class="text-category">Hogar</h2>
-  </div>
-  <div class="card-category">
-    <img class="img-category" src="img/product3.jpg" alt="bolsa de productos">
-    <h2 class="text-category">Mascotas</h2>
-  </div>
-  <div class="card-category">
-    <img class="img-category" src="img/product5.jpg" alt="bolsa de productos">
-    <h2 class="text-category">Juegos</h2>
-  </div>
-  <div class="card-category">
-    <img class="img-category" src="img/product4.jpg" alt="bolsa de productos">
-    <h2 class="text-category">Ropa</h2>
-  </div>
-  <div class="card-category">
-    <img class="img-category" src="img/product6.jpg" alt="bolsa de productos">
-    <h2 class="text-category">Deportes</h2>
-  </div>
-</div>
-<!-- fin categorias-->
-<!-- slogan-->
-<div class="slogan-banner">
-  <h2 class="slogan-title">
-      <strong>¿Quieres devolver tu regalo de Reyes y Navidad?</strong>
-  </h2>
-  <p class="slogan-text">
-    Te damos la posibilidad de cambiar los regalos sin dejar la moral de tu familia y amigos por los suelos.
-  </p>
-</div>
-
-<hr />
-<div>
-  <p class="text-store">Todos los resultados:</p>
-</div>
-
-<!--cards de productos-->
-<section class="
-columns
-products
-is-multiline is-mobile
-has-text-centered
-product-container
-is-flex
-">
-<div class="column is-half-touch is-one-quarter-desktop">
-    <div class="product-card">
-        <img src="https://via.placeholder.com/250" alt="" />
-        <div class="text-product">
-            <p class="green">Disponible</p>
-            <p class="has-text-weight-bold">Nombre Producto</p>
-            <p class="has-text-left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum fringilla.
-            </p>
-        </div>
-    </div>
-</div>
-<div class="column is-half-touch is-one-quarter-desktop">
-    <div class="product-card">
-        <img src="https://via.placeholder.com/250" alt="" />
-        <div class="text-product">
-            <p class="green">Disponible</p>
-            <p class="has-text-weight-bold">Nombre Producto</p>
-            <p class="has-text-left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum fringilla.
-            </p>
-        </div>
-    </div>
-</div>
-<div class="column is-half-touch is-one-quarter-desktop">
-    <div class="product-card">
-        <img src="https://via.placeholder.com/250" alt="" />
-        <div class="text-product">
-            <p class="green">Disponible</p>
-            <p class="has-text-weight-bold">Nombre Producto</p>
-            <p class="has-text-left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum fringilla.
-            </p>
-        </div>
-    </div>
-</div>
-<div class="column is-half-touch is-one-quarter-desktop">
-    <div class="product-card">
-        <img src="https://via.placeholder.com/250" alt="" />
-        <div class="text-product">
-            <p class="green">Disponible</p>
-            <p class="has-text-weight-bold">Nombre Producto</p>
-            <p class="has-text-left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum fringilla.
-            </p>
-        </div>
-    </div>
-</div>
-<div class="column is-half-touch is-one-quarter-desktop">
-    <div class="product-card">
-        <img src="https://via.placeholder.com/250" alt="" />
-        <div class="text-product">
-            <p class="green">Disponible</p>
-            <p class="has-text-weight-bold">Nombre Producto</p>
-            <p class="has-text-left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum fringilla.
-            </p>
-        </div>
-    </div>
-</div>
-<div class="column is-half-touch is-one-quarter-desktop">
-    <div class="product-card">
-        <img src="https://via.placeholder.com/250" alt="" />
-        <div class="text-product">
-            <p class="green">Disponible</p>
-            <p class="has-text-weight-bold">Nombre Producto</p>
-            <p class="has-text-left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum fringilla.
-            </p>
-        </div>
-    </div>
-</div>
-<div class="column is-half-touch is-one-quarter-desktop">
-    <div class="product-card">
-        <img src="https://via.placeholder.com/250" alt="" />
-        <div class="text-product">
-            <p class="green">Disponible</p>
-            <p class="has-text-weight-bold">Nombre Producto</p>
-            <p class="has-text-left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum fringilla.
-            </p>
-        </div>
-    </div>
-</div>
-<div class="column is-half-touch is-one-quarter-desktop">
-    <div class="product-card">
-        <img src="https://via.placeholder.com/250" alt="" />
-        <div class="text-product">
-            <p class="green">Disponible</p>
-            <p class="has-text-weight-bold">Nombre Producto</p>
-            <p class="has-text-left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum fringilla.
-            </p>
-        </div>
-    </div>
-</div>
-<div class="column is-half-touch is-one-quarter-desktop">
-  <div class="product-card">
-      <img src="https://via.placeholder.com/250" alt="" />
-      <div class="text-product">
-          <p class="green">Disponible</p>
-          <p class="has-text-weight-bold">Nombre Producto</p>
-          <p class="has-text-left">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum fringilla.
-          </p>
+    <div class="container-categories">
+      <div class="card-category">
+        <img
+          class="img-category"
+          src="img/product1.jpg"
+          alt="bolsa de productos"
+        />
+        <h2 class="text-category">Tecnología</h2>
       </div>
-  </div>
-</div>
-<div class="column is-half-touch is-one-quarter-desktop">
-  <div class="product-card">
-      <img src="https://via.placeholder.com/250" alt="" />
-      <div class="text-product">
-          <p class="green">Disponible</p>
-          <p class="has-text-weight-bold">Nombre Producto</p>
-          <p class="has-text-left">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum fringilla.
-          </p>
+      <div class="card-category">
+        <img
+          class="img-category"
+          src="img/product2.jpg"
+          alt="bolsa de productos"
+        />
+        <h2 class="text-category">Hogar</h2>
       </div>
-  </div>
-</div>
-<div class="column is-half-touch is-one-quarter-desktop">
-  <div class="product-card">
-      <img src="https://via.placeholder.com/250" alt="" />
-      <div class="text-product">
-          <p class="green">Disponible</p>
-          <p class="has-text-weight-bold">Nombre Producto</p>
-          <p class="has-text-left">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum fringilla.
-          </p>
+      <div class="card-category">
+        <img
+          class="img-category"
+          src="img/product3.jpg"
+          alt="bolsa de productos"
+        />
+        <h2 class="text-category">Mascotas</h2>
       </div>
-  </div>
-</div>
-<div class="column is-half-touch is-one-quarter-desktop">
-  <div class="product-card">
-      <img src="https://via.placeholder.com/250" alt="" />
-      <div class="text-product">
-          <p class="green">Disponible</p>
-          <p class="has-text-weight-bold">Nombre Producto</p>
-          <p class="has-text-left">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque maximus nisi nec leo vestibulum fringilla.
-          </p>
+      <div class="card-category">
+        <img
+          class="img-category"
+          src="img/product5.jpg"
+          alt="bolsa de productos"
+        />
+        <h2 class="text-category">Juegos</h2>
       </div>
-  </div>
-</div>
-</section>
-<div>
-  <nav class="pagination" role="navigation" aria-label="pagination">
-    <a class="pagination-previous is-disabled" title="This is the first page">Previous</a>
-    <a class="pagination-next">Next page</a>
-    <ul class="pagination-list">
-      <li>
-        <a class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a>
-      </li>
-      <li>
-        <a class="pagination-link" aria-label="Goto page 2">2</a>
-      </li>
-      <li>
-        <a class="pagination-link" aria-label="Goto page 3">3</a>
-      </li>
-    </ul>
-  </nav>
-</div>
-<!--banner-->
-<section>
-  <div class="banner-products">
-    <img class="img-banner-product" src="img/bg5banner.png" alt="imagen muchos articulos">
-    <img class="img-slogan" src="img/banner_png_slogan1.png">
-  </div>
-</section>
-<!-- footer -->
-<footer class="footer-container">
-  <div class="link-container">
-    <div class="desktop-bg">
-      <ul class="footer-list">
-        <li class="footer-link">
-          <a href="#navbar">INICIO</a>
+      <div class="card-category">
+        <img
+          class="img-category"
+          src="img/product4.jpg"
+          alt="bolsa de productos"
+        />
+        <h2 class="text-category">Ropa</h2>
+      </div>
+      <div class="card-category">
+        <img
+          class="img-category"
+          src="img/product6.jpg"
+          alt="bolsa de productos"
+        />
+        <h2 class="text-category">Deportes</h2>
+      </div>
+    </div>
+    <!-- fin categorias-->
+    <!-- slogan-->
+    <div class="slogan-banner">
+      <h2 class="slogan-title">
+        <strong>¿Quieres devolver tu regalo de Reyes y Navidad?</strong>
+      </h2>
+      <p class="slogan-text">
+        Te damos la posibilidad de cambiar los regalos sin dejar la moral de tu
+        familia y amigos por los suelos.
+      </p>
+    </div>
+
+    <hr />
+    <div>
+      <p class="text-store">Todos los resultados:</p>
+    </div>
+
+    <!--cards de productos-->
+    <section
+      class="
+        columns
+        products
+        is-multiline is-mobile
+        has-text-centered
+        product-container
+        is-flex
+      "
+    >
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/tecnologia-movil.webp" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              maximus nisi nec leo vestibulum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/tecnologia-pc.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              maximus nisi nec leo vestibulum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/tecnologia-switch.webp" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              maximus nisi nec leo vestibulum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/tecnologia-tv.webp" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              maximus nisi nec leo vestibulum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/hogar-lamp.webp" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              maximus nisi nec leo vestibulum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/hogar-mesita.webp" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              maximus nisi nec leo vestibulum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/hogar-silla.webp" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              maximus nisi nec leo vestibulum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/hogar-sofa.webp" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              maximus nisi nec leo vestibulum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/mascotas-cattoy.webp" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              maximus nisi nec leo vestibulum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/mascotas-comedero.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              maximus nisi nec leo vestibulum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/mascotas-dogtoy.webp" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              maximus nisi nec leo vestibulum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/mascotas-transportin.webp" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              maximus nisi nec leo vestibulum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/juego-monopoly.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              maximus nisi nec leo vestibulum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/juego-sims.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              maximus nisi nec leo vestibulum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/juego-twister.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              maximus nisi nec leo vestibulum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/juego-zelda.webp" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              maximus nisi nec leo vestibulum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/ropa-camisa.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              maximus nisi nec leo vestibulum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/ropa-pantalon.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              maximus nisi nec leo vestibulum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/ropa-sombrero.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              maximus nisi nec leo vestibulum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/ropa-zapatos.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              maximus nisi nec leo vestibulum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/deporte-eski.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              maximus nisi nec leo vestibulum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/deporte-futbol.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              maximus nisi nec leo vestibulum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/deporte-padel.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              maximus nisi nec leo vestibulum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/deporte-tenis.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Nombre Producto</p>
+            <p class="has-text-left">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+              maximus nisi nec leo vestibulum fringilla.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <nav class="pagination" role="navigation" aria-label="pagination">
+      <a class="pagination-previous is-disabled" title="This is the first page"
+        >Previous</a
+      >
+      <a class="pagination-next">Next page</a>
+      <ul class="pagination-list">
+        <li>
+          <a
+            class="pagination-link is-current"
+            aria-label="Page 1"
+            aria-current="page"
+            >1</a
+          >
         </li>
-        <li class="footer-link">
-          <a href="product.html">PRODUCTOS</a>
+        <li>
+          <a class="pagination-link" aria-label="Goto page 2">2</a>
         </li>
-        <li class="footer-link">
-          <a href="#form">CONTACTO</a>
+        <li>
+          <a class="pagination-link" aria-label="Goto page 3">3</a>
         </li>
       </ul>
-    </div>
-    <div class="desktop-bg">
-      <ul class="footer-list">
-        <li class="footer-link">
-          <a href="#">SOPORTE</a>
-        </li>
-        <li class="footer-link">
-          <a href="#">AVISO LEGAL</a>
-        </li>
-        <li class="footer-link">
-          <a href="#">CONOCENOS</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-flex">
-    <a href="#">
-      <img
-        class="logo"
-        src="img/logotipo3.svg"
-        width="25"
-        height="25"
-        alt=""
-      />
-    </a>
-    <h4 class="footer-title">Cambialo!</h4>
-    <p class="footer-rights">Copyright © 2021, Cámbialo ©</p>
-  </div>
-</footer>
-<!-- fin footer -->
-
-</body>
+    </nav>
+    <!--banner-->
+    <section>
+      <div class="banner-products">
+        <img
+          class="img-banner-product"
+          src="img/bg5banner.png"
+          alt="imagen muchos articulos"
+        />
+        <img class="img-slogan" src="img/banner_png_slogan1.png" />
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer-container">
+      <div class="link-container">
+        <div class="desktop-bg">
+          <ul class="footer-list">
+            <li class="footer-link">
+              <a href="#navbar">INICIO</a>
+            </li>
+            <li class="footer-link">
+              <a href="product.html">PRODUCTOS</a>
+            </li>
+            <li class="footer-link">
+              <a href="#form">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
+        <div class="desktop-bg">
+          <ul class="footer-list">
+            <li class="footer-link">
+              <a href="#">SOPORTE</a>
+            </li>
+            <li class="footer-link">
+              <a href="#">AVISO LEGAL</a>
+            </li>
+            <li class="footer-link">
+              <a href="#">CONOCENOS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-flex">
+        <a href="#">
+          <img
+            class="logo"
+            src="img/logotipo3.svg"
+            width="25"
+            height="25"
+            alt=""
+          />
+        </a>
+        <h4 class="footer-title">Cambialo!</h4>
+        <p class="footer-rights">Copyright © 2021, Cámbialo ©</p>
+      </div>
+    </footer>
+    <!-- fin footer -->
+  </body>
 </html>
