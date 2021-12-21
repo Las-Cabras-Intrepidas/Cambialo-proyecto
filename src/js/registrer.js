@@ -160,6 +160,7 @@ let inputName = document.getElementById("nameUser");
 let inputUser = document.getElementById("user");
 let inputPsw = document.getElementById("psw");
 let inputCheckTerms = document.getElementById("checkTerms");
+let formRegister = document.getElementById("formRegister");
 
 
 
@@ -183,11 +184,13 @@ inputButton.addEventListener("click", () => {
                 inputPsw.style.border = "0.5px solid #8B0000"; 
             } else {
                 //AÑADE A LA VARIABLE USERS QUE YA EXISTE
-                console.log("epa");
+                console.log("Registrando usuario");
                 registerUser(valueinputName, valueinputUser, valueinputPsw);
                 console.log(users);
                 //LLEVAR AL HOME
-                //location.assign("/Cambialo-proyecto/src/index.html");
+                let usuario = searchUser(valueinputName, valueinputUser, valueinputPsw);
+                console.log("nuevo", usuario);
+                volverHome(usuario);
             }
         }
        
@@ -217,7 +220,8 @@ inputLoginButton.addEventListener("click", () => {
         //EL USUARIO EXISTE 
         console.log("Logeado Correctamente");  
         //CAMBIAR A LA PAGINA PRICIPAL CON EL LOGIN YA REGISTRADO
-        //location.assign("/Cambialo-proyecto/src/index.html");
+        let usuario = searchUser("nombre", valueLoginUser, valueLoginPsw);
+        volverHome(usuario);
     } 
     else if(searchUser("nombre", valueLoginUser, valueLoginPsw)== null) {
         inputLoginUser.style.border = "0.5px solid #8B0000"
@@ -231,6 +235,29 @@ inputLoginButton.addEventListener("click", () => {
 
 
 //Entrar al home ya logeado
-//FALTA
+function volverHome(usuario){
+    //CREAR COOKIE PARA Inicio de sesión 
+    let tiempo = new Date;
+    tiempo.setDate(tiempo.getDate() + 1);
+    let tiempoDuracion = tiempo;
+    crearCookie("userName", usuario.name, tiempoDuracion);
+    formLogin.action="./index.html";
+    formRegister.action="./index.html";
+    
+}
+
+//GALLETITAS
+
+
+
+function crearCookie(nombre, value, time) {
+
+
+    document.cookie = nombre + "=" + encodeURIComponent(value) + ";expires=" + time;
+
+}
+
+
+
 
 
