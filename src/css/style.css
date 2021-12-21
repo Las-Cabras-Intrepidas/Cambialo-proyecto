@@ -6,6 +6,11 @@
   --darker-gray: #5e5e5e;
   --shadow-color: rgba(129, 129, 129, 0.075);
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -27,7 +32,7 @@ header {
   box-sizing: border-box;
   border-bottom: 2px solid var(--shadow-color);
   box-shadow: 0px 18px 15px -10px var(--shadow-color);
-  z-index: 10;
+  /* z-index: 10; */
 }
 
 .logo-space {
@@ -519,6 +524,10 @@ hr {
   align-items: center;
   margin-bottom: 1.5rem;
   transition: all 0.4s ease;
+}
+
+.card-category a {
+  text-align: center;
 }
 
 .card-category:hover {
