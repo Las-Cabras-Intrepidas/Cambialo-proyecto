@@ -6,6 +6,11 @@
   --darker-gray: #5e5e5e;
   --shadow-color: rgba(129, 129, 129, 0.075);
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -27,7 +32,7 @@ header {
   box-sizing: border-box;
   border-bottom: 2px solid var(--shadow-color);
   box-shadow: 0px 18px 15px -10px var(--shadow-color);
-  z-index: 10;
+  /* z-index: 10; */
 }
 
 .logo-space {
@@ -71,6 +76,10 @@ header {
 }
 
 .mobile-nav-toggle {
+  display: none;
+}
+
+.sr-only {
   display: none;
 }
 
@@ -268,6 +277,10 @@ hr {
   padding: 0px 7%;
 }
 
+.img-product {
+  width: 100%;
+}
+
 /*Hero Section*/
 .block_article {
   background-size: cover;
@@ -427,6 +440,27 @@ hr {
   align-items: center;
 }
 
+.banner-products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-banner-product {
+  border: 3px solid var(--main-color);
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.img-slogan {
+  position: absolute;
+  width: 70%;
+}
+
+.breadcrum {
+  margin-left: 1rem;
+}
+
 /*Hashtag*/
 .hashtag {
   width: 100%;
@@ -470,6 +504,56 @@ hr {
   text-align: center;
 }
 
+/* Estilos de la shop */
+
+.subrayar {
+  text-decoration: underline black;
+}
+
+.container-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-category {
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  transition: all 0.4s ease;
+}
+
+.card-category a {
+  text-align: center;
+}
+
+.card-category:hover {
+  transform: scale(1.2);
+}
+
+.img-category {
+  border-radius: 50%;
+  max-width: 50%;
+  box-shadow: 0.5px 1px 5px black;
+}
+
+.text-category {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-top: 0.5rem;
+}
+
+.text-store {
+  padding: 1.5rem 0 1.5rem 0.5rem;
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-left: 1rem;
+}
+
 @media (max-width: 400px) {
   #hash-logo {
     display: none;
@@ -493,6 +577,12 @@ hr {
     justify-content: space-around;
     align-items: center;
     padding: 1rem 20%;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 899px) {
+  .card-category {
+    max-width: 30%;
   }
 }
 
@@ -573,5 +663,12 @@ hr {
     flex-wrap: nowrap;
     width: 80%;
     margin: 0 auto;
+  }
+
+  .container-categories {
+    flex-wrap: nowrap;
+  }
+  .card-category {
+    max-width: 15%;
   }
 }
