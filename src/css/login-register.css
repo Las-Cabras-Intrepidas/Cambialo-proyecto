@@ -218,7 +218,15 @@ main{
     outline: none;
 }
 
+/*
+.registerButton {
+    color: white;
+}
 
+.loginButton {
+    color: white;
+} 
+*/
 
 
 .formulario__login{
