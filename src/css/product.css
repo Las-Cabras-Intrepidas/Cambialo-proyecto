@@ -295,6 +295,10 @@ margin: 2rem 0;
   width: 70%;
 }
 
+.sr-only {
+  display: none;
+}
+
 @media (min-width: 750px) and (max-width: 899px) {
   .card-category {
     max-width: 30%;
@@ -309,6 +313,7 @@ margin: 2rem 0;
     max-width: 15%;
   }
 
+/* Navegacion hamburguesa */
 @media (max-width: 900px) {
   .link-box {
     position: fixed;
