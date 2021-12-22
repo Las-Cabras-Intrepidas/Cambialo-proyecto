@@ -32,7 +32,7 @@ header {
   box-sizing: border-box;
   border-bottom: 2px solid var(--shadow-color);
   box-shadow: 0px 18px 15px -10px var(--shadow-color);
-  /* z-index: 10; */
+  z-index: 10;
 }
 
 .logo-space {
