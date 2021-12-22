@@ -5,7 +5,7 @@ function getCookie(name) {
     let end = document.cookie.indexOf(";", begin);
     if (begin == -1) {
         begin = dc.indexOf(prefix);
-        if (begin != 0){
+        if (begin != 0) {
             return null;
         }
     } else {
@@ -19,14 +19,13 @@ function getCookie(name) {
     //return decodeURI(dc.substring(begin + prefix.length, end));
 }
 
-
-
 let botonesBorrar1 = document.getElementById("botonesBorrar1");
 let botonesBorrar2 = document.getElementById("botonesBorrar2");
 let btnBorrar1 = document.getElementById("btnBorrar1");
 let btnBorrar2 = document.getElementById("btnBorrar2");
 
 let btnLogin = document.getElementById("btnInicio");
+
 function recogerCookie() {
     let Nombre = getCookie("userName").split("userName=");
     let datosIntro = "Hola, " + Nombre[1];
@@ -36,7 +35,7 @@ function recogerCookie() {
     botonesBorrar2.removeChild(btnBorrar2);
     //CREAR BOTON CIERRE SESIÓN
     botonCierre();
-    return  Nombre;
+    return Nombre;
 }
 
 function comprobarCookie() {
@@ -50,9 +49,6 @@ function comprobarCookie() {
     }
 }
 
-
-
-
 function deleteAllCookies() {
     var cookies = document.cookie.split(";");
 
@@ -64,31 +60,27 @@ function deleteAllCookies() {
     }
 }
 
-
 //MODIFICAR EL BUTTON
-if(comprobarCookie() == "existe"){
+if (comprobarCookie() == "existe") {
     console.log("Hay una cookie");
     recogerCookie();
-}else if(comprobarCookie() == "noexiste"){
+} else if (comprobarCookie() == "noexiste") {
     console.log("No hay una cookie");
 }
 
 //CERRAR SESIÓN
-function botonCierre(){
+function botonCierre() {
     let botonesLogin = document.getElementById("botonesLogin");
     const button = document.createElement('button');
     button.type = 'button';
     button.innerText = 'Cerrar sesión';
     //button.style.border=" solid 1px red ";
-    button.id="btnCierreSesion";
+    button.id = "btnCierreSesion";
 
     botonesLogin.appendChild(button);
-    button.addEventListener("click", ()=>{
+    button.addEventListener("click", () => {
         console.log("fufa");
         deleteAllCookies();
         location.reload();
     });
 }
-
-
-

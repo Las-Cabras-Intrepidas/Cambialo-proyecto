@@ -77,7 +77,6 @@ function anchoPage() {
 
 anchoPage();
 
-
 function iniciarSesion() {
     if (window.innerWidth > 850) {
         formulario_login.style.display = "block";
@@ -111,13 +110,6 @@ function register() {
     }
 }
 
-
-
-
-
-
-
-
 //OK
 function registerUser(name, user, psw) {
 
@@ -141,14 +133,12 @@ function searchUser(name, user, psw) {
 
     let userFound = users.findIndex(element => element.user == searchUser.user && element.password == searchUser.passwords);
     if (userFound != undefined && userFound != null && userFound > -1) {
-        
+
         return users[userFound];
     } else {
         return null;
     }
 }
-
-
 
 //------------------------REGISTRO-------------------------------------------
 //NO OK
@@ -172,16 +162,16 @@ inputButton.addEventListener("click", () => {
     let valueCheckTerms = inputCheckTerms.value;
 
     //COMPROBAR QUE EL USUARIO EXISTA O NO PARA NO AÑADIR DOS IGUALES
-    if(valueinputName != null && valueinputUser != null && valueinputPsw != null && valueCheckTerms != null){
-        if(valueinputName != "" && valueinputUser != "" && valueinputPsw != ""){
+    if (valueinputName != null && valueinputUser != null && valueinputPsw != null && valueCheckTerms != null) {
+        if (valueinputName != "" && valueinputUser != "" && valueinputPsw != "") {
             if (searchUser(valueinputName, valueinputUser, valueinputPsw) != null) {
                 console.log("EL USUARIO YA EXISTE");
                 console.log(searchUser(valueinputName, valueinputUser, valueinputPsw));
                 console.log(users);
                 //MOSTRAR EN EL REGISTER QUE EL USUARIO YA EXISTE
                 inputName.style.border = "0.5px solid #8B0000";
-                inputUser.style.border = "0.5px solid #8B0000";  
-                inputPsw.style.border = "0.5px solid #8B0000"; 
+                inputUser.style.border = "0.5px solid #8B0000";
+                inputPsw.style.border = "0.5px solid #8B0000";
             } else {
                 //AÑADE A LA VARIABLE USERS QUE YA EXISTE
                 console.log("Registrando usuario");
@@ -193,7 +183,7 @@ inputButton.addEventListener("click", () => {
                 volverHome(usuario);
             }
         }
-       
+
     }
 });
 
@@ -216,34 +206,33 @@ inputLoginButton.addEventListener("click", () => {
 
     let valueLoginUser = inputLoginUser.value;
     let valueLoginPsw = inputLoginPsw.value;
-    if (searchUser("nombre", valueLoginUser, valueLoginPsw) !=null) {
+    if (searchUser("nombre", valueLoginUser, valueLoginPsw) != null) {
         //EL USUARIO EXISTE 
-        console.log("Logeado Correctamente");  
+        console.log("Logeado Correctamente");
         //CAMBIAR A LA PAGINA PRICIPAL CON EL LOGIN YA REGISTRADO
         let usuario = searchUser("nombre", valueLoginUser, valueLoginPsw);
         volverHome(usuario);
-    } 
-    else if(searchUser("nombre", valueLoginUser, valueLoginPsw)== null) {
+    } else if (searchUser("nombre", valueLoginUser, valueLoginPsw) == null) {
         inputLoginUser.style.border = "0.5px solid #8B0000"
         inputLoginPsw.style.border = "0.5px solid #8B0000";
         console.log("El usuario o la contraseña no son correctas");
-        
+
     }
-   
+
 
 })
 
 
 //Entrar al home ya logeado
-function volverHome(usuario){
+function volverHome(usuario) {
     //CREAR COOKIE PARA Inicio de sesión 
     let tiempo = new Date;
     tiempo.setDate(tiempo.getDate() + 1);
     let tiempoDuracion = tiempo;
     crearCookie("userName", usuario.name, tiempoDuracion);
-    formLogin.action="./index.html";
-    formRegister.action="./index.html";
-    
+    formLogin.action = "./index.html";
+    formRegister.action = "./index.html";
+
 }
 
 //GALLETITAS
@@ -256,8 +245,3 @@ function crearCookie(nombre, value, time) {
     document.cookie = nombre + "=" + encodeURIComponent(value) + ";expires=" + time;
 
 }
-
-
-
-
-

@@ -16,89 +16,6 @@ body {
   display: flex;
 }
 
-/* header {
-    position: sticky;
-    background-color: #fff;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 3%;
-    box-sizing: border-box;
-    border-bottom: 1px solid rgba(129, 129, 129, 0.171);
-    z-index: 10;
-  }
-
-  .logo-space {
-    margin-top: 8px;
-  }
-
-  .logo {
-    width: 4.5rem;
-  }
-
-  .link-box {
-    display: flex;
-    align-items: center;
-  }
-
-  .main-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-  }
-
-  .menu-item {
-    margin: 0 1rem;
-    font-weight: 600;
-    transition: 0, 5;
-    color: #000;
-  }
-
-  .menu-item:hover {
-    border-bottom: 3px solid var(--main-color);
-    transition: 0.2s;
-  }
-
-  .styless-btn {
-    background: none;
-    border: none;
-    line-height: 2.5rem;
-  }
-
-  .sign-in-btn {
-    padding: 8px 20px;
-    border-radius: 30px;
-    font-size: 16px;
-    background-color: #fff;
-    color: var(--main-color);
-    border: 2px solid var(--main-color);
-    text-decoration: none;
-  }
-  .sign-in-btn:hover {
-    color: #fff;
-    background-color: var(--main-color);
-    transition: 0.2s;
-    text-decoration: none;
-  }
-  .register-btn {
-    padding: 8px 20px;
-    border-radius: 30px;
-    font-size: 16px;
-    background-color: #fff;
-    color: var(--main-color);
-    border: 2px solid var(--main-color);
-    text-decoration: none;
-  }
-  .register-btn:hover {
-    color: #fff;
-    background-color: var(--main-color);
-    transition: 0.2s;
-    text-decoration: none;
-  } */
-
 main {
   width: 100%;
   height: 100vh;
@@ -224,16 +141,6 @@ main {
 #checkTerms {
   width: 20%;
 }
-
-/*
-.registerButton {
-    color: white;
-}
-
-.loginButton {
-    color: white;
-}
-*/
 
 .formulario__login {
   opacity: 1;
