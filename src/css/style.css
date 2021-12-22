@@ -714,6 +714,7 @@ hr {
 /* ESTILOS PAGINA PRODUCT_CONFIRM */
 .btn-agreed {
   margin-top: 1rem;
+  font-weight: 600;
 }
 .change-item {
   justify-content: center;
@@ -751,4 +752,27 @@ hr {
 }
 
 @media (min-width: 770px) and (max-width: 1021px) {
+}
+
+/* ESTILOS MENSAJE DE CONFIRMACIÓN */
+
+.message-change {
+  background-color: rgba(134, 206, 134, 0.37);
+  margin: 1.5rem auto;
+  width: 70%;
+  border: 1.5px solid green;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.message-change[data-message="false"] {
+  display: none;
+}
+
+.message-change[data-message="true"] {
+  display: block;
+}
+
+.list-message {
+  text-align: center;
 }

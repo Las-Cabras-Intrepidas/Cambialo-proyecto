@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
   <script src="js/nav.js" defer></script>
+  <script src="js/btn-confirm.js" defer></script>
 </head>
 
 <body>
@@ -80,7 +81,7 @@
       <strong>Resumen de tu intercambio</strong>
     </h2>
     <p class="slogan-text">
-      Te mostramos tu artículo (izq) y el artículo por el cual solicitas un cambio (der).
+      Te mostramos tu artículo y el artículo por el cual solicitas un cambio.
     </p>
   </div>
 
@@ -101,6 +102,7 @@
       ">
     <div id="technology" class="column is-half-touch is-one-quarter-desktop">
       <div class="product-card">
+        <p class="has-text-weight-bold">Lo que ofreces:</p>
         <img src="img/products/tecnologia-movil.webp" alt="" />
         <div class="text-product">
           <p class="green">Disponible</p>
@@ -113,6 +115,7 @@
     </div>
     <div class="card-change column is-half-touch is-one-quarter-desktop">
       <div class="product-card">
+        <p class="has-text-weight-bold">Lo que recibes:</p>
         <img src="img/products/tecnologia-switch.webp" alt="" />
         <div class="text-product">
           <p class="green">Disponible</p>
@@ -125,8 +128,19 @@
       </div>
     </div>
     <div class="agreed-container">
-    <button class="btn-agreed sign-in-btn">Cámbialo!</button>
-    <p class="agreed-change">Al pulsar "Cámbialo!" aceptas que tus datos sean tratados con el fin de efectuar el
+    <button class="btn-agreed sign-in-btn">¡Cámbialo!</button>
+    <div class="message-change" data-message="false">
+      <p class="has-text-weight-bold">Datos de Contacto:</p>
+      <ul class="list-message">
+      <li class="has-text-centered">
+        Nombre: Bárbara.
+      </li>
+      <li class="has-text-centered">
+        Email: barbaraibex@ganamos.com
+      </li>
+    </ul>
+    </div>
+    <p class="agreed-change">Al pulsar "Cámbialo!" aceptas que tratarás los datos que te proporcionemos con el fin de efectuar el
       intercambio.</p>
     </div>
   </section>
