@@ -107,6 +107,15 @@ header {
   text-decoration: none;
 }
 
+#btnCierreSesion{
+  background-color: var(--main-color);
+  border: solid black 0.5px;
+  border-radius: 5px;
+  color: #fff;
+  height: 28px;
+  width: 90px;
+}
+
 /*Search_Style*/
 .barra_busqueda {
   margin: 25px;
@@ -218,19 +227,26 @@ header {
 
 /*Query para panóramicas*/
 
-/*
-@media screen and (min-width: 1700px), screen and (max-width: 3200px){
+@media screen and (min-height: 600px), screen and (max-height: 820px), screen and (min-width: 650px), screen and (max-width: 1200px){
   .mosaic-text-container {
-    min-height: 500px;
-}
-}
-@media screen and (max-height: 810px), screen and (min-height: 400px){
-  .mosaic-text-container {
-    min-height: 350px;
+    min-height: 450px;
 
 }
 }
-*/
+
+@media screen and (min-width: 1800px), screen and (min-height: 910px){
+  .mosaic-text-container {
+    min-height: 650px;
+}
+}
+
+
+
+@media screen and (min-width: 525px), screen and (max-width: 650px), screen and (min-height: 820px), screen and (max-height: 910px){
+  .mosaic-text-container {
+    min-height: 270px;
+}
+}
 
 #hash-logo {
   width: 100%;
@@ -734,3 +750,5 @@ hr {
 
 @media (min-width: 770px) and (max-width: 1021px) {
 }
+
+

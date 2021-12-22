@@ -7,10 +7,10 @@ function getCookie(name) {
         begin = dc.indexOf(prefix);
         if (begin != 0){
             return null;
-        } 
+        }
     } else {
         begin += 2;
-        
+
         if (end == -1) {
             end = dc.length;
         }
@@ -29,7 +29,7 @@ let btnBorrar2 = document.getElementById("btnBorrar2");
 let btnLogin = document.getElementById("btnInicio");
 function recogerCookie() {
     let Nombre = getCookie("userName").split("userName=");
-    let datosIntro = "Hola, " + Nombre[1]; 
+    let datosIntro = "Hola, " + Nombre[1];
     btnLogin.innerText = datosIntro;
     //ELIMINAR LOS OTROS BOTONES
     botonesBorrar1.removeChild(btnBorrar1);
@@ -65,7 +65,7 @@ function deleteAllCookies() {
 }
 
 
-//MODIFICAR EL BUTTON 
+//MODIFICAR EL BUTTON
 if(comprobarCookie() == "existe"){
     console.log("Hay una cookie");
     recogerCookie();
@@ -79,13 +79,14 @@ function botonCierre(){
     const button = document.createElement('button');
     button.type = 'button';
     button.innerText = 'Cerrar sesión';
-    button.style.border=" solid 1px red ";
+    //button.style.border=" solid 1px red ";
+    button.id="btnCierreSesion";
 
     botonesLogin.appendChild(button);
     button.addEventListener("click", ()=>{
         console.log("fufa");
         deleteAllCookies();
-        location.reload();  
+        location.reload();
     });
 }
 
