@@ -686,3 +686,43 @@ hr {
   }
 
 }
+
+/* ESTILOS PAGINA PRODUCT_CONFIRM */
+
+.change-item {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.animation-arrow {
+  animation: 0.5s infinite alternate slidein;
+}
+
+.agreed-change {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+@media (min-width: 350px) and (max-width: 768px) {
+  .change-item {
+    flex-direction: column;
+  }
+
+  .animation-arrow {
+    width: 70%;
+  }
+
+  .img-arrow {
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+  }
+}
+
+@media (min-width: 770px) and (max-width: 1021px) {
+}
