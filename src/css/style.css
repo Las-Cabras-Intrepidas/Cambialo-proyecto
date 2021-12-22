@@ -218,6 +218,7 @@ header {
 
 /*Query para panóramicas*/
 
+/*
 @media screen and (min-width: 1700px), screen and (max-width: 3200px){
   .mosaic-text-container {
     min-height: 500px;
@@ -229,7 +230,7 @@ header {
 
 }
 }
-
+*/
 
 #hash-logo {
   width: 100%;
