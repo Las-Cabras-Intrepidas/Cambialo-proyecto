@@ -1,139 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./css/style_1.css" />
-    <title>Confirmacion del trueque</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+  <script src="js/nav.js" defer></script>
 </head>
 
 <body>
-    <!-- HEADER   -->
-    <header id="header">
-        <div class="logo-space">
-            <a href="index.html"><img class="logo" src="img/logotipo3.png" alt="Logotipo" /></a>
-        </div>
+  <!--Comienzo Navigation Bar-->
 
-        <!--Barra búsqueda-->
-        <!-- <div class="barra_busqueda">
-        <div class="container-4">
-          <input type="search" id="search" placeholder="Busca en todas las categorías ..."/>
-          <button class="icon"><i class="fa fa-search"></i></button>
-        </div>
+  <header id="header">
+    <div class="logo-space">
+      <a class="logo" href="index.html"><img src="img/logotipo3.png" alt="Logotipo" /></a>
+      <div class="name-logo">
+        <p>CÁMBIALO</p>
+      </div>
+    </div>
+
+    <!--Barra búsqueda
+     <div class="barra_busqueda">
+
+      <div class="container-4">
+        <input
+          type="search"
+          id="search"
+          placeholder="Busca en todas las categorías ..."
+        />
+        <button class="icon"><i class="fa fa-search"></i></button>
       </div> -->
+    <button class="mobile-nav-toggle" aria-controls="main-menu" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+    </button>
 
-        <!-- Enlaces -->
-        <div class="link-box">
-            <nav>
-                <ul class="main-menu">
-                    <li><a class="menu-item" href="index.html">Inicio</a></li>
-                    <li>
-                        <a class="menu-item" href="product_confirm.html">Productos</a>
-                    </li>
-                    <li><a class="menu-item" href="#">Conócenos</a></li>
-                    <li><a class="menu-item" href="#">Contacto</a></li>
-                </ul>
-            </nav>
-            <!-- Botones -->
-            <div class="login-btn">
-                <button class="styless-btn">
-          <a class="sign-in-btn" href="login-register.html">Iniciar sesión</a>
+    <!-- Enlaces -->
+    <div class="link-box" data-visible="false">
+      <nav>
+        <ul id="main-menu" class="main-menu">
+          <li class="menu-item"><a href="index.html">Inicio</a></li>
+          <li class="menu-item">
+            <a href="./product.html">Productos</a>
+          </li>
+          <li class="menu-item"><a href="#conocenos">Conócenos</a></li>
+          <li class="menu-item"><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- Botones -->
+      <div class="login-btn">
+        <button class="styless-btn">
+          <a id="btnIni" class="sign-in-btn" href="login-register.html">Iniciar sesión</a>
         </button>
-            </div>
-        </div>
-    </header>
+      </div>
+    </div>
+    <!-- <button class="styless-btn hamburger" >
 
-    <!-- CUERPO -->
+      </button> -->
+  </header>
+
+  <!--Fin Navigation Bar-->
+
+  <!--Cuerpo categorias-->
+  <div>
+    <p class="breadcrum">
+      <a href="index.html">Inicio</a> >
+      <a class="subrayar" href="product.html">Tienda</a>
+    </p>
+  </div>
+  <div>
+    <h1 class="text-store">Categorías</h1>
+  </div>
+
+  <div class="container-categories">
+    <div class="card-category">
+      <a href="#technology">
+        <img class="img-category" src="img/product1.jpg" alt="bolsa de productos" />
+        <h2 class="text-category">Tecnología</h2>
+      </a>
+    </div>
+    <div class="card-category">
+      <a href="#home">
+        <img class="img-category" src="img/product2.jpg" alt="bolsa de productos" />
+        <h2 class="text-category">Hogar</h2>
+      </a>
+    </div>
+    <div class="card-category">
+      <a href="#pets">
+        <img class="img-category" src="img/product3.jpg" alt="bolsa de productos" />
+        <h2 class="text-category">Mascotas</h2>
+      </a>
+    </div>
+    <div class="card-category">
+      <a href="#games">
+        <img class="img-category" src="img/product5.jpg" alt="bolsa de productos" />
+        <h2 class="text-category">Juegos</h2>
+      </a>
+    </div>
+    <div class="card-category">
+      <a href="#clothes">
+        <img class="img-category" src="img/product4.jpg" alt="bolsa de productos" />
+        <h2 class="text-category">Ropa</h2>
+      </a>
+    </div>
+    <div class="card-category">
+      <a href="#sports">
+        <img class="img-category" src="img/product6.jpg" alt="bolsa de productos" />
+        <h2 class="text-category">Deportes</h2>
+      </a>
+    </div>
+  </div>
+  <!-- fin categorias-->
+  <!-- slogan-->
+  <div class="slogan-banner">
+    <h2 class="slogan-title">
+      <strong>Resumen de tu intercambio</strong>
+    </h2>
+    <p class="slogan-text">
+      Te mostramos tu artículo (izq) y el artículo por el cual solicitas un cambio (der).
+    </p>
+  </div>
+
+  <hr />
+  <div>
+    <p class="text-store">Tu intercambio es el siguiente:</p>
+  </div>
+
+  <!--cards de productos-->
+  <section class="
+        columns
+        products
+        is-multiline is-mobile
+        has-text-centered
+        product-container
+        change-item
+        is-flex
+      ">
+    <div id="technology" class="column is-half-touch is-one-quarter-desktop">
+      <div class="product-card">
+        <img src="img/products/tecnologia-movil.webp" alt="" />
+        <div class="text-product">
+          <p class="green">Disponible</p>
+          <p class="has-text-weight-bold">iPhone 11</p>
+          <p class="has-text-left">
+            iPhone 11 de 64gb negro tiene 3 fundas, con su factura y garantía, está nuevo pero me gusta más Android.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="column is-half-touch is-one-quarter-desktop">
+      <div class="img-arrow">
+        <img class="animation-arrow" src="img/right-arrow.png" alt="flecha" id="#arrow"/>
+      </div>
+      <button class="sign-in-btn">Cámbialo!</button>
+      </div>
+    </div>
+    <div class="card-change column is-half-touch is-one-quarter-desktop">
+      <div class="product-card">
+        <img src="img/products/tecnologia-switch.webp" alt="" />
+        <div class="text-product">
+          <p class="green">Disponible</p>
+          <p class="has-text-weight-bold">Nintendo Switch</p>
+          <p class="has-text-left">
+            Se la regalé a mi novia porque "iba a jugar mucho" y la tengo aquí cogiendo polvo, te regalo 5 juegos
+            también.
+          </p>
+        </div>
+      </div>
+    </div>
+    <p class="agreed-change">Al pulsar "Cámbialo!" aceptas que tus datos sean tratados con el fin de efectuar el intercambio.</p>
+  </section>
+    <!--banner-->
+
     <section>
-        <div id="izquierdo">
-            <ul>
-                <li>Mis productos</li>
-                <li>Mis solicitudes</li>
-                <li>Mi perfil</li>
-                <li>Favoritos</li>
-            </ul>
-        </div>
-        <div id="derecho">
-            <div id="contenido">
-                <p>Enhorabuena! Tu solicitud de cambio ha sido aceptada!</p>
-                <div id="bodytarj">
-                    <div class="tarjeta">
-                        <img src="./img/producto.png" alt="Producto" />
-                        <h3>Disponible</h3>
-                        <h2>Nombre producto 1</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus libero ac interdum.
-                        </p>
-                    </div>
-                    <div id="flecha">
-                        <img src="./img/flecha.png" />
-                    </div>
-                    <div class="tarjeta">
-                        <img src="./img/producto.png" alt="Producto" />
-                        <h3>Disponible</h3>
-                        <h2>Nombre producto 2</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus libero ac interdum.
-                        </p>
-                    </div>
-                </div>
-                <p>Asegurate de coordinar todo lo referente a envíos</p>
-            </div>
-        </div>
-    </section>
-    <hr />
-    <section>
-        <div id="cont">
-            <div id="first">
-                <h1>Te acompañamos en todo momento</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed finibus libero ac interdum.
-                </p>
-            </div>
-
-            <div id="second">
-                <img src="./img/producto.png" alt="Producto" />
-                <img src="./img/producto.png" alt="Producto" />
-                <img src="./img/producto.png" alt="Producto" />
-                <img src="./img/producto.png" alt="Producto" />
-                <img src="./img/producto.png" alt="Producto" />
-                <img src="./img/producto.png" alt="Producto" />
-                <img src="./img/producto.png" alt="Producto" />
-                <img src="./img/producto.png" alt="Producto" />
-            </div>
-        </div>
+      <div class="banner-products">
+        <img class="img-banner-product" src="img/bg5banner.png" alt="imagen muchos articulos" />
+        <img class="img-slogan" src="img/banner_png_slogan1.png" />
+      </div>
     </section>
 
-    <footer class="footer has-background-dark has-text-black is-small">
-        <div class="content has-text-centered">
-            <div class="columns is-desktop">
-                <div class="column">
-                    <a href="index.html"><img src="img/logotipo3.svg" alt="Logotipo" class="logo" /></a>
-                </div>
-                <div class="column is-half">
-                    <p class="footer-copy">
-                        © Copyright All rights reserved 2021 - By Intrepid Ibex
-                    </p>
-                </div>
-                <div class="column footer-icons">
-                    <p class="social-title">Te acompañamos!</p>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/cambialo_es/"><i class="footer-icon fab fa-facebook-f fa-2x"></i></a>
-                        <a href="https://www.instagram.com/cambialo_es/"><i class="footer-icon fab fa-instagram fa-2x"></i></a>
-                        <a href="https://twitter.com/CambialoES"><i class="footer-icon fab fa-twitter fa-2x"></i></a>
-                    </div>
-                </div>
-            </div>
+    <!-- footer -->
+    <footer class="footer-container">
+      <div class="link-container">
+        <div class="desktop-bg">
+          <ul class="footer-list">
+            <li class="footer-link">
+              <a href="#navbar">INICIO</a>
+            </li>
+            <li class="footer-link">
+              <a href="product.html">PRODUCTOS</a>
+            </li>
+            <li class="footer-link">
+              <a href="#form">CONTACTO</a>
+            </li>
+          </ul>
         </div>
+        <div class="desktop-bg">
+          <ul class="footer-list">
+            <li class="footer-link">
+              <a href="#">SOPORTE</a>
+            </li>
+            <li class="footer-link">
+              <a href="#">AVISO LEGAL</a>
+            </li>
+            <li class="footer-link">
+              <a href="#">CONOCENOS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-flex">
+        <a href="#">
+          <img class="logo" src="img/logotipo3.svg" width="25" height="25" alt="" />
+        </a>
+        <h4 class="footer-title">Cambialo!</h4>
+        <p class="footer-rights">Copyright © 2021, Cámbialo ©</p>
+      </div>
     </footer>
+    <!-- fin footer -->
 </body>
 
 </html>
