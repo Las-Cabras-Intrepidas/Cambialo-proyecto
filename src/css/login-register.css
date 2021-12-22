@@ -216,6 +216,15 @@ main {
   outline: none;
 }
 
+.check-container {
+  display: flex;
+  margin-top: 1rem;
+}
+
+#checkTerms {
+  width: 20%;
+}
+
 /*
 .registerButton {
     color: white;
