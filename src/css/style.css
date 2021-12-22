@@ -225,8 +225,8 @@ header {
 }
 @media screen and (max-height: 810px){
   .mosaic-text-container {
-    min-height: 400px;
-    max-height: 430px;
+    min-height: 300px;
+    max-height: 300px;
 }
 
 #hash-logo {
