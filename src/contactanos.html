@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <script src="js/nav.js" defer></script>
+  <script src="js/btn-confirm.js" defer></script>
+</head>
+
+<body>
+  <!--Comienzo Navigation Bar-->
+
+  <header id="header">
+    <div class="logo-space">
+      <a class="logo" href="index.html"><img src="img/logotipo3.png" alt="Logotipo" /></a>
+      <div class="name-logo">
+        <p>CÁMBIALO</p>
+      </div>
+    </div>
+
+    <!--Barra búsqueda
+     <div class="barra_busqueda">
+
+      <div class="container-4">
+        <input
+          type="search"
+          id="search"
+          placeholder="Busca en todas las categorías ..."
+        />
+        <button class="icon"><i class="fa fa-search"></i></button>
+      </div> -->
+    <button class="mobile-nav-toggle" aria-controls="main-menu" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <!-- Enlaces -->
+    <div class="link-box" data-visible="false">
+      <nav>
+        <ul id="main-menu" class="main-menu">
+          <li class="menu-item"><a href="index.html">Inicio</a></li>
+          <li class="menu-item">
+            <a href="./product.html">Productos</a>
+          </li>
+          <li class="menu-item"><a href="#conocenos">Conócenos</a></li>
+          <li class="menu-item"><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- Botones -->
+      <div class="login-btn">
+        <button class="styless-btn">
+          <a id="btnIni" class="sign-in-btn" href="login-register.html">Iniciar sesión</a>
+        </button>
+      </div>
+    </div>
+    <!-- <button class="styless-btn hamburger" >
+
+      </button> -->
+  </header>
+
+  <!--Fin Navigation Bar-->
+
+  <!--Cuerpo categorias-->
+  <div class="img-container">
+    <div>
+      <p class="breadcrum">
+        <a href="index.html">Inicio</a> >
+        <a class="subrayar" href="">Contáctanos</a>
+      </p>
+    </div>
+
+    <!--seccion contactanos-->
+    <div class="contact-container">
+      <div class="contact-details">
+        <h1 class="contact-title">¿Tienes alguna pregunta?</h1>
+        <h2 class="contact-subtitle">Rellena el siguiente formulario y te responderemos cuanto antes.</h2>
+        <h3 class="contact-subtitle">También nos puedes encontrar en Redes Sociales.</h3>
+        <ul>
+          <li class="contact-item">902-781-369</li>
+          <li class="contact-item">intrepidibex@gmail.com</li>
+          <li class="contact-item">Calle La X, 13. Madrid, España.</li>
+        </ul>
+      </div>
+      <form id="form" class="form-container">
+        <div class="name-field">
+          <label class="label">Nombre</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Tu nombre" />
+          </div>
+        </div>
+        <div class="email-field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input class="input" type="email" placeholder="Tu email" />
+          </div>
+        </div>
+
+        <div class="message-field">
+          <label class="label">Mensaje</label>
+          <div class="control">
+            <textarea class="input textarea" placeholder="Tu mensaje..."></textarea>
+          </div>
+        </div>
+        <div class="terms-field">
+          <div class="control">
+            <label class="">
+              <input type="checkbox" required />
+              Estoy de acuerdo con los
+              <a class="conditions-link" href="#">términos y condiciones.</a>
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <button class="btn" onclick="location.reload()">
+              <a href="#">Enviar</a>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer-container">
+    <nav class="link-container">
+      <div class="desktop-bg">
+        <ul class="footer-list icon-flex">
+          <li class="footer-link">
+            <a href="#"><i class="rrss-icon fab fa-facebook-square"></i></a>
+          </li>
+          <li class="footer-link">
+            <a href="https://www.instagram.com/cambialo_es/"><i class="rrss-icon fab fa-instagram"></i></a>
+          </li>
+          <li class="footer-link">
+            <a href="https://twitter.com/CambialoES"><i class="rrss-icon fab fa-twitter-square"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="desktop-bg">
+        <ul class="footer-list">
+          <li class="footer-link">
+            <a href="index.html">INICIO</a>
+          </li>
+          <li class="footer-link">
+            <a href="product.html">PRODUCTOS</a>
+          </li>
+          <li class="footer-link">
+            <a href="#form">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+      <div class="desktop-bg">
+        <ul class="footer-list">
+          <li class="footer-link">
+            <a href="mailto:info@cambialo.es">SOPORTE</a>
+          </li>
+          <li class="footer-link">
+            <a href="terms-conditions.html">AVISO LEGAL</a>
+          </li>
+          <li class="footer-link">
+            <a href="#">CONOCENOS</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="footer-flex">
+      <a href="#">
+        <img class="logo" src="img/logotipo3.svg" width="25" height="25" alt="" />
+      </a>
+      <h4 class="footer-title">Cambialo!</h4>
+      <p class="footer-rights">Copyright © 2021, Cámbialo ©</p>
+    </div>
+  </footer>
+  <!-- fin footer -->
+</body>
+
+</html>

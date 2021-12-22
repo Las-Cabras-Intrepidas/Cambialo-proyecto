@@ -776,3 +776,35 @@ hr {
 .list-message {
   text-align: center;
 }
+
+/* ESTILOS PAGINA DE CONTACTO */
+.img-container {
+  background-image: url(../img/bg-contacto.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+}
+
+.contact-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+.contact-subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  margin: 0.7rem;
+}
+
+.contact-item {
+  margin: 0.7rem;
+}
