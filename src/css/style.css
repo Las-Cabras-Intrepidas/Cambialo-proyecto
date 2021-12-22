@@ -107,7 +107,7 @@ header {
   text-decoration: none;
 }
 
-#btnCierreSesion{
+#btnCierreSesion {
   background-color: var(--main-color);
   border: solid black 0.5px;
   border-radius: 5px;
@@ -227,25 +227,28 @@ header {
 
 /*Query para panóramicas*/
 
-@media screen and (min-height: 600px), screen and (max-height: 820px), screen and (min-width: 650px), screen and (max-width: 1200px){
+@media screen and (min-height: 600px),
+  screen and (max-height: 820px),
+  screen and (min-width: 650px),
+  screen and (max-width: 1200px) {
   .mosaic-text-container {
     min-height: 450px;
-
+  }
 }
-}
 
-@media screen and (min-width: 1800px), screen and (min-height: 910px){
+@media screen and (min-width: 1800px), screen and (min-height: 910px) {
   .mosaic-text-container {
     min-height: 650px;
+  }
 }
-}
 
-
-
-@media screen and (min-width: 525px), screen and (max-width: 650px), screen and (min-height: 820px), screen and (max-height: 910px){
+@media screen and (min-width: 525px),
+  screen and (max-width: 650px),
+  screen and (min-height: 820px),
+  screen and (max-height: 910px) {
   .mosaic-text-container {
     min-height: 270px;
-}
+  }
 }
 
 #hash-logo {
@@ -674,7 +677,6 @@ hr {
     z-index: 50;
     border: none;
     display: block;
-
   }
 
   .mobile-nav-toggle[aria-expanded="true"] {
@@ -685,7 +687,6 @@ hr {
 @media (min-width: 900px) {
   .mosaic-section {
     height: 75vh;
-
   }
   .mosaic-text-container {
     height: 45vh;
@@ -708,13 +709,14 @@ hr {
   .card-category {
     max-width: 15%;
   }
-
 }
 
 /* ESTILOS PAGINA PRODUCT_CONFIRM */
-
+.btn-agreed {
+  margin-top: 1rem;
+}
 .change-item {
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
@@ -723,7 +725,7 @@ hr {
 }
 
 .agreed-change {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 4rem;
   font-weight: 600;
   font-size: 14px;
@@ -750,5 +752,3 @@ hr {
 
 @media (min-width: 770px) and (max-width: 1021px) {
 }
-
-
