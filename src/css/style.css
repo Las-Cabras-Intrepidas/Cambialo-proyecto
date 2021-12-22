@@ -212,7 +212,16 @@ header {
   box-shadow: 5px 18px 18px 5px var(--shadow-color);
   color: black;
   height: 35vh;
+
   width: 80%;
+}
+
+/*Query para panóramicas*/
+
+@media screen and (min-width: 1800px){
+  .mosaic-text-container {
+    min-height: 500px;
+}
 }
 
 #hash-logo {
@@ -595,8 +604,10 @@ hr {
     padding: 5rem 2rem;
     gap: 2em;
     transform: translateX(100%);
-    transition: transform 350ms ease-out;
+    transition: transform 0ms ease-out; /*Quitado el tiempo de animación porque da fallos al redimensionar. Antes era 350ms*/
   }
+  /* Sería interesante tener la función de "transtion:transform: ;" por medio de "onclick" en JS, ya que si lo tenemos así
+  al redimensionar la pantalla salta la animación sola. */
 
   @supports (backdrop-filter: blur(1rem)) {
     .link-box {
@@ -632,13 +643,14 @@ hr {
     background: url(../img/square.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 2.5rem;
+    width: 2rem;
     aspect-ratio: 1;
     top: 1rem;
-    right: 2rem;
-    z-index: 100;
+    right: 1.5rem;
+    z-index: 50;
     border: none;
     display: block;
+
   }
 
   .mobile-nav-toggle[aria-expanded="true"] {
@@ -649,6 +661,7 @@ hr {
 @media (min-width: 900px) {
   .mosaic-section {
     height: 75vh;
+
   }
   .mosaic-text-container {
     height: 45vh;
@@ -671,6 +684,7 @@ hr {
   .card-category {
     max-width: 15%;
   }
+
 }
 
 /* ESTILOS PAGINA PRODUCT_CONFIRM */
