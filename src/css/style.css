@@ -320,62 +320,6 @@ hr {
   width: 100%;
 }
 
-/*Hero Section*/
-.block_article {
-  background-size: cover;
-  justify-content: center;
-  text-align: left;
-}
-.hero-left {
-  text-align: left;
-  width: 100%;
-  margin-left: 3rem;
-}
-
-.hero-title {
-  text-align: left;
-  color: rgba(0, 0, 0, 0.87);
-  font-weight: 800;
-  font-style: bolder;
-  font-size: 2.25rem;
-  animation-duration: 2s;
-  animation-name: slidein;
-  letter-spacing: 2px;
-}
-
-.hero-text {
-  font-size: 1rem;
-  color: var(--main-color);
-  font-style: bolder;
-  font-weight: 400;
-  margin-top: 5px;
-  animation-duration: 2.25s;
-  animation-name: slidein2;
-  letter-spacing: 0.75px;
-}
-@keyframes slidein {
-  from {
-    margin-left: -50%;
-    width: -50%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-@keyframes slidein2 {
-  from {
-    margin-left: 38%;
-    width: 38%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
 /*SEGUNDO BANNER*/
 .hero.has-background {
   margin-top: 50px;
@@ -393,7 +337,48 @@ hr {
 .hero-background.is-transparent {
   opacity: 0.3;
 }
+/*Cartas centrales con info empresa*/
+.central-cards {
+  display: flex;
+  justify-content:baseline;
+  align-items: center;
+  margin: 30px;
+  margin-top: 50px;
 
+  margin-bottom: 50px;
+
+}
+.central-cards p{
+  padding: 10px;
+  font-size: 0.9rem;
+}
+.central-cards a{
+  text-decoration: none;
+}
+.head-card{
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.left-card, .central-card, .right-card {
+  width: 80%;
+  height: 175px;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  background-color: #284ab6;
+  color: #fff;
+  margin: 10px;
+  padding: 15px;
+
+
+}
+
+
+
+/*Hasta aquí*/
 .container.has-text-right h1 {
   color: #fff;
 }
