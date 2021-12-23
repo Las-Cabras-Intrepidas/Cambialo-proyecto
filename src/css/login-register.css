@@ -183,3 +183,12 @@ main {
     position: relative;
   }
 }
+
+@media (max-width: 580px) {
+  .btn333 {
+    display: none;
+  }
+  .caja__trasera-register {
+    padding-left: 2rem;
+  }
+}

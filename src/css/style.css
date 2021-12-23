@@ -381,7 +381,7 @@ hr {
     flex-direction: column;
   }
   .left-card, .central-card, .right-card  {
-    height: 190px;
+    height: 260px;
   }
 }
 @media (min-width: 580px) and (max-width: 1030px) {
