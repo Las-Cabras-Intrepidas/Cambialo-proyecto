@@ -73,7 +73,7 @@ function botonCierre() {
     let botonesLogin = document.getElementById("botonesLogin");
     const button = document.createElement('button');
     button.type = 'button';
-    button.innerText = 'Cerrar sesión';
+    button.innerText = 'Logout';
     //button.style.border=" solid 1px red ";
     button.id = "btnCierreSesion";
 

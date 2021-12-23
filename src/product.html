@@ -14,10 +14,9 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link rel="shortcut icon" href="./img/logotipo-icon.ico" />
-    <title>
-        Categorías | Tecnología, Hogar, Mascotas, Juegos, Ropa y Deportes
-    </title>
+    <title>Categorías | Tecnología, Hogar, Mascotas, Juegos, Ropa y Deportes</title>
     <script src="js/nav.js" defer></script>
+    <script type="module" src="./js/manejousuario.js"></script>
 </head>
 
 <body>
@@ -32,16 +31,16 @@
         </div>
 
         <!--Barra búsqueda
-     <div class="barra_busqueda">
+       <div class="barra_busqueda">
 
-      <div class="container-4">
-        <input
-          type="search"
-          id="search"
-          placeholder="Busca en todas las categorías ..."
-        />
-        <button class="icon"><i class="fa fa-search"></i></button>
-      </div> -->
+        <div class="container-4">
+          <input
+            type="search"
+            id="search"
+            placeholder="Busca en todas las categorías ..."
+          />
+          <button class="icon"><i class="fa fa-search"></i></button>
+        </div> -->
         <button class="mobile-nav-toggle" aria-controls="main-menu" aria-expanded="false">
         <span class="sr-only">Menu</span>
       </button>
@@ -54,22 +53,19 @@
                     <li class="menu-item">
                         <a href="./product.html">Productos</a>
                     </li>
-                    <li class="menu-item"><a href="#conocenos">Conócenos</a></li>
                     <li class="menu-item"><a href="contact.html">Contacto</a></li>
                 </ul>
             </nav>
             <!-- Botones -->
-            <div class="login-btn">
-                <button class="styless-btn">
-            <a id="btnIni" class="sign-in-btn" href="login-register.html"
-              >Iniciar sesión</a
-            >
+            <div id="botonesLogin" class="login-btn">
+                <button id="btnInicio" class="styless-btn">
+            <a class="sign-in-btn" href="login-register.html">Iniciar sesión</a>
           </button>
             </div>
         </div>
         <!-- <button class="styless-btn hamburger" >
 
-      </button> -->
+        </button> -->
     </header>
 
     <!--Fin Navigation Bar-->
@@ -456,6 +452,21 @@
             </li>
         </ul>
     </nav>
+
+    <!-- BOTONES BORRAR -->
+    <div id="botonesBorrar1" class="login-btn">
+        <button id="btnBorrar1" class="styless-btn btn-hero">
+            <a class="" href=""></a>
+        </button>
+    </div>
+    <div id="botonesBorrar2" class="container has-text-right">
+        <h1 class="title"></h1>
+        <h3 class="subtitle"></h3>
+        <button id="btnBorrar2" class="button button-banner is-white">
+            <a href=""></a>
+        </button>
+    </div>
+
     <!--banner-->
     <section>
         <div class="banner-products">
@@ -463,24 +474,11 @@
             <img class="img-slogan" src="img/banner_png_slogan1.png" />
         </div>
     </section>
+
     <!-- footer -->
     <footer class="footer-container">
         <nav class="link-container">
-            <div class="desktop-bg">
-                <ul class="footer-list icon-flex">
-                    <li class="footer-link">
-                        <a href="#"><i class="rrss-icon fab fa-facebook-square"></i></a>
-                    </li>
-                    <li class="footer-link">
-                        <a href="https://www.instagram.com/cambialo_es/"><i class="rrss-icon fab fa-instagram"></i
-              ></a>
-                    </li>
-                    <li class="footer-link">
-                        <a href="https://twitter.com/CambialoES"><i class="rrss-icon fab fa-twitter-square"></i
-              ></a>
-                    </li>
-                </ul>
-            </div>
+
             <div class="desktop-bg">
                 <ul class="footer-list">
                     <li class="footer-link">
@@ -494,6 +492,21 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="desktop-bg">
+                <ul class="footer-list icon-flex">
+                    <li class="footer-link">
+                        <a href="https://www.facebook.com/Cambialocom-111304798084313/" target="_blank"><i class="rrss-icon fab fa-facebook-square"></i></a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="https://www.instagram.com/cambialo_es/" target="_blank"><i class="rrss-icon fab fa-instagram"></i></a>
+                    </li>
+                    <li class="footer-link">
+                        <a href="https://twitter.com/CambialoES" target="_blank"><i class="rrss-icon fab fa-twitter-square"></i></a>
+                    </li>
+                </ul>
+            </div>
+
             <div class="desktop-bg">
                 <ul class="footer-list">
                     <li class="footer-link">
@@ -512,11 +525,12 @@
             <a href="#">
                 <img class="logo" src="img/logotipo3.svg" width="25" height="25" alt="" />
             </a>
-            <h4 class="footer-title">Cambialo!</h4>
+            <h4 class="footer-title">Cámbialo - </h4>
             <p class="footer-rights">Copyright © 2021, Cámbialo ©</p>
         </div>
     </footer>
     <!-- fin footer -->
+
 </body>
 
 </html>
