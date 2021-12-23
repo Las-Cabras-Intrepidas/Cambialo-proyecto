@@ -361,7 +361,7 @@ hr {
 }
 .left-card, .central-card, .right-card {
   width: 80%;
-  height: 175px;
+  height: 190px;
   border-radius: 5px;
 
   display: flex;
@@ -375,9 +375,31 @@ hr {
 
 
 }
+@media (max-width: 580px) {
+  .central-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .left-card, .central-card, .right-card  {
+    height: 190px;
+  }
+}
+@media (min-width: 580px) and (max-width: 1030px) {
+  .central-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .left-card, .central-card, .right-card  {
+    height: 140px;
+  }
+}
 
+@media (min-width: 2300px) {
+  .left-card, .central-card, .right-card  {
+    height: 130px;
+  }
 
-
+}
 /*Hasta aquí*/
 .container.has-text-right h1 {
   color: #fff;
