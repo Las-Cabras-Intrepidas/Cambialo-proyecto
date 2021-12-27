@@ -78,76 +78,66 @@
     <!-- slogan-->
     <div class="slogan-banner">
         <h2 class="slogan-title">
-            <strong>Resumen de tu intercambio</strong>
+            <strong>Sube tu producto</strong>
         </h2>
-        <p class="slogan-text">
-            Te mostramos tu artículo y el artículo por el cual solicitas un cambio.
-        </p>
     </div>
-
     <hr />
-    <div>
-        <p class="text-store">Tu intercambio es el siguiente:</p>
-    </div>
 
     <!--cards de productos-->
-    <section class="
-        columns
-        products
-        is-multiline is-mobile
-        has-text-centered
-        product-container
-        change-item
-        is-flex
-      ">
-        <div id="technology" class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <p class="has-text-weight-bold">Lo que ofreces:</p>
-                <img src="img/products/tecnologia-movil.webp" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">iPhone 11</p>
-                    <p class="has-text-left">
-                        iPhone 11 de 64gb negro tiene 3 fundas, con su factura y garantía, está nuevo pero me gusta más Android.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="card-change column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <p class="has-text-weight-bold">Lo que recibes:</p>
-                <img src="img/products/tecnologia-switch.webp" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">Nintendo Switch</p>
-                    <p class="has-text-left">
-                        Se la regalé a mi novia porque "iba a jugar mucho" y la tengo aquí cogiendo polvo, te regalo 5 juegos también.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="agreed-container">
-            <button class="btn-agreed sign-in-btn">Cambiar</button>
-            <div class="message-change" data-message="false">
-                <p class="has-text-weight-bold">Datos de Contacto:</p>
-                <ul class="list-message">
-                    <li class="has-text-centered">Nombre: Bárbara.</li>
-                    <li class="has-text-centered">Email: barbaraibex@ganamos.com</li>
-                </ul>
-            </div>
-            <p class="agreed-change">
-                Al pulsar "Cámbialo" aceptas que tratarás los datos que te proporcionemos con el fin de efectuar el intercambio.
-            </p>
-        </div>
-    </section>
-    <!--banner-->
 
-    <section>
-        <div class="banner-products">
-            <img class="img-banner-product" src="img/bg5banner.png" alt="imagen muchos articulos" />
-            <img class="img-slogan" src="img/banner_png_slogan1.png" />
+    <form id="form" class="form-container">
+      <h1>¡Sube tu producto!</h1>
+
+        <div class="field">
+          <label class="label">Sube la imagen de tu producto</label>
+          <div class="control">
+            <input class="upload-line" type="file" id="file" accept="image/*" onchange="show()"/>
+          <img class="img-upload" id="img"/>
+          </div>
         </div>
-    </section>
+
+        <div class="field">
+          <label class="label">Nombre de tu artículo</label>
+          <div class="control">
+            <input class="input" id="product-title" type="text" placeholder="Breve nombre del artículo" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="text-upload" class="label">Breve descripción</label>
+          <div class="control">
+            <textarea
+              class="input-textarea"
+              id="text-upload"
+              name="text-upload"
+              placeholder="Tu descripción..."
+              minlength="10" maxlength="250"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <label class="">
+              <input type="checkbox" required />
+              Estoy de acuerdo con los
+              <a class="conditions-link" href="#">términos y condiciones.</a>
+            </label>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="control">
+            <button class="btn" onclick="sendForm()">
+              <a href="#">Enviar</a>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <div>
+          <p class="text-store">Al pulsar "subir" tu artículo aparecerá en "productos" en unos minutos.</p>
+      </div>
 
     <!-- footer -->
     <footer class="footer-container">

@@ -340,26 +340,27 @@ hr {
 /*Cartas centrales con info empresa*/
 .central-cards {
   display: flex;
-  justify-content:baseline;
+  justify-content: baseline;
   align-items: center;
   margin: 30px;
   margin-top: 50px;
 
   margin-bottom: 50px;
-
 }
-.central-cards p{
+.central-cards p {
   padding: 10px;
   font-size: 0.9rem;
 }
-.central-cards a{
+.central-cards a {
   text-decoration: none;
 }
-.head-card{
+.head-card {
   font-weight: 500;
   font-size: 1.1rem;
 }
-.left-card, .central-card, .right-card {
+.left-card,
+.central-card,
+.right-card {
   width: 80%;
   height: 190px;
   border-radius: 5px;
@@ -372,15 +373,15 @@ hr {
   color: #fff;
   margin: 10px;
   padding: 15px;
-
-
 }
 @media (max-width: 580px) {
   .central-cards {
     display: flex;
     flex-direction: column;
   }
-  .left-card, .central-card, .right-card  {
+  .left-card,
+  .central-card,
+  .right-card {
     height: 260px;
   }
 }
@@ -389,16 +390,19 @@ hr {
     display: flex;
     flex-direction: column;
   }
-  .left-card, .central-card, .right-card  {
+  .left-card,
+  .central-card,
+  .right-card {
     height: 140px;
   }
 }
 
 @media (min-width: 2300px) {
-  .left-card, .central-card, .right-card  {
+  .left-card,
+  .central-card,
+  .right-card {
     height: 130px;
   }
-
 }
 /*Hasta aquí*/
 .container.has-text-right h1 {
@@ -890,4 +894,27 @@ hr {
   .contact-container {
     width: 50%;
   }
+}
+
+/* ESTILOS PROVISIONALES FORM DE SUBIDA */
+
+.form-container {
+  border: 2px solid blue;
+  border-radius: 10px;
+  width: 35%;
+  padding: 1rem;
+}
+
+.field {
+  margin-bottom: 1.5rem;
+  font-size: 18px;
+}
+
+.img-upload {
+  width: 90px;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
 }
