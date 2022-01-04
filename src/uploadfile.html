@@ -116,6 +116,7 @@
             id="file"
             accept="image/*"
             onchange="show()"
+            required
           />
           <img class="img-upload" id="img" />
         </div>
@@ -129,18 +130,20 @@
             id="product-title"
             type="text"
             placeholder="Breve nombre del artículo"
+            required
           />
         </div>
       </div>
 
       <div class="field">
-        <label for="text-upload" class="label">Breve descripción</label>
+        <label class="label">Breve descripción</label>
         <div class="control">
           <textarea
             class="input-textarea"
             id="text-upload"
             name="text-upload"
             placeholder="Tu descripción..."
+            required
           ></textarea>
         </div>
       </div>
@@ -157,7 +160,7 @@
 
       <div class="field">
         <div class="control">
-          <button class="btn">Enviar</button>
+          <button type="button" class="btn">Enviar</button>
         </div>
       </div>
     </form>
