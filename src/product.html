@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <link rel="shortcut icon" href="./img/logotipo-icon.ico" />
-    <title>Categorías | Tecnología, Hogar, Mascotas, Juegos, Ropa y Deportes</title>
+    <title>
+      Categorías | Tecnología, Hogar, Mascotas, Juegos, Ropa y Deportes
+    </title>
     <script src="js/nav.js" defer></script>
     <script type="module" src="./js/manejousuario.js"></script>
     <script src="./js/upload-product.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--Comienzo Navigation Bar-->
 
     <header id="header">
-        <div class="logo-space">
-            <a class="logo" href="index.html"><img src="img/logotipo3.png" alt="Logotipo" /></a>
-            <div class="name-logo">
-                <p>CÁMBIALO</p>
-            </div>
+      <div class="logo-space">
+        <a class="logo" href="index.html"
+          ><img src="img/logotipo3.png" alt="Logotipo"
+        /></a>
+        <div class="name-logo">
+          <p>CÁMBIALO</p>
         </div>
+      </div>
 
-        <!--Barra búsqueda
+      <!--Barra búsqueda
        <div class="barra_busqueda">
 
         <div class="container-4">
@@ -42,29 +59,33 @@
           />
           <button class="icon"><i class="fa fa-search"></i></button>
         </div> -->
-        <button class="mobile-nav-toggle" aria-controls="main-menu" aria-expanded="false">
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="main-menu"
+        aria-expanded="false"
+      >
         <span class="sr-only">Menu</span>
       </button>
 
-        <!-- Enlaces -->
-        <div class="link-box" data-visible="false">
-            <nav>
-                <ul id="main-menu" class="main-menu">
-                    <li class="menu-item"><a href="index.html">Inicio</a></li>
-                    <li class="menu-item">
-                        <a href="./product.html">Productos</a>
-                    </li>
-                    <li class="menu-item"><a href="contact.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <!-- Botones -->
-            <div id="botonesLogin" class="login-btn">
-                <button id="btnInicio" class="styless-btn">
+      <!-- Enlaces -->
+      <div class="link-box" data-visible="false">
+        <nav>
+          <ul id="main-menu" class="main-menu">
+            <li class="menu-item"><a href="index.html">Inicio</a></li>
+            <li class="menu-item">
+              <a href="./product.html">Productos</a>
+            </li>
+            <li class="menu-item"><a href="contact.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <!-- Botones -->
+        <div id="botonesLogin" class="login-btn">
+          <button id="btnInicio" class="styless-btn">
             <a class="sign-in-btn" href="login-register.html">Iniciar sesión</a>
           </button>
-            </div>
         </div>
-        <!-- <button class="styless-btn hamburger" >
+      </div>
+      <!-- <button class="styless-btn hamburger" >
 
         </button> -->
     </header>
@@ -73,465 +94,539 @@
 
     <!--Cuerpo categorias-->
     <div>
-        <p class="breadcrum">
-            <a href="index.html">Inicio</a> >
-            <a class="subrayar" href="product.html">Tienda</a>
-        </p>
+      <p class="breadcrum">
+        <a href="index.html">Inicio</a> >
+        <a class="subrayar" href="product.html">Tienda</a>
+      </p>
     </div>
     <div>
-        <h1 class="text-store">Categorías</h1>
+      <h1 class="text-store">Categorías</h1>
     </div>
 
     <div class="container-categories">
-        <div class="card-category">
-            <a href="#technology">
-                <img class="img-category" src="img/product1.jpg" alt="bolsa de productos" />
-                <h2 class="text-category">Tecnología</h2>
-            </a>
-        </div>
-        <div class="card-category">
-            <a href="#home">
-                <img class="img-category" src="img/product2.jpg" alt="bolsa de productos" />
-                <h2 class="text-category">Hogar</h2>
-            </a>
-        </div>
-        <div class="card-category">
-            <a href="#pets">
-                <img class="img-category" src="img/product3.jpg" alt="bolsa de productos" />
-                <h2 class="text-category">Mascotas</h2>
-            </a>
-        </div>
-        <div class="card-category">
-            <a href="#games">
-                <img class="img-category" src="img/product5.jpg" alt="bolsa de productos" />
-                <h2 class="text-category">Juegos</h2>
-            </a>
-        </div>
-        <div class="card-category">
-            <a href="#clothes">
-                <img class="img-category" src="img/product4.jpg" alt="bolsa de productos" />
-                <h2 class="text-category">Ropa</h2>
-            </a>
-        </div>
-        <div class="card-category">
-            <a href="#sports">
-                <img class="img-category" src="img/product6.jpg" alt="bolsa de productos" />
-                <h2 class="text-category">Deportes</h2>
-            </a>
-        </div>
+      <div class="card-category">
+        <a href="#technology">
+          <img
+            class="img-category"
+            src="img/product1.jpg"
+            alt="bolsa de productos"
+          />
+          <h2 class="text-category">Tecnología</h2>
+        </a>
+      </div>
+      <div class="card-category">
+        <a href="#home">
+          <img
+            class="img-category"
+            src="img/product2.jpg"
+            alt="bolsa de productos"
+          />
+          <h2 class="text-category">Hogar</h2>
+        </a>
+      </div>
+      <div class="card-category">
+        <a href="#pets">
+          <img
+            class="img-category"
+            src="img/product3.jpg"
+            alt="bolsa de productos"
+          />
+          <h2 class="text-category">Mascotas</h2>
+        </a>
+      </div>
+      <div class="card-category">
+        <a href="#games">
+          <img
+            class="img-category"
+            src="img/product5.jpg"
+            alt="bolsa de productos"
+          />
+          <h2 class="text-category">Juegos</h2>
+        </a>
+      </div>
+      <div class="card-category">
+        <a href="#clothes">
+          <img
+            class="img-category"
+            src="img/product4.jpg"
+            alt="bolsa de productos"
+          />
+          <h2 class="text-category">Ropa</h2>
+        </a>
+      </div>
+      <div class="card-category">
+        <a href="#sports">
+          <img
+            class="img-category"
+            src="img/product6.jpg"
+            alt="bolsa de productos"
+          />
+          <h2 class="text-category">Deportes</h2>
+        </a>
+      </div>
     </div>
     <!-- fin categorias-->
     <!-- slogan-->
     <div class="slogan-banner">
-        <h2 class="slogan-title">
-            <strong>¿Quieres devolver tu regalo de Reyes y Navidad?</strong>
-        </h2>
-        <p class="slogan-text">
-            Te damos la posibilidad de cambiar los regalos sin dejar la moral de tu familia y amigos por los suelos.
-        </p>
+      <h2 class="slogan-title">
+        <strong>¿Quieres devolver tu regalo de Reyes y Navidad?</strong>
+      </h2>
+      <p class="slogan-text">
+        Te damos la posibilidad de cambiar los regalos sin dejar la moral de tu
+        familia y amigos por los suelos.
+      </p>
     </div>
 
     <hr />
     <div>
-        <p class="text-store">Todos los resultados:</p>
+      <p class="text-store">Todos los resultados:</p>
     </div>
 
     <!--cards de productos-->
-    <section class="
-        columns
-        products
-        is-multiline is-mobile
-        has-text-centered
-        product-container
-        is-flex
-      ">
-        <div id="technology" class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <img src="img/products/tecnologia-movil.webp" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">iPhone 11</p>
-                    <p class="has-text-left">
-                        iPhone 11 de 64gb negro tiene 3 fundas, con su factura y garantía, está nuevo pero me gusta más Android.
-                    </p>
-                </div>
-            </div>
+    <section
+      class="columns products is-multiline is-mobile has-text-centered product-container is-flex"
+    >
+      <div id="technology" class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/tecnologia-movil.webp" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">iPhone 11</p>
+            <p class="has-text-left">
+              iPhone 11 de 64gb negro tiene 3 fundas, con su factura y garantía,
+              está nuevo pero me gusta más Android.
+            </p>
+          </div>
         </div>
-        <div class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <img src="img/products/tecnologia-pc.jpg" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">Portatil AAA</p>
-                    <p class="has-text-left">
-                        Portatil traído de China, no tiene garantía, es un Intel Celerón así que ningún problema de velocidad.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/tecnologia-pc.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Portatil AAA</p>
+            <p class="has-text-left">
+              Portatil traído de China, no tiene garantía, es un Intel Celerón
+              así que ningún problema de velocidad.
+            </p>
+          </div>
         </div>
-        <div class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <a href="product_confirm.html">
-                    <img src="img/products/tecnologia-switch.webp" alt="" />
-                    <div class="text-product">
-                        <p class="green">Disponible</p>
-                        <p class="has-text-weight-bold">Nintendo Switch</p>
-                        <p class="has-text-left">
-                            Se la regalé a mi novia porque "iba a jugar mucho" y la tengo aquí cogiendo polvo, te regalo 5 juegos también.
-                        </p>
-                    </div>
-                </a>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <a href="product_confirm.html">
+            <img src="img/products/tecnologia-switch.webp" alt="" />
+            <div class="text-product">
+              <p class="green">Disponible</p>
+              <p class="has-text-weight-bold">Nintendo Switch</p>
+              <p class="has-text-left">
+                Se la regalé a mi novia porque "iba a jugar mucho" y la tengo
+                aquí cogiendo polvo, te regalo 5 juegos también.
+              </p>
             </div>
+          </a>
         </div>
-        <div class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <img src="img/products/tecnologia-tv.webp" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">TV *casi* Nueva</p>
-                    <p class="has-text-left">
-                        TV comprada en Carrefour, tiene su factura y es de 43 pulgadas, 4K. Está bastante bien porque poco se usó.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/tecnologia-tv.webp" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">TV *casi* Nueva</p>
+            <p class="has-text-left">
+              TV comprada en Carrefour, tiene su factura y es de 43 pulgadas,
+              4K. Está bastante bien porque poco se usó.
+            </p>
+          </div>
         </div>
-        <div id="home" class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <img src="img/products/hogar-lamp.webp" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">Lámpara bien moderna</p>
-                    <p class="has-text-left">
-                        Lámpara moderna, viene con el sombrero y las gafas. Tiene una pata un poco coja, pero cumple su función.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div id="home" class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/hogar-lamp.webp" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Lámpara bien moderna</p>
+            <p class="has-text-left">
+              Lámpara moderna, viene con el sombrero y las gafas. Tiene una pata
+              un poco coja, pero cumple su función.
+            </p>
+          </div>
         </div>
-        <div class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <img src="img/products/hogar-mesita.webp" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">Mesa de Noche</p>
-                    <p class="has-text-left">
-                        Mesa de noche de madera clara, está en perfecto estado como en la foto. Perfecta si te falta una en tu habitación.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/hogar-mesita.webp" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Mesa de Noche</p>
+            <p class="has-text-left">
+              Mesa de noche de madera clara, está en perfecto estado como en la
+              foto. Perfecta si te falta una en tu habitación.
+            </p>
+          </div>
         </div>
-        <div class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <img src="img/products/hogar-silla.webp" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">Silla Comedor</p>
-                    <p class="has-text-left">
-                        Silla estilo revista de IKEA, la quito porque no pega con nada en mi casa. Solo me queda esta, ya vendí las demás.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/hogar-silla.webp" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Silla Comedor</p>
+            <p class="has-text-left">
+              Silla estilo revista de IKEA, la quito porque no pega con nada en
+              mi casa. Solo me queda esta, ya vendí las demás.
+            </p>
+          </div>
         </div>
-        <div class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <img src="img/products/hogar-sofa.webp" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">Sofá de IKEA</p>
-                    <p class="has-text-left">
-                        Sofá un poco desgastado por el uso. Es color beige claro y es de 2 plazas. Tiene su factura pero no garantía ya.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/hogar-sofa.webp" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Sofá de IKEA</p>
+            <p class="has-text-left">
+              Sofá un poco desgastado por el uso. Es color beige claro y es de 2
+              plazas. Tiene su factura pero no garantía ya.
+            </p>
+          </div>
         </div>
-        <div id="pets" class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <img src="img/products/mascotas-cattoy.webp" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">Juguete de Gato</p>
-                    <p class="has-text-left">
-                        Juguete grande. Ocupa la mitad de mi salón y por eso tengo que quitarlo. Cumple su función y al gato le gusta.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div id="pets" class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/mascotas-cattoy.webp" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Juguete de Gato</p>
+            <p class="has-text-left">
+              Juguete grande. Ocupa la mitad de mi salón y por eso tengo que
+              quitarlo. Cumple su función y al gato le gusta.
+            </p>
+          </div>
         </div>
-        <div class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <img src="img/products/mascotas-comedero.jpg" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">Comedero de Mascota</p>
-                    <p class="has-text-left">
-                        Comedero bien fancy. Para cualquier animal. La madera un poco deteriorada por la humedad, pero nada más.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/mascotas-comedero.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Comedero de Mascota</p>
+            <p class="has-text-left">
+              Comedero bien fancy. Para cualquier animal. La madera un poco
+              deteriorada por la humedad, pero nada más.
+            </p>
+          </div>
         </div>
-        <div class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <img src="img/products/mascotas-dogtoy.webp" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">Juguete para Perrito</p>
-                    <p class="has-text-left">
-                        En realidad me gusta más a mí que a mi mascota, y no lo veo sano. Es un patito chulo para hacer duchas amenas.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/mascotas-dogtoy.webp" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Juguete para Perrito</p>
+            <p class="has-text-left">
+              En realidad me gusta más a mí que a mi mascota, y no lo veo sano.
+              Es un patito chulo para hacer duchas amenas.
+            </p>
+          </div>
         </div>
-        <div class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <img src="img/products/mascotas-transportin.webp" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">Transportín Bonito</p>
-                    <p class="has-text-left">
-                        Transportín de marca. Está arañada por dentro. Es color naranja y es de cuero de mentira.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/mascotas-transportin.webp" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Transportín Bonito</p>
+            <p class="has-text-left">
+              Transportín de marca. Está arañada por dentro. Es color naranja y
+              es de cuero de mentira.
+            </p>
+          </div>
         </div>
-        <div id="games" class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <img src="img/products/juego-monopoly.jpg" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">Monopoly clásico</p>
-                    <p class="has-text-left">
-                        Lo cambio por no poder jugar, mi familia me roba el dinero cuando no estoy atento. Como nuevo, con todas sus piezas.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div id="games" class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/juego-monopoly.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Monopoly clásico</p>
+            <p class="has-text-left">
+              Lo cambio por no poder jugar, mi familia me roba el dinero cuando
+              no estoy atento. Como nuevo, con todas sus piezas.
+            </p>
+          </div>
         </div>
-        <div class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <img src="img/products/juego-sims.jpg" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">The Sims 4 - PS4</p>
-                    <p class="has-text-left">
-                        Juego original, por fin mi vida me parece mas divertida que la que hago en este juego. Cambio por cualquier cosa de bowling.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/juego-sims.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">The Sims 4 - PS4</p>
+            <p class="has-text-left">
+              Juego original, por fin mi vida me parece mas divertida que la que
+              hago en este juego. Cambio por cualquier cosa de bowling.
+            </p>
+          </div>
         </div>
-        <div class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <img src="img/products/juego-twister.jpg" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">Twister</p>
-                    <p class="has-text-left">
-                        Solo usado una vez, mi suegra se cayó y casi no lo cuenta. Lo recomiendo mucho para niños que son mas flexibles.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/juego-twister.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Twister</p>
+            <p class="has-text-left">
+              Solo usado una vez, mi suegra se cayó y casi no lo cuenta. Lo
+              recomiendo mucho para niños que son mas flexibles.
+            </p>
+          </div>
         </div>
-        <div class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <img src="img/products/juego-zelda.webp" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">Zelda para Switch</p>
-                    <p class="has-text-left">
-                        Edicion Breath of the Wild, el envio lo pagas tu, solo cambio por el juego de Crash Bandicoot, no ofrecerme nada mas.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/juego-zelda.webp" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Zelda para Switch</p>
+            <p class="has-text-left">
+              Edicion Breath of the Wild, el envio lo pagas tu, solo cambio por
+              el juego de Crash Bandicoot, no ofrecerme nada mas.
+            </p>
+          </div>
         </div>
-        <div id="clothes" class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <img src="img/products/ropa-camisa.jpg" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">Camisa blanca de Zara</p>
-                    <p class="has-text-left">
-                        Talla M, tiene la etiqueta y todo. Me lo regalaron de cumpleaños pero me queda pequeña. La envío con la bolsa que me dieron también.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div id="clothes" class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/ropa-camisa.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Camisa blanca de Zara</p>
+            <p class="has-text-left">
+              Talla M, tiene la etiqueta y todo. Me lo regalaron de cumpleaños
+              pero me queda pequeña. La envío con la bolsa que me dieron
+              también.
+            </p>
+          </div>
         </div>
-        <div class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <img src="img/products/ropa-pantalon.jpg" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">Pantalones Levis</p>
-                    <p class="has-text-left">
-                        Poco uso, molones, un poco acartonados pero el color azul es chulo. Talla 46, tiene un detalle en el bolsillo de atras pero nada grave.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/ropa-pantalon.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Pantalones Levis</p>
+            <p class="has-text-left">
+              Poco uso, molones, un poco acartonados pero el color azul es
+              chulo. Talla 46, tiene un detalle en el bolsillo de atras pero
+              nada grave.
+            </p>
+          </div>
         </div>
-        <div class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <img src="img/products/ropa-sombrero.jpg" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">Sombrero de rayas</p>
-                    <p class="has-text-left">
-                        Para el verano! si vives en canarias lo vas a usar todo el año que te lo digo yo, CASI nuevo. Buena calidad, si se te olvida en el horno sale igualito.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/ropa-sombrero.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Sombrero de rayas</p>
+            <p class="has-text-left">
+              Para el verano! si vives en canarias lo vas a usar todo el año que
+              te lo digo yo, CASI nuevo. Buena calidad, si se te olvida en el
+              horno sale igualito.
+            </p>
+          </div>
         </div>
-        <div class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <img src="img/products/ropa-zapatos.jpg" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">Zapatos Beige de Bershka</p>
-                    <p class="has-text-left">
-                        Zapatos de la temporada pasada de primavera-verano de Bershka, solo los use para tomarme fotos para el instagram.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/ropa-zapatos.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Zapatos Beige de Bershka</p>
+            <p class="has-text-left">
+              Zapatos de la temporada pasada de primavera-verano de Bershka,
+              solo los use para tomarme fotos para el instagram.
+            </p>
+          </div>
         </div>
-        <div id="sports" class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <img src="img/products/deporte-eski.jpg" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">Esquíes</p>
-                    <p class="has-text-left">
-                        Los cambio por no uso, la única vez que los utilice fue con Filomena, la mejor experiencia en Madrid de mi vida.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div id="sports" class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/deporte-eski.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Esquíes</p>
+            <p class="has-text-left">
+              Los cambio por no uso, la única vez que los utilice fue con
+              Filomena, la mejor experiencia en Madrid de mi vida.
+            </p>
+          </div>
         </div>
-        <div class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <img src="img/products/deporte-futbol.jpg" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">Balón de fútbol</p>
-                    <p class="has-text-left">
-                        Se parece al de la foto, lo tiene mi primo pero en cuanto me lo devuelva te lo envío. Es verde, si lo quieres de otro color avisame que lo pinto.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/deporte-futbol.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Balón de fútbol</p>
+            <p class="has-text-left">
+              Se parece al de la foto, lo tiene mi primo pero en cuanto me lo
+              devuelva te lo envío. Es verde, si lo quieres de otro color
+              avisame que lo pinto.
+            </p>
+          </div>
         </div>
-        <div class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <img src="img/products/deporte-padel.jpg" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">Bolsa de Pádel</p>
-                    <p class="has-text-left">
-                        ME quiero deshacer de esto. No lo uso desde hace 5 años pero cuando mi familia lo ve se creen que tengo mucho dinero y me piden.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/deporte-padel.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Bolsa de Pádel</p>
+            <p class="has-text-left">
+              ME quiero deshacer de esto. No lo uso desde hace 5 años pero
+              cuando mi familia lo ve se creen que tengo mucho dinero y me
+              piden.
+            </p>
+          </div>
         </div>
-        <div class="column is-half-touch is-one-quarter-desktop">
-            <div class="product-card">
-                <img src="img/products/deporte-tenis.jpg" alt="" />
-                <div class="text-product">
-                    <p class="green">Disponible</p>
-                    <p class="has-text-weight-bold">Raqueta de Tenis</p>
-                    <p class="has-text-left">
-                        Para reparar, es ezone original. Me la dio el primo del vecino de Nadal, me ha dado buena suerte en los exámenes. La entrego con una pelota.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="column is-half-touch is-one-quarter-desktop">
+        <div class="product-card">
+          <img src="img/products/deporte-tenis.jpg" alt="" />
+          <div class="text-product">
+            <p class="green">Disponible</p>
+            <p class="has-text-weight-bold">Raqueta de Tenis</p>
+            <p class="has-text-left">
+              Para reparar, es ezone original. Me la dio el primo del vecino de
+              Nadal, me ha dado buena suerte en los exámenes. La entrego con una
+              pelota.
+            </p>
+          </div>
         </div>
+      </div>
+      <div
+        id="producto"
+        class="column is-half-touch is-one-quarter-desktop"
+      ></div>
     </section>
     <nav class="pagination" role="navigation" aria-label="pagination">
-        <a class="pagination-previous is-disabled" title="This is the first page">Previous</a
+      <a class="pagination-previous is-disabled" title="This is the first page"
+        >Previous</a
       >
       <a class="pagination-next">Next page</a>
-        <ul class="pagination-list">
-            <li>
-                <a class="pagination-link is-current" aria-label="Page 1" aria-current="page">1</a
+      <ul class="pagination-list">
+        <li>
+          <a
+            class="pagination-link is-current"
+            aria-label="Page 1"
+            aria-current="page"
+            >1</a
           >
         </li>
         <li>
           <a class="pagination-link" aria-label="Goto page 2">2</a>
-            </li>
-            <li>
-                <a class="pagination-link" aria-label="Goto page 3">3</a>
-            </li>
-        </ul>
+        </li>
+        <li>
+          <a class="pagination-link" aria-label="Goto page 3">3</a>
+        </li>
+      </ul>
     </nav>
 
     <!-- BOTONES BORRAR -->
     <div id="botonesBorrar1" class="login-btn">
-        <button id="btnBorrar1" class="styless-btn btn-hero">
-            <a class="" href=""></a>
-        </button>
+      <button id="btnBorrar1" class="styless-btn btn-hero">
+        <a class="" href=""></a>
+      </button>
     </div>
     <div id="botonesBorrar2" class="container has-text-right">
-        <h1 class="title"></h1>
-        <h3 class="subtitle"></h3>
-        <button id="btnBorrar2" class="button button-banner is-white">
-            <a href=""></a>
-        </button>
+      <h1 class="title"></h1>
+      <h3 class="subtitle"></h3>
+      <button id="btnBorrar2" class="button button-banner is-white">
+        <a href=""></a>
+      </button>
     </div>
 
     <!--banner-->
     <section>
-        <div class="banner-products">
-            <img class="img-banner-product" src="img/bg5banner.png" alt="imagen muchos articulos" />
-            <img class="img-slogan" src="img/banner_png_slogan1.png" />
-        </div>
+      <div class="banner-products">
+        <img
+          class="img-banner-product"
+          src="img/bg5banner.png"
+          alt="imagen muchos articulos"
+        />
+        <img class="img-slogan" src="img/banner_png_slogan1.png" />
+      </div>
     </section>
 
     <!-- footer -->
     <footer class="footer-container">
-        <nav class="link-container">
-
-            <div class="desktop-bg">
-                <ul class="footer-list">
-                    <li class="footer-link">
-                        <a href="index.html">INICIO</a>
-                    </li>
-                    <li class="footer-link">
-                        <a href="product.html">PRODUCTOS</a>
-                    </li>
-                    <li class="footer-link">
-                        <a href="contact.html">CONTACTO</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="desktop-bg">
-                <ul class="footer-list icon-flex">
-                    <li class="footer-link">
-                        <a href="https://www.facebook.com/Cambialocom-111304798084313/" target="_blank"><i class="rrss-icon fab fa-facebook-square"></i></a>
-                    </li>
-                    <li class="footer-link">
-                        <a href="https://www.instagram.com/cambialo_es/" target="_blank"><i class="rrss-icon fab fa-instagram"></i></a>
-                    </li>
-                    <li class="footer-link">
-                        <a href="https://twitter.com/CambialoES" target="_blank"><i class="rrss-icon fab fa-twitter-square"></i></a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="desktop-bg">
-                <ul class="footer-list">
-                    <li class="footer-link">
-                        <a href="mailto:info@cambialo.es">SOPORTE</a>
-                    </li>
-                    <li class="footer-link">
-                        <a href="terms-conditions.html" target="_blank">AVISO LEGAL</a>
-                    </li>
-                    <li class="footer-link">
-                        <a href="#">CONÓCENOS</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="footer-flex">
-            <a href="#">
-                <img class="logo" src="img/logotipo3.svg" width="25" height="25" alt="" />
-            </a>
-            <h4 class="footer-title">Cámbialo - </h4>
-            <p class="footer-rights">Copyright © 2021, Cámbialo ©</p>
+      <nav class="link-container">
+        <div class="desktop-bg">
+          <ul class="footer-list">
+            <li class="footer-link">
+              <a href="index.html">INICIO</a>
+            </li>
+            <li class="footer-link">
+              <a href="product.html">PRODUCTOS</a>
+            </li>
+            <li class="footer-link">
+              <a href="contact.html">CONTACTO</a>
+            </li>
+          </ul>
         </div>
+
+        <div class="desktop-bg">
+          <ul class="footer-list icon-flex">
+            <li class="footer-link">
+              <a
+                href="https://www.facebook.com/Cambialocom-111304798084313/"
+                target="_blank"
+                ><i class="rrss-icon fab fa-facebook-square"></i
+              ></a>
+            </li>
+            <li class="footer-link">
+              <a href="https://www.instagram.com/cambialo_es/" target="_blank"
+                ><i class="rrss-icon fab fa-instagram"></i
+              ></a>
+            </li>
+            <li class="footer-link">
+              <a href="https://twitter.com/CambialoES" target="_blank"
+                ><i class="rrss-icon fab fa-twitter-square"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="desktop-bg">
+          <ul class="footer-list">
+            <li class="footer-link">
+              <a href="mailto:info@cambialo.es">SOPORTE</a>
+            </li>
+            <li class="footer-link">
+              <a href="terms-conditions.html" target="_blank">AVISO LEGAL</a>
+            </li>
+            <li class="footer-link">
+              <a href="#">CONÓCENOS</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-flex">
+        <a href="#">
+          <img
+            class="logo"
+            src="img/logotipo3.svg"
+            width="25"
+            height="25"
+            alt=""
+          />
+        </a>
+        <h4 class="footer-title">Cámbialo -</h4>
+        <p class="footer-rights">Copyright © 2021, Cámbialo ©</p>
+      </div>
     </footer>
     <!-- fin footer -->
-
-</body>
-
+  </body>
 </html>

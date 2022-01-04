@@ -13,45 +13,59 @@ function show() {
   }
 }
 
-// como guardar datos recogidos del form y hacer un json con ellos
-function sendForm() {
-  const photoProduct = document.getElementById("img").src;
-  const nameProduct = document.getElementById("product-title").value;
-  const descriptionProduct = document.getElementById("text-upload").value;
-  const product = {
-    productName: nameProduct,
-    productDescription: descriptionProduct,
-    productPicture: photoProduct,
-  };
+const termsConditions = document.querySelector("#terms");
+termsConditions.addEventListener("change", (e) => e.preventDefault());
 
-  addProductToCatalog(product);
-  resetForm();
+const btnSubmit = document.querySelector(".btn");
+btnSubmit.addEventListener("click", sendForm);
+
+class Product {
+  constructor(title, description, picture) {
+    (this.title = title),
+      (this.description = description),
+      (this.picture = picture),
+      (this.availability = "Disponible");
+  }
 }
 
-// subida del producto a product.html y manz recomienda más bien así:
+function sendForm() {
+  const img = document.getElementById("img").src;
+  const megaTitle = document.getElementById("product-title").value;
+  const megaDescription = document.getElementById("text-upload").value;
 
-const addProductToCatalog = (product, classes) => {
+  const product = new Product();
+
+  product.picture = img;
+  product.title = megaTitle;
+  product.description = megaDescription;
+
+  const classes = {
+    card: "product-card",
+    paragraph: "has-text-weight-bold",
+    description: "has-text-left",
+    availability: "green",
+    text: "text-product",
+  };
+
+  addProductToCatalog(product, classes);
+
+  console.log(product);
+}
+
+function addProductToCatalog(product, classes) {
   const template = `
     <div class="${classes.card}">
-      <img src="${product.picture}" alt="${product.name}">
-      <p class="${classes.paragraph}">${product.name}</p>
-      <p class="${classes.description}">${product.description}</p>
+      <img src="${product.picture}" alt="${product.title}">
+      <div class="${classes.text}">
+        <p class="${classes.availability}">${product.availability}</p>
+        <p class="${classes.paragraph}">${product.title}</p>
+        <p class="${classes.description}">${product.description}</p>
+      </div>
     </div>
   `;
 
-  const catalog = document.querySelector("#product-catalog");
-  catalog.insertAdjacentHTML("beforeEnd", newProduct);
-};
+  const catalog = document.querySelector("#producto");
+  catalog.insertAdjacentHTML("beforeEnd", template);
+}
 
-// así lo mandamos a llamar
-const product = {
-  picture: "/image.jpg",
-  name: "Product Name",
-  description: "Large Description",
-};
-const classes = {
-  card: "product-card",
-  paragraph: "has-text-weight-bold",
-  description: "has-text-left",
-};
-addProductToCatalog(product, classes);
+// como guardar datos recogidos del form y hacer un json con ellos
