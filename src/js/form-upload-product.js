@@ -19,7 +19,6 @@ function show() {
     };
   }
 }
-
 class Product {
   constructor(title, description, picture, availability = true) {
     this.title = title;
@@ -45,8 +44,8 @@ function sendForm() {
   // product.title = megaTitle;
   // product.description = megaDescription;
   saveLocalStorage(megaTitle, product);
+  document.location = "./product.html";
   // addProductToCatalog(product);
-  console.log(product);
 }
 window.addEventListener("DOMContentLoaded", () => {
   if (localStorage.getItem("Lista de Productos") != null) {

@@ -3,39 +3,15 @@
 //  Json de los productos
 let listProduct = [];
 
-// ! const termsConditions = document.querySelector("#terms");
-//revisar este prevent default
-// ! termsConditions.addEventListener("change", (e) => e.preventDefault());
-
-/* const btnSubmit = document.querySelector(".btn");
-btnSubmit.addEventListener("click", sendForm);*/
-
 class Product {
   constructor(title, description, picture, availability = true) {
     this.title = title;
     this.description = description;
     this.picture = picture;
-
     this.availability = availability ? "Disponible" : "No Disponible";
   }
 }
-
-function sendForm() {
-  const img = document.getElementById("img").src;
-  const megaTitle = document.getElementById("product-title").value;
-  const megaDescription = document.getElementById("text-upload").value;
-
-  const product = new Product(megaTitle, megaDescription, img);
-
-  // product.picture = img;
-  // product.title = megaTitle;
-  // product.description = megaDescription;
-  listProduct.push(product);
-  // addProductToCatalog(product);
-
-  console.log(product);
-}
-
+//nos falto el padre para que se viera la info pero solved ya
 function addProductToCatalog(product, container) {
   const classes = {
     divCard: "column is-half-touch is-one-quarter-desktop",
@@ -57,25 +33,24 @@ function addProductToCatalog(product, container) {
     </div>
   </div>
   `;
-  // const catalog = document.querySelector("#producto");
   container.insertAdjacentHTML("beforeEnd", template);
 }
+//trae los datos del JSON, si nos aprueba pasamos al sig evento. Sino coge y arroja error.
 function createProduct() {
   fetch("js/producto.json")
     .then((response) => response.json())
     .catch((error) => console.error("Esto no funciona", error))
     .then((data) => {
-      // Array de los productos del JSON
-
+      // Array de los productos del JSON. Con un bucle lo metemos dentro de una variable global para poder trabajar.
       for (let index in data) {
         listProduct.push(data[index]);
       }
-      console.log(listProduct);
       createAllProduct(listProduct);
     });
 }
+
 function createAllProduct(ProductList) {
-  const containerProduct = document.querySelector(".product-container");
+  const containerProduct = document.querySelector(".product-container"); //la section
   for (let index in ProductList) {
     const ItemJSON = ProductList[index];
     const Product1 = new Product(
@@ -87,18 +62,20 @@ function createAllProduct(ProductList) {
     addProductToCatalog(Product1, containerProduct);
   }
 }
+// la ventana escucha por el DOM
 window.addEventListener("DOMContentLoaded", () => {
+  //solo obtengo una lista de los titulos de los productos
   if (localStorage.getItem("Lista de productos") != null) {
     let listUploadProduct = JSON.parse(
       localStorage.getItem("Lista de productos")
-    );
+    ); //SI en el storage, cogeme el item y si es distinto de nulo, procesas el item (un array de titulos).
     for (let index in listUploadProduct) {
       const UploadProduct = JSON.parse(
         localStorage.getItem(listUploadProduct[index])
-      );
+      ); // y con ese array iteramos dentro de la lista de titulos para coger el resto de items que se han subido (img, description) solo funciona en tu ordenador mientras lo subes, no es un backend real.
       console.log(UploadProduct);
-      listProduct.push(UploadProduct);
+      listProduct.push(UploadProduct); //aqui meto upload product dentro de list product.
     }
   }
-  createProduct();
+  createProduct(); //procesado del json junto con la variable global
 });
