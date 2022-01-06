@@ -1,16 +1,29 @@
 /* eslint-disable quote-props */
 /* eslint-disable quotes */
+const Encuentrame = (param, array) => {
+  for (let i in array) {
+    if (array[i].textContent === param) {
+      return array[i];
+    }
+  }
+};
 //  Json de los productos
 let listProduct = [];
 
 class Product {
-  constructor(title, description, picture, availability = true) {
+  constructor(title, description, picture, category, availability = true) {
+    this.id = title
+      .toLowerCase()
+      .replace(/ /g, "-")
+      .replace(/[^\w-]+/g, "");
     this.title = title;
     this.description = description;
     this.picture = picture;
     this.availability = availability ? "Disponible" : "No Disponible";
+    this.category = category;
   }
 }
+
 //nos falto el padre para que se viera la info pero solved ya
 function addProductToCatalog(product, container) {
   const classes = {
@@ -21,8 +34,9 @@ function addProductToCatalog(product, container) {
     availability: "green",
     text: "text-product",
   };
+
   const template = `
-  <div class="${classes.divCard}">
+  <div class="${classes.divCard}" id="${product.id}" onclick="showChangeProduct()">
     <div class="${classes.card}">
       <img src="${product.picture}" alt="${product.title}">
       <div class="${classes.text}">
@@ -35,6 +49,23 @@ function addProductToCatalog(product, container) {
   `;
   container.insertAdjacentHTML("beforeEnd", template);
 }
+
+// function addEvent() {
+// const Tarjetas = document.querySelectorAll("div.column is-half-touch is-one-quarter-desktop");
+//   Tarjetas.forEach((divCard) =>
+//     divCard.addEventListener("click", showChangeProduct)
+//   );
+// }
+
+//mostrar la pagina de confirm product
+function showChangeProduct(e) {
+  const esto = e;
+  console.log(e);
+  // console.log(this);
+  //const target = e.currentTarget;
+  //return (document.location = "./product_confirm.html");
+}
+
 //trae los datos del JSON, si nos aprueba pasamos al sig evento. Sino coge y arroja error.
 function createProduct() {
   fetch("js/producto.json")
@@ -57,7 +88,8 @@ function createAllProduct(ProductList) {
       ItemJSON.title,
       ItemJSON.description,
       ItemJSON.picture,
-      ItemJSON.available
+      ItemJSON.available,
+      ItemJSON.category
     );
     addProductToCatalog(Product1, containerProduct);
   }
@@ -78,4 +110,5 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
   createProduct(); //procesado del json junto con la variable global
+  // addEvent();
 });

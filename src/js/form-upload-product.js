@@ -1,3 +1,4 @@
+//este archivo solo se ocupa de mostrar la foto en el form y enviar el formulario
 let listItemsUploaded = [];
 const termsConditions = document.querySelector("#terms");
 //revisar este prevent default
@@ -20,12 +21,12 @@ function show() {
   }
 }
 class Product {
-  constructor(title, description, picture, availability = true) {
+  constructor(title, description, picture, category, availability = true) {
     this.title = title;
     this.description = description;
     this.picture = picture;
-
     this.availability = availability ? "Disponible" : "No Disponible";
+    this.category = category;
   }
 }
 const saveLocalStorage = (title, product) =>
@@ -36,8 +37,9 @@ function sendForm() {
   const img = document.getElementById("img").src;
   const megaTitle = document.getElementById("product-title").value;
   const megaDescription = document.getElementById("text-upload").value;
+  const megaCategory = document.getElementById("list-category").value;
 
-  const product = new Product(megaTitle, megaDescription, img);
+  const product = new Product(megaTitle, megaDescription, img, megaCategory);
   listItemsUploaded.push(megaTitle);
   saveLocalStorage("Lista de productos", listItemsUploaded);
   // product.picture = img;
