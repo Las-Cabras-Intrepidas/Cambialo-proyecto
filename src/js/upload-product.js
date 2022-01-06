@@ -1,12 +1,5 @@
 /* eslint-disable quote-props */
 /* eslint-disable quotes */
-const Encuentrame = (param, array) => {
-  for (let i in array) {
-    if (array[i].textContent === param) {
-      return array[i];
-    }
-  }
-};
 //  Json de los productos
 let listProduct = [];
 
@@ -49,21 +42,11 @@ function addProductToCatalog(product, container) {
   `;
   container.insertAdjacentHTML("beforeEnd", template);
 }
+//filter por categoria
 
-// function addEvent() {
-// const Tarjetas = document.querySelectorAll("div.column is-half-touch is-one-quarter-desktop");
-//   Tarjetas.forEach((divCard) =>
-//     divCard.addEventListener("click", showChangeProduct)
-//   );
-// }
-
-//mostrar la pagina de confirm product
-function showChangeProduct(e) {
-  const esto = e;
-  console.log(e);
-  // console.log(this);
-  //const target = e.currentTarget;
-  //return (document.location = "./product_confirm.html");
+//mostrar la pagina de confirm product en click
+function showChangeProduct() {
+  return (document.location = "./product_confirm.html");
 }
 
 //trae los datos del JSON, si nos aprueba pasamos al sig evento. Sino coge y arroja error.
@@ -110,5 +93,4 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   }
   createProduct(); //procesado del json junto con la variable global
-  // addEvent();
 });
