@@ -475,6 +475,10 @@ hr {
   padding-bottom: 5px;
 }
 
+.product-card:hover {
+  cursor: pointer;
+}
+
 .has-text-left {
   font-size: 14px;
   margin: 8px;

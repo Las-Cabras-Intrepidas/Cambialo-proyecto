@@ -32,7 +32,7 @@
     </title>
     <script src="js/nav.js" defer></script>
     <script type="module" src="./js/manejousuario.js"></script>
-    <script src="./js/upload-product.js"></script>
+    <script defer src="./js/upload-product.js"></script>
   </head>
 
   <body>
@@ -103,8 +103,8 @@
       <h1 class="text-store">Categorías</h1>
     </div>
 
-    <div class="container-categories">
-      <div class="card-category">
+    <div class="container-categories" id="main-container">
+      <div class="card-category" id="Tecnologia">
         <a href="#technology">
           <img
             class="img-category"
@@ -114,7 +114,7 @@
           <h2 class="text-category">Tecnología</h2>
         </a>
       </div>
-      <div class="card-category">
+      <div class="card-category" id="Hogar">
         <a href="#home">
           <img
             class="img-category"
@@ -124,7 +124,7 @@
           <h2 class="text-category">Hogar</h2>
         </a>
       </div>
-      <div class="card-category">
+      <div class="card-category" id="Mascotas">
         <a href="#pets">
           <img
             class="img-category"
@@ -134,7 +134,7 @@
           <h2 class="text-category">Mascotas</h2>
         </a>
       </div>
-      <div class="card-category">
+      <div class="card-category" id="Juegos">
         <a href="#games">
           <img
             class="img-category"
@@ -144,7 +144,7 @@
           <h2 class="text-category">Juegos</h2>
         </a>
       </div>
-      <div class="card-category">
+      <div class="card-category" id="Ropa">
         <a href="#clothes">
           <img
             class="img-category"
@@ -154,7 +154,7 @@
           <h2 class="text-category">Ropa</h2>
         </a>
       </div>
-      <div class="card-category">
+      <div class="card-category" id="Deporte">
         <a href="#sports">
           <img
             class="img-category"
@@ -178,51 +178,54 @@
     </div>
 
     <hr />
-    <div>
-      <p class="text-store">Todos los resultados:</p>
-    </div>
 
-    <!--cards de productos-->
-    <section
-      class="columns products is-multiline is-mobile has-text-centered product-container is-flex"
-    >
+      <div>
+        <p class="text-store">Todos los resultados:</p>
+      </div>
+
+      <!--cards de productos-->
+      <section
+        class="columns products is-multiline is-mobile has-text-centered product-container is-flex"
+      ></section>
+      <nav class="pagination" role="navigation" aria-label="pagination">
+        <a
+          class="pagination-previous is-disabled"
+          title="This is the first page"
+          >Previous</a
+        >
+        <a class="pagination-next">Next page</a>
+        <ul class="pagination-list">
+          <li>
+            <a
+              class="pagination-link is-current"
+              aria-label="Page 1"
+              aria-current="page"
+              >1</a
+            >
+          </li>
+          <li>
+            <a class="pagination-link" aria-label="Goto page 2">2</a>
+          </li>
+          <li>
+            <a class="pagination-link" aria-label="Goto page 3">3</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- BOTONES BORRAR -->
+      <div id="botonesBorrar1" class="login-btn">
+        <button id="btnBorrar1" class="styless-btn btn-hero">
+          <a class="" href=""></a>
+        </button>
+      </div>
+      <div id="botonesBorrar2" class="container has-text-right">
+        <h1 class="title"></h1>
+        <h3 class="subtitle"></h3>
+        <button id="btnBorrar2" class="button button-banner is-white">
+          <a href=""></a>
+        </button>
+      </div>
     </section>
-    <nav class="pagination" role="navigation" aria-label="pagination">
-      <a class="pagination-previous is-disabled" title="This is the first page"
-        >Previous</a
-      >
-      <a class="pagination-next">Next page</a>
-      <ul class="pagination-list">
-        <li>
-          <a
-            class="pagination-link is-current"
-            aria-label="Page 1"
-            aria-current="page"
-            >1</a
-          >
-        </li>
-        <li>
-          <a class="pagination-link" aria-label="Goto page 2">2</a>
-        </li>
-        <li>
-          <a class="pagination-link" aria-label="Goto page 3">3</a>
-        </li>
-      </ul>
-    </nav>
-
-    <!-- BOTONES BORRAR -->
-    <div id="botonesBorrar1" class="login-btn">
-      <button id="btnBorrar1" class="styless-btn btn-hero">
-        <a class="" href=""></a>
-      </button>
-    </div>
-    <div id="botonesBorrar2" class="container has-text-right">
-      <h1 class="title"></h1>
-      <h3 class="subtitle"></h3>
-      <button id="btnBorrar2" class="button button-banner is-white">
-        <a href=""></a>
-      </button>
-    </div>
 
     <!--banner-->
     <section>
@@ -234,7 +237,6 @@
         />
         <img class="img-slogan" src="img/banner_png_slogan1.png" />
       </div>
-    </section>
 
     <!-- footer -->
     <footer class="footer-container">

@@ -94,3 +94,36 @@ window.addEventListener("DOMContentLoaded", () => {
   }
   createProduct(); //procesado del json junto con la variable global
 });
+
+/// Filtro por categorias
+
+// Reconocer la categoria seleccionada y guardarla en una variable
+
+const container = document.getElementById("main-container");
+const btnCategory = container.querySelectorAll(".card-category");
+
+btnCategory.forEach((category) =>
+  category.addEventListener("click", (e) => {
+    const categoryID = e.currentTarget.id;
+    document.querySelector(".product-container").innerHTML = "";
+    const listFiltered = listProduct.filter(
+      (item) => item.category === categoryID
+    );
+    createAllProduct(listFiltered);
+  })
+);
+
+//
+
+function showCategories() {
+  const listFiltered = filterList(listProduct, categoryID);
+  console.log(listFiltered);
+  document.querySelector(".main-container").innerHTML = "";
+  createProductsFiltered(listFiltered);
+}
+
+// Coger esa variable y usarla para filtrar el array de productos
+
+function filterList(arr, arg) {
+  arr.filter((item) => item.category === arg);
+}
