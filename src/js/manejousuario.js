@@ -1,86 +1,109 @@
 function getCookie(name) {
-    let dc = document.cookie;
-    let prefix = name + "=";
-    let begin = dc.indexOf("; " + prefix);
-    let end = document.cookie.indexOf(";", begin);
-    if (begin == -1) {
-        begin = dc.indexOf(prefix);
-        if (begin != 0) {
-            return null;
-        }
-    } else {
-        begin += 2;
+   let dc = document.cookie;
+   let prefix = name + '=';
+   let begin = dc.indexOf('; ' + prefix);
+   let end = document.cookie.indexOf(';', begin);
+   if (begin == -1) {
+      begin = dc.indexOf(prefix);
+      if (begin != 0) {
+         return null;
+      }
+   } else {
+      begin += 2;
 
-        if (end == -1) {
-            end = dc.length;
-        }
-    }
-    return dc.valueOf();
-    //return decodeURI(dc.substring(begin + prefix.length, end));
+      if (end == -1) {
+         end = dc.length;
+      }
+   }
+   return dc.valueOf();
+   //return decodeURI(dc.substring(begin + prefix.length, end));
 }
 
-let botonesBorrar1 = document.getElementById("botonesBorrar1");
-let botonesBorrar2 = document.getElementById("botonesBorrar2");
-let btnBorrar1 = document.getElementById("btnBorrar1");
-let btnBorrar2 = document.getElementById("btnBorrar2");
+let botonesBorrar1 = document.getElementById('botonesBorrar1');
+let botonesBorrar2 = document.getElementById('botonesBorrar2');
+let btnBorrar1 = document.getElementById('btnBorrar1');
+let btnBorrar2 = document.getElementById('btnBorrar2');
 
-let btnLogin = document.getElementById("btnInicio");
+let btnLogin = document.getElementById('btnInicio');
 
 function recogerCookie() {
-    let Nombre = getCookie("userName").split("userName=");
-    let datosIntro = "Hola, " + Nombre[1];
-    btnLogin.innerText = datosIntro;
-    //ELIMINAR LOS OTROS BOTONES
-    botonesBorrar1.removeChild(btnBorrar1);
-    botonesBorrar2.removeChild(btnBorrar2);
-    //CREAR BOTON CIERRE SESIÓN
-    botonCierre();
-    return Nombre;
+   let Nombre = getCookie('userName').split('userName=');
+   let datosIntro = 'Hola, ' + Nombre[1];
+   btnLogin.innerText = datosIntro;
+   //ELIMINAR LOS OTROS BOTONES
+   botonesBorrar1.removeChild(btnBorrar1);
+   botonesBorrar2.removeChild(btnBorrar2);
+   //CREAR BOTON CIERRE SESIÓN
+   botonCierre();
+   return Nombre;
 }
 
 function comprobarCookie() {
-    let clave = getCookie("userName");
-    if (clave == null) {
-        let noexiste = "noexiste";
-        return noexiste;
-    } else {
-        let existe = "existe";
-        return existe;
-    }
+   let clave = getCookie('userName');
+   if (clave == null) {
+      let noexiste = 'noexiste';
+      return noexiste;
+   } else {
+      let existe = 'existe';
+      return existe;
+   }
 }
 
 function deleteAllCookies() {
-    var cookies = document.cookie.split(";");
+   var cookies = document.cookie.split(';');
 
-    for (var i = 0; i < cookies.length; i++) {
-        var cookie = cookies[i];
-        var eqPos = cookie.indexOf("=");
-        var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
-    }
+   for (var i = 0; i < cookies.length; i++) {
+      var cookie = cookies[i];
+      var eqPos = cookie.indexOf('=');
+      var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+      document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT';
+   }
 }
 
 //MODIFICAR EL BUTTON
-if (comprobarCookie() == "existe") {
-    console.log("Hay una cookie");
-    recogerCookie();
-} else if (comprobarCookie() == "noexiste") {
-    console.log("No hay una cookie");
+if (comprobarCookie() == 'existe') {
+   console.log('Hay una cookie');
+   recogerCookie();
+} else if (comprobarCookie() == 'noexiste') {
+   console.log('No hay una cookie');
 }
 
 //CERRAR SESIÓN
 function botonCierre() {
-    let botonesLogin = document.getElementById("botonesLogin");
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.innerText = 'Logout';
-    //button.style.border=" solid 1px red ";
-    button.id = "btnCierreSesion";
+   let botonesLogin = document.getElementById('botonesLogin');
+   const button = document.createElement('button');
+   button.type = 'button';
+   button.innerText = 'Logout';
+   //button.style.border=" solid 1px red ";
+   button.id = 'btnCierreSesion';
 
-    botonesLogin.appendChild(button);
-    button.addEventListener("click", () => {
-        console.log("fufa");
-        deleteAllCookies();
-        location.reload();
-    });
+   botonesLogin.appendChild(button);
+   button.addEventListener('click', () => {
+      console.log('fufa');
+      deleteAllCookies();
+      location.reload();
+   });
+}
+
+// Botón de subir producto al estar logeado
+
+function botonSubirProducto() {
+   const buttondiv = document.querySelector('.main-menu');
+   const button = document.createElement('button');
+   button.type = 'button';
+   button.innerText = '+ Subir producto';
+   button.id = 'btnSubirProducto';
+
+   buttondiv.appendChild(button);
+   button.addEventListener('click', () => {
+      location.href = 'http://127.0.0.1:56950/uploadfile.html';
+   });
+}
+
+const logoutbutton = document.querySelector('#btnCierreSesion');
+const outbutton = logoutbutton.textContent;
+if (outbutton === 'Logout') {
+   botonSubirProducto();
+} else {
+   console.log('No funciona');
 }
