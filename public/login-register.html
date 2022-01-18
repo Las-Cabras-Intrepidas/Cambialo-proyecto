@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <link rel="stylesheet" href="./css/login-register.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="./img/logotipo-icon.ico" />
+    <title>Iniciar sesión</title>
+    <script type="module" src="./js/registrer.js"></script>
+</head>
+
+<body>
+
+    <div class="btn333">
+        <button class="button is-focused">
+            <a href="./index.html">Volver a Inicio</a>
+        </button>
+    </div>
+
+    <main>
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Iniciar sesión para entrar en la página</p>
+                    <button id="loginButton2">Iniciar sesión</button>
+                </div>
+                <div class="caja__trasera-register">
+                    <h3>¿Aún no tienes una cuenta?</h3>
+                    <p>Regístrate para poder iniciar sesión</p>
+                    <button id="registerButton2" style="background-color: #012bb3">
+                      Registrarse
+                   </button>
+                </div>
+            </div>
+
+            <!--Formulario de Login y registro-->
+            <div class="contenedor__login-register">
+                <!--Login-->
+                <form action="#" id="formLogin" method="GET" class="formulario__login">
+                    <h2>Iniciar sesión</h2>
+                    <input id="userLogin" type="text" placeholder="Nombre de usuario" required />
+                    <input id="pswLogin" type="password" placeholder="Contraseña" required />
+                    <button id="loginButton" style="background-color: #012bb3">
+                        Iniciar sesión
+                    </button>
+                </form>
+
+                <!--Register-->
+                <form action="#" id="formRegister" method="GET" class="formulario__register">
+                    <h2>Registrarse</h2>
+                    <input id="nameUser" type="text" placeholder="Nombre completo" required />
+                    <input id="user" type="text" placeholder="Nombre de usuario" required />
+                    <input id="psw" type="password" placeholder="Contraseña" required />
+
+                    <div class="check-container">
+                        <input id="checkTerms" type="checkbox" required />
+                        <span>Estoy de acuerdo con los<a href="./terms-conditions.html" target="_blank">términos y condiciones</a>.</span>
+                    </div>
+                    <br />
+                    <button id="registerButton" style="background-color: #012bb3">
+                      Registrarse
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div class="btn333">
+        <button class="button is-focused">
+            <a href="./product.html" >Ir a productos</a>
+        </button>
+    </div>
+
+</body>
+
+</html>
