@@ -960,3 +960,20 @@ h1 {
 .text-store {
   text-align: center;
 }
+
+/*Botón de subida*/
+#btnSubirProducto {
+   background-color: rgba(255, 255, 255, 0);
+   color: var(--main-color);
+   border: solid var(--main-color) 1px;
+   text-decoration: none;
+   font-size: 13px;
+   font-weight: bold;
+   border-radius: 15px;
+   height: 35px;
+   width: 125px;
+}
+#btnSubirProducto:hover{
+   background-color: var(--main-color);
+   color: #fff;
+}

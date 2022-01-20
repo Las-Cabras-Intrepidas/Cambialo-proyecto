@@ -81,7 +81,7 @@ function botonCierre() {
    button.addEventListener('click', () => {
       console.log('fufa');
       deleteAllCookies();
-      location.reload();
+      location.href = 'www.cambialo.eu'; //Esto envía a la página de inicio tras cerrar sesión
    });
 }
 
@@ -96,7 +96,7 @@ function botonSubirProducto() {
 
    buttondiv.appendChild(button);
    button.addEventListener('click', () => {
-      location.href = 'http://127.0.0.1:56950/uploadfile.html';
+      location.href = 'www.cambialo.eu/uploadfile.html';
    });
 }
 
