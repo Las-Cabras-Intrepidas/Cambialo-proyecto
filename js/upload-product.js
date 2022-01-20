@@ -29,7 +29,6 @@ function addProductToCatalog(product, container) {
    };
 
    const template = `
->>>>>>> origin/release
   <div class="${classes.divCard}" id="${product.id}" onclick="showChangeProduct()">
     <div class="${classes.card}">
       <img src="${product.picture}" alt="${product.title}">
