@@ -1,0 +1,194 @@
+[
+   {
+      "title": "iPhone 11",
+      "available": true,
+      "description": "iPhone 11 de 64gb negro tiene 3 fundas, con su factura y garantía, está nuevo pero me gusta más Android",
+      "picture": "https://res.cloudinary.com/dleqykpqi/image/upload/v1641317660/cambialo/tecnologia-movil_j1tjqt.webp",
+      "suNumero": true,
+      "category": "Tecnologia"
+   },
+   {
+      "title": "Portatil AAA",
+      "available": true,
+      "description": "Portatil traído de China, no tiene garantía, es un Intel Celerón así que ningún problema de velocidad.",
+      "picture": "https://res.cloudinary.com/dleqykpqi/image/upload/v1641317660/cambialo/tecnologia-pc_yfyzke.jpg",
+      "suNumero": true,
+      "category": "Tecnologia"
+   },
+   {
+      "title": "Nintendo Switch",
+      "available": true,
+      "description": "Se la regalé a mi novia porque 'iba a jugar mucho' y la tengo aquí cogiendo polvo, te regalo 5 juegos también.",
+      "picture": "https://res.cloudinary.com/dleqykpqi/image/upload/v1641317660/cambialo/tecnologia-switch_mmmmif.webp",
+      "suNumero": true,
+      "category": "Tecnologia"
+   },
+   {
+      "title": "TV *casi* Nueva",
+      "available": true,
+      "description": "TV comprada en Carrefour, tiene su factura y es de 43 pulgadas, 4K. Está bastante bien porque poco se usó.",
+      "picture": "https://res.cloudinary.com/dleqykpqi/image/upload/v1641317660/cambialo/tecnologia-tv_zeqyzc.webp",
+      "suNumero": true,
+      "category": "Tecnologia"
+   },
+   {
+      "title": "Lámpara bien moderna",
+      "available": true,
+      "description": "Lámpara moderna, viene con el sombrero y las gafas. Tiene una pata un poco coja, pero cumple su función.",
+      "picture": "https://res.cloudinary.com/dleqykpqi/image/upload/v1641317659/cambialo/hogar-lamp_ccqizn.webp",
+      "suNumero": true,
+      "category": "Hogar"
+   },
+   {
+      "title": "Mesa de Noche",
+      "available": true,
+      "description": "Mesa de noche de madera clara, está en perfecto estado como en la foto. Perfecta si te falta una en tu habitación.",
+      "picture": "https://res.cloudinary.com/dleqykpqi/image/upload/v1641317659/cambialo/hogar-mesita_wmkvrv.webp",
+      "suNumero": true,
+      "category": "Hogar"
+   },
+   {
+      "title": "Silla Comedor",
+      "available": true,
+      "description": "Silla estilo revista de IKEA, la quito porque no pega con nada en mi casa. Solo me queda esta, ya vendí las demás.",
+      "picture": "https://res.cloudinary.com/dleqykpqi/image/upload/v1641317659/cambialo/hogar-silla_wr09op.webp",
+      "suNumero": true,
+      "category": "Hogar"
+   },
+   {
+      "title": "Sofá de IKEA",
+      "available": true,
+      "description": "Sofá un poco desgastado por el uso. Es color beige claro y es de 2 plazas. Tiene su factura pero no garantía ya.",
+      "picture": "https://res.cloudinary.com/dleqykpqi/image/upload/v1641317658/cambialo/hogar-sofa_wqmhdn.webp",
+      "suNumero": true,
+      "category": "Hogar"
+   },
+   {
+      "title": "Juguete de Gato",
+      "available": true,
+      "description": "Juguete grande. Ocupa la mitad de mi salón y por eso tengo que quitarlo. Cumple su función y al gato le gusta.",
+      "picture": "https://res.cloudinary.com/dleqykpqi/image/upload/v1641317659/cambialo/mascotas-cattoy_sbtcly.webp",
+      "suNumero": true,
+      "category": "Mascotas"
+   },
+   {
+      "title": "Comedero de Mascota",
+      "available": true,
+      "description": "Comedero bien fancy. Para cualquier animal. La madera un poco deteriorada por la humedad, pero nada más.",
+      "picture": "https://res.cloudinary.com/dleqykpqi/image/upload/v1641317659/cambialo/mascotas-comedero_cuokfg.jpg",
+      "suNumero": true,
+      "category": "Mascotas"
+   },
+   {
+      "title": "Juguete para Perrito",
+      "available": true,
+      "description": "En realidad me gusta más a mí que a mi mascota, y no lo veo sano. Es un patito chulo para hacer duchas amenas.",
+      "picture": "https://res.cloudinary.com/dleqykpqi/image/upload/v1641317659/cambialo/mascotas-dogtoy_sv7ptp.webp",
+      "suNumero": true,
+      "category": "Mascotas"
+   },
+   {
+      "title": "Transportín Bonito",
+      "available": true,
+      "description": "Transportín de marca. Está arañada por dentro. Es color naranja y es de cuero de mentira.",
+      "picture": "https://res.cloudinary.com/dleqykpqi/image/upload/v1641317659/cambialo/mascotas-transportin_rxu5nb.webp",
+      "suNumero": true,
+      "category": "Mascotas"
+   },
+   {
+      "title": "Monopoly clásico",
+      "available": true,
+      "description": "Lo cambio por no poder jugar, mi familia me roba el dinero cuando no estoy atento. Como nuevo, con todas sus piezas.",
+      "picture": "https://res.cloudinary.com/dleqykpqi/image/upload/v1641317659/cambialo/juego-monopoly_nr01um.jpg",
+      "suNumero": true,
+      "category": "Juegos"
+   },
+   {
+      "title": "The Sims 4 - PS4",
+      "available": true,
+      "description": "Juego original, por fin mi vida me parece mas divertida que la que hago en este juego. Cambio por cualquier cosa de bowling.",
+      "picture": "https://res.cloudinary.com/dleqykpqi/image/upload/v1641317659/cambialo/juego-sims_d1q9c7.jpg",
+      "suNumero": true,
+      "category": "Juegos"
+   },
+   {
+      "title": "Twister",
+      "available": true,
+      "description": "Solo usado una vez, mi suegra se cayó y casi no lo cuenta. Lo recomiendo mucho para niños que son mas flexibles.",
+      "picture": "https://res.cloudinary.com/dleqykpqi/image/upload/v1641317659/cambialo/juego-twister_ukemst.jpg",
+      "suNumero": true,
+      "category": "Juegos"
+   },
+   {
+      "title": "Zelda para Switch",
+      "available": true,
+      "description": "Edicion Breath of the Wild, el envio lo pagas tu, solo cambio por el juego de Crash Bandicoot, no ofrecerme nada mas.",
+      "picture": "https://res.cloudinary.com/dleqykpqi/image/upload/v1641317659/cambialo/juego-zelda_rjd2gw.webp",
+      "suNumero": true,
+      "category": "Juegos"
+   },
+   {
+      "title": "Camisa blanca de Zara",
+      "available": true,
+      "description": "Talla M, tiene la etiqueta y todo. Me lo regalaron de cumpleaños pero me queda pequeña. La envío con la bolsa que me dieron también.",
+      "picture": "https://res.cloudinary.com/dleqykpqi/image/upload/v1641317661/cambialo/ropa-camisa_ahwath.jpg",
+      "suNumero": true,
+      "category": "Ropa"
+   },
+   {
+      "title": "Pantalones Levis",
+      "available": true,
+      "description": "Poco uso, molones, un poco acartonados pero el color azul es chulo. Talla 46, tiene un detalle en el bolsillo de atras pero nada grave.",
+      "picture": "https://res.cloudinary.com/dleqykpqi/image/upload/v1641317663/cambialo/ropa-pantalon_kiib2j.jpg",
+      "suNumero": true,
+      "category": "Ropa"
+   },
+   {
+      "title": "Sombrero de rayas",
+      "available": true,
+      "description": "Para el verano! si vives en canarias lo vas a usar todo el año que te lo digo yo, CASI nuevo. Buena calidad, si se te olvida en el horno sale igualito.",
+      "picture": "https://res.cloudinary.com/dleqykpqi/image/upload/v1641317660/cambialo/ropa-sombrero_vvkdjs.jpg",
+      "suNumero": true,
+      "category": "Ropa"
+   },
+   {
+      "title": "Zapatos Beige de Bershka",
+      "available": true,
+      "description": "Zapatos de la temporada pasada de primavera-verano de Bershka, solo los use para tomarme fotos para el instagram.",
+      "picture": "https://res.cloudinary.com/dleqykpqi/image/upload/v1641317660/cambialo/ropa-zapatos_mior4l.jpg",
+      "suNumero": true,
+      "category": "Ropa"
+   },
+   {
+      "title": "Esquíes",
+      "available": true,
+      "description": "Los cambio por no uso, la única vez que los utilice fue con Filomena, la mejor experiencia en Madrid de mi vida.",
+      "picture": "https://res.cloudinary.com/dleqykpqi/image/upload/v1641317660/cambialo/deporte-eski_f2late.jpg",
+      "suNumero": true,
+      "category": "Deporte"
+   },
+   {
+      "title": "Balón de fútbol",
+      "available": true,
+      "description": "Se parece al de la foto, lo tiene mi primo pero en cuanto me lo devuelva te lo envío. Es verde, si lo quieres de otro color avisame que lo pinto.",
+      "picture": "https://res.cloudinary.com/dleqykpqi/image/upload/v1641317661/cambialo/deporte-futbol_xv7ymr.jpg",
+      "suNumero": true,
+      "category": "Deporte"
+   },
+   {
+      "title": "Bolsa de Pádel",
+      "available": true,
+      "description": "ME quiero deshacer de esto. No lo uso desde hace 5 años pero cuando mi familia lo ve se creen que tengo mucho dinero y me piden.",
+      "picture": "https://res.cloudinary.com/dleqykpqi/image/upload/v1641317660/cambialo/deporte-padel_ikgbez.jpg",
+      "suNumero": true,
+      "category": "Deporte"
+   },
+   {
+      "title": "Raqueta de Tenis",
+      "available": true,
+      "description": "Para reparar, es ezone original. Me la dio el primo del vecino de Nadal, me ha dado buena suerte en los exámenes. La entrego con una pelota.",
+      "picture": "https://res.cloudinary.com/dleqykpqi/image/upload/v1641317661/cambialo/deporte-tenis_wyhcw9.jpg",
+      "suNumero": true,
+      "category": "Deporte"
+   }
+]
